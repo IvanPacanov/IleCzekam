@@ -1,0 +1,45 @@
+# Świadczenia badane przez ETL + słownik synonimów pacjenta.
+#
+# UWAGA (ustalenie z fazy A — patrz RECON.md, rozbieżność R1):
+# w słowniku NFZ NIE MA świadczenia "PORADNIA KARDIOLOGICZNA" ani żadnego innego
+# ambulatoryjnego świadczenia kardiologicznego. Nazwy w `nfz_benefits` muszą być
+# DOKŁADNIE takie, jak zwraca /benefits — parametr `benefit` w /queues jest
+# dopasowaniem po pełnej nazwie, a literówka daje po cichu 0 wyników (nie błąd).
+#
+# Liczby w komentarzach = liczba kolejek w woj. śląskim (kod 12), przypadek stabilny,
+# snapshot z 2026-08-10.
+
+benefits:
+  - slug: kardiologia
+    label: Kardiolog
+    synonyms:
+      - serce
+      - kardiolog
+      - choroby serca
+      - zawał
+      - arytmia
+    nfz_benefits:
+      - ODDZIAŁ KARDIOLOGICZNY                    # 29 placówek, 18 miejscowości
+      - ODDZIAŁ KARDIOLOGICZNY DLA DZIECI         # 2
+      - PORADNIA KARDIOCHIRURGICZNA               # 3
+      - PORADNIA KARDIOCHIRURGICZNA DLA DZIECI    # 1
+      - ODDZIAŁ KARDIOCHIRURGICZNY                # 3
+      - ODDZIAŁ KARDIOCHIRURGICZNY DLA DZIECI     # 2
+      - PORADNIA KONTROLI ROZRUSZNIKÓW I KARDIOWERTERÓW
+      - PORADNIA KONTROLI ROZRUSZNIKÓW I KARDIOWERTERÓW DLA DZIECI
+      - LECZENIE PACJENTÓW Z KARDIOMIOPATIĄ       # 4
+
+  - slug: rehabilitacja-kardiologiczna
+    label: Rehabilitacja kardiologiczna
+    synonyms:
+      - rehabilitacja serca
+      - rehabilitacja po zawale
+    nfz_benefits:
+      - PORADNIA REHABILITACJI KARDIOLOGICZNEJ
+      - PORADNIA REHABILITACJI KARDIOLOGICZNEJ DLA DZIECI
+      - REHABILITACJA KARDIOLOGICZNA W WARUNKACH STACJONARNYCH   # 9
+      - KARDIOLOGICZNA TELEREHABILITACJA HYBRYDOWA W WARUNKACH STACJONARNYCH  # 5
+      - ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ             # 9
+      - ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ DLA DZIECI
+      - ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ DZIENNEJ    # 5
+      - ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ DZIENNEJ DLA DZIECI

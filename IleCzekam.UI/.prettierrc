@@ -1,0 +1,33 @@
+{
+  "printWidth": 120,
+  "htmlWhitespaceSensitivity": "ignore",
+  "useTabs": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "bracketSameLine": true,
+  "semi": true,
+  "trailingComma": "none",
+  "plugins": ["prettier-plugin-organize-attributes", "prettier-plugin-tailwindcss"],
+  "attributeGroups": ["$ANGULAR"],
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 100
+      }
+    },
+    {
+      "files": "*.html",
+      "options": {
+        "singleAttributePerLine": true,
+        "parser": "angular"
+      }
+    },
+    {
+      "files": "*.csproj",
+      "options": {
+        "printWidth": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+HTTP/2 404 
+date: Mon, 10 Aug 2026 19:04:57 GMT
+server: 
+x-frame-options: SAMEORIGIN
+content-length: 0
+referrer-policy: no-referrer
+x-xss-protection: 1; mode=block
+x-frame-options: SameOrigin
+content-security-policy: default-src 'none';script-src 'self';object-src 'none';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;img-src 'self' data:;media-src 'none';font-src 'self' https://fonts.gstatic.com;connect-src 'self';base-uri 'self';child-src 'self';form-action 'self';frame-ancestors 'self';block-all-mixed-content;report-uri /report/data.log
+x-content-type-options: nosniff
+feature-policy: geolocation 'none';midi 'none';notifications 'none';push 'none';sync-xhr 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';speaker 'self';vibrate 'none';fullscreen 'self';payment 'none';
+x-permitted-cross-domain-policies: 'none'
+strict-transport-security: max-age=31536000; includeSubDomains
+set-cookie: visid_incap_3271785=F6zXmEjqSruznxBIf80Tq9ggemoAAAAAQUIPAAAAAABl1lhuwDVKfaPsxkTvLfR/; expires=Tue, 10 Aug 2027 09:14:56 GMT; HttpOnly; path=/; Domain=.nfz.gov.pl
+set-cookie: incap_ses_683_3271785=wZFPbl6JETwkjaJY5oB6CdggemoAAAAAui4OXtBiWeUHe/AcCH0QUQ==; path=/; Domain=.nfz.gov.pl
+x-cdn: Imperva
+x-iinfo: 54-51528399-51527631 PNNN RT(1786388697182 66) q(0 0 0 -1) r(0 0) U11
+

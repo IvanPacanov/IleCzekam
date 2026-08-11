@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>API Dokumentacja</title>
+
+    <link rel="stylesheet" href="swagger-ui.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Helvetica, Tahoma, Arial, sans-serif;
+            font-size: 1em;
+            background: #fafafa;
+            line-height: 1.5;
+        }
+
+        #layout {
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 250px;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background: #7386d5;
+            color: #339;
+        }
+
+            #sidebar button {
+                display: block;
+                width: 100%;
+                padding: 15px;
+                border: none;
+                background: none;
+                text-align: left;
+                color: white;
+                cursor: pointer;
+                font-size: large;
+            }
+
+                #sidebar button:hover {
+                    background: #fafafa;
+                    color: #142665;
+                }
+
+        .sidebar-header {
+            background-color: white;
+            text-align: center;
+            padding: 10px 0 10px 0;
+        }
+
+
+        #content {
+            flex: 1;
+            overflow: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .documentation-title {
+            min-height: 110px;
+            font-size: xx-large;
+            font-weight: bold;
+            color: #142665;
+            display: flex;
+            align-items: center;
+        }
+
+        .company {
+            color: #707070;
+            font-size: 8pt;
+            margin-top: 5px;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        /* dodatkowe style dla poszczegolnych opcji */
+
+        /* dodatkowe style dla poszczegolnych opcji - schematy */
+        #schemas h3 {
+            color: #142665;
+        }
+
+        /* dodatkowe style dla poszczegolnych opcji - regulamin */
+        .border-content h3, .border-content h2 {
+            color: #142665;
+        }
+
+        /* dodatkowe style dla poszczegolnych opcji - errors */
+        #errors h3 {
+            color: #142665;
+        }
+
+        #errors div h3 {
+            color: #7386d5;
+        }
+
+        /* dodatkowe style dla poszczegolnych opcji - swagger */
+        .swagger-ui .topbar {
+            display: none !important;
+        }
+
+        .swagger-ui .information-container {
+            display: none !important;
+        }
+
+        .swagger-ui .scheme-container {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="layout">
+        <div id="sidebar">
+            <div class="sidebar-header">
+                <img class="logoNfz" src="images/logo_nfz.png" alt="Logo NFZ" title="Logo NFZ" />
+            </div>
+            <button onclick="show('swagger')">Swagger</button>
+            <button onclick="show('statute')">Regulamin</button>
+            <button onclick="show('errors')">Opis błędów</button>
+            <button onclick="show('schemas')">Schematy</button>
+            <button onclick="show('changelog')">Changelog</button>
+        </div>
+
+        <div id="content">
+            <div class="documentation-title">
+                <div class="box">Dokumentacja API Terminy Leczenia <span id="api-version"></span></div>
+            </div>
+
+            <div id="statute" class="section">
+            </div>
+
+
+            <div id="errors" class="section">
+            </div>
+
+            <div id="swagger" class="section active">
+                <div id="swagger-ui"></div>
+            </div>
+
+            <div id="schemas" class="section">
+                <h3>Schematy</h3>
+                <p>Celem poniższych schematów jest określenie kontekstu zwracanych danych. Przykładem problemu określenia znaczenia zwracanych danych jest rzeczownik kolejka, który bez kontekstu ma kilka znaczeń np. kolejka górska, kolejka wąskotorowa, kolejka do sklepu. Dzięki określeniu schematu w łatwy sposób można określić dokładne znaczenie zwracanych danych.</p>
+                <p>Zgodnie ze strukturą dane zwracane są w sekcji data. Pełna struktura dostępna jest również w formie pliku <a href="swagger/v1.4/swagger.json">swagger.json.</a></p>
+                <hr />
+                <pre id="schema-content">Ładowanie...</pre>
+            </div>
+
+            <div id="changelog" class="section">
+            </div>
+
+            <footer>
+                <div class="text-center company">
+                    <hr />
+                    KAMSOFT S.A., ul. 1 Maja 133, 40-235 Katowice
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Swagger -->
+    <script src="swagger-ui-bundle.js"></script>
+
+    <!-- Redoc -->
+    <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"></script>
+
+    <script>
+        function show(section) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(section).classList.add('active');
+
+            if (section === 'schemas') {
+                loadSchemas();
+            }
+
+            if (section === 'swagger' && !window.swaggerLoaded) {
+                initSwagger();
+                window.swaggerLoaded = true;
+            }
+
+            if (section === 'errors') {
+                loadErrors();
+            }
+
+            if (section === 'statute') {
+                loadStatute();
+            }
+
+            if (section === 'changelog') {
+                loadChangelog();
+            }
+        }
+
+        function initSwagger() {
+            SwaggerUIBundle({
+                url: "swagger/v1.4/swagger.json",
+                dom_id: '#swagger-ui',
+                deepLinking: true,
+                docExpansion: "list"
+            });
+        }
+
+        function loadApiVersion() {
+            fetch('swagger/v1.4/swagger.json')
+                .then(r => r.json())
+                .then(data => {
+                    const version =
+                        data.info?.version || data.openapi || 'brak';
+
+                    document.getElementById('api-version').textContent =
+                        `wersja ${version}`;
+                });
+        }
+
+        function loadSchemas() {
+            fetch('swagger/v1.4/swagger.json')
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('schema-content')
+                        .textContent = JSON.stringify(data, null, 2);
+                });
+        }
+
+        function loadErrors() {
+            const container = document.getElementById('errors');
+
+            // żeby nie ładować wiele razy
+            if (container.dataset.loaded) return;
+
+            fetch('errors/index.html')
+                .then(r => r.text())
+                .then(html => {
+                    container.innerHTML = html;
+                    container.dataset.loaded = "true";
+                })
+                .catch(err => {
+                    container.innerHTML = "<p>Błąd ładowania pliku errors</p>";
+                    console.error(err);
+                });
+        }
+
+        function loadStatute() {
+            const container = document.getElementById('statute');
+
+            // żeby nie ładować wiele razy
+            if (container.dataset.loaded) return;
+
+            fetch('swagger-ui/statute.html')
+                .then(r => r.text())
+                .then(html => {
+                    container.innerHTML = html;
+                    container.dataset.loaded = "true";
+                })
+                .catch(err => {
+                    container.innerHTML = "<p>Błąd ładowania pliku regulaminu</p>";
+                    console.error(err);
+                });
+        }
+
+        function loadChangelog() {
+            const container = document.getElementById('changelog');
+
+            // żeby nie ładować wiele razy
+            if (container.dataset.loaded) return;
+
+            fetch('swagger-ui/changelog.html')
+                .then(r => r.text())
+                .then(html => {
+                    container.innerHTML = html;
+                    container.dataset.loaded = "true";
+                })
+                .catch(err => {
+                    container.innerHTML = "<p>Błąd ładowania pliku zmian</p>";
+                    console.error(err);
+                });
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            initSwagger();
+            loadApiVersion();
+        });
+    </script>
+
+</body>
+</html>

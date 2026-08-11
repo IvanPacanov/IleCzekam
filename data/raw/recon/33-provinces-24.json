@@ -1,0 +1,1 @@
+{"errors":[{"id":"213ebfe7-08aa-41ef-b58d-b090eb143d3e","error-result":"Cannot return results","error-reason":"Invalid value for {province} attribute","error-solution":"Provide proper value for attribute","error-help":"https://api.nfz.gov.pl/app-itl-api/errors/#1200013","error-code":1200013}]}

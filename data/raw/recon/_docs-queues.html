@@ -1,0 +1,529 @@
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dokumentacja API - Terminy leczenia</title>
+    <link href="/app-itl-api/css/font-awsome/all.min.css" rel="stylesheet" nws-csp-add-nonce="true" />
+
+
+    <link href="/app-itl-api/css/bootstrap.min.css" rel="stylesheet" nws-csp-add-nonce="true" />
+    <link href="/app-itl-api/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" nws-csp-add-nonce="true" />
+
+    
+    
+        <link rel="stylesheet" type="text/css" href="/app-itl-api/css/site.min.css" nws-csp-add-nonce="true" />
+    
+    
+    <link rel="stylesheet" type="text/css" href="/app-itl-api/css/swagger-ui.css" nws-csp-add-nonce="true" />
+
+    <link rel="icon" type="image/png" href="/app-itl-api/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/app-itl-api/images/favicon-16x16.png" sizes="16x16" />
+</head>
+<body class="swagger-section">
+    <div id="storage" class="no-display"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-style">
+        <defs>
+            <symbol viewBox="0 0 20 20" id="unlocked">
+                <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"></path>
+            </symbol>
+            <symbol viewBox="0 0 20 20" id="locked">
+                <path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z" />
+            </symbol>
+            <symbol viewBox="0 0 20 20" id="close">
+                <path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z" />
+            </symbol>
+            <symbol viewBox="0 0 20 20" id="large-arrow">
+                <path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z" />
+            </symbol>
+            <symbol viewBox="0 0 20 20" id="large-arrow-down">
+                <path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z" />
+            </symbol>
+
+            <symbol viewBox="0 0 24 24" id="jump-to">
+                <path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z" />
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="expand">
+                <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="https://api.nfz.gov.pl" title="Strona Narodowego Funduszu Zdrowia" rel="noreferrer" target="_blank"><img class="logonfz" src="/app-itl-api/images/logo_nfz.png" alt="Logo NFZ - Narodowy Fundusz Zdrowia" title="Logo Narodowego Funduszu Zdrowia"></a>
+            </div>
+            <ul class="list-unstyled components">
+
+                    <li class="active">
+                        <a href="#start" class="position-selected"><strong>Informacje ogólne</strong></a>
+                        <ul class="list-unstyled dropdown" id="homeSubmenu">
+                            <li>
+                                <a href="#intro">Wstęp</a>
+                            </li>
+                            <li>
+                                <a href="#swagger">Swagger i API terminy leczenia</a>
+                            </li>
+                            <li>
+                                <a href="#resources">Zasoby</a>
+                            </li>
+                            <li>
+                                <a href="#structure">Struktura danych</a>
+                            </li>
+                            <li>
+                                <a href="#searching">Standardowy mechanizm wyszukiwania danych</a>
+                            </li>
+                        </ul>
+                    </li>
+                                    <li>
+                        <a href="/app-itl-api/terms"><strong>Regulamin</strong></a>
+                    </li>
+                                    <li><a href="/app-itl-api/schemas"><strong>Schematy</strong></a></li>
+
+                    <li>
+                        <a href="/app-itl-api/metadata"><strong>Metadane</strong></a>
+                    </li>
+                                    <li>
+                        <a href="/app-itl-api/errors"><strong>Opis błędów</strong></a>
+                    </li>
+                                    <li>
+                        <a href="/app-itl-api/swagger-docs"><strong>Swagger</strong></a>
+                    </li>
+                                    <li>
+                        <a href="/app-itl-api/changelog"><strong>Changelog <i class="fas fa-exclamation color-umowy"></i></strong></a>
+                    </li>
+            </ul>
+            <br /><br /><br /><br />
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="http://nfz.gov.pl" class="article">Copyright © Narodowy Fundusz Zdrowia 2026</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div class="content">
+            <div class="documentation-title">
+                <div class="box-center">
+                    <a href="https://api.nfz.gov.pl/app-itl-api/">
+                        <i class="fas fa-calendar-alt fa-4x margin-right-50"></i>
+                    </a>
+                </div>
+                <div class="box-center">
+                    <h1>Dokumentacja API Terminy Leczenia wersja 1.3</h1>
+                </div>
+            </div>
+            
+
+
+<div class="border-content">
+    
+     <div style="color: red">
+        <h3>Wersja API 1.3 jest nieaktualna</h3>
+        <h4>Od 10 lipca obowiązuje nowa wersja API 1.4, która jest dostępna pod adresem 
+            <a href="https://apinfz.nfz.gov.pl/app-itl-api-pcus/">https://apinfz.nfz.gov.pl/app-itl-api-pcus/</a></h4>
+    </div>
+    <hr />
+    
+    <h3 id="intro">Informacje ogólne</h3> 
+
+    <p>
+        Interfejs API Terminy Leczenia umożliwia dostęp do danych publicznych gromadzonych przez Narodowy Fundusz Zdrowia.
+    </p>
+    <p>
+        Budowa API Terminy Leczenia zrealizowana została w ramach projektu „Otwarte Dane – dostęp, standard, edukacja” w ramach programu Operacyjnego Polska Cyfrowa na lata 2014-2020.
+    </p>
+
+    <p>
+        Udostępniane dane przekazywane są do NFZ przez świadczeniodawców mających umowę o udzielanie świadczeń opieki zdrowotnej (np. szpitale, poradnie specjalistyczne).
+    </p>
+
+    <p>
+        Dane obejmują informacje o świadczeniach opieki zdrowotnej (procedury medyczne, programy lekowe, świadczenia w poradniach specjalistycznych, w oddziałach szpitalnych,
+        w pracowniach diagnostycznych, w ośrodkach opieki pozaszpitalnej), dla których świadczeniodawcy prowadzą listy oczekujących. Informacje gromadzone w ramach list oczekujących obejmują w szczególności:
+    </p>
+    <p>
+        <ul>
+            <li>dane świadczeniodawcy,</li>
+            <li>dane o miejscach udzielania świadczeń,</li>
+            <li>liczbę osób wpisanych na listę oczekujących na świadczenie zdrowotne wg stanu na koniec miesiąca,</li>
+            <li>datę pierwszego wolnego terminu udzielenia świadczenia.</li>
+        </ul>
+    </p>
+    <p>
+        API Terminy Leczenia jest źródłem informacji, które mogą posłużyć do stworzenia aplikacji dedykowanych osobom korzystającym ze świadczeń opieki zdrowotnej finansowanych ze środków publicznych.
+    </p>
+
+    <div class="line"></div>
+    <h3 id="swagger">Swagger i API Terminy Leczenia</h3>
+    <p>
+        W celu ułatwienia korzystania z API Terminy Leczenia zdecydowaliśmy się dodać do dokumentacji <a href="https://swagger.io/tools/swagger-ui/">Swagger UI</a>. Jest to narzędzie umożliwiające
+        w prosty sposób wizualizację i interakcję z zasobami API bez konieczności implementowania. Narzędzie dostępne jest w menu w sekcji <a href="/app-itl-api/swagger-docs">Swagger</a>
+    </p>
+    <div class="line"></div>
+
+    <h3 id="resources">Zasoby</h3>
+    <p>
+        Prezentowane dane zostały podzielone na trzy główne sekcje:
+    </p>
+    <p>
+        <ul>
+            <li><a href="#medical-treatment">Dane o terminach leczenia</a></li>
+            <li><a href="#glossary">Słowniki</a></li>
+            <li><a href="#info">Info</a></li>
+        </ul>
+    </p>
+    <h3 id="medical-treatment">Dane o terminach leczenia</h3>
+    <p>
+        Do dyspozycj w tej sekcji są 3 zasoby: <code><a href="#qs">/queues</a></code>, <code><a href="#q">/queues/{id}</a></code> oraz <code><a href="#mp">/many-places/{id}</a></code>
+    </p>
+
+    <h4 id="qs"><code>/queues</code></h4>
+    <p>
+        Zasób zwraca listę pierwszych dostępnych terminów leczenia w zależności od wprowadzonych parametrów.
+        Wynik żądania zgodnie ze <a href="#structure">strukturą</a> zwraca listę obiektów <a href="/app-itl-api/schemas#queue"><code>queue</code></a>
+        (<a href="/app-itl-api/swagger-docs?region=model-queue">SwaggerUi</a>).
+    </p>
+
+    <div class="swagger-ui">
+        <div id="queues-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=queues"></div>
+    </div>
+
+    <h4 id="q"><code>/queue/{id}</code></h4>
+    <p>
+        Zasób dostarcza szczegółów dotyczących jednego terminu leczenia wskazanego parametrem <code>{id}</code>.
+        Wynik żądania zgodnie ze <a href="#structure">strukturą</a> zwraca obiekt <a href="/app-itl-api/schemas#queue"><code>queue</code></a>
+        (<a href="/app-itl-api/swagger-docs?region=model-queue">SwaggerUi</a>).
+    </p>
+
+    <div class="swagger-ui">
+        <div id="queue-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=queues%2F%7Bid%7D"></div>
+    </div>
+
+    <h4 id="mp"><code>/many-places/{id}</code></h4>
+    <p>
+        Zasób zwraca listę pierwszych wolnych terminów leczenia dla wcześniej wybranego świadczenia (poprzez parametr <code>{id}</code> kolejki dla której występują inne miejsca) udzielanego przez
+        tego samego świadczeniodawcę.
+        Wynik żądania zgodnie ze <a href="#structure">strukturą</a> zwraca obiekt <a href="/app-itl-api/schemas#many-places"><code>many-places</code></a>
+        (<a href="/app-itl-api/swagger-docs?region=model-queue">SwaggerUi</a>).
+    </p>
+    <div class="swagger-ui">
+        <div id="many-places-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=many-places%2F%7Bid%7D"></div>
+    </div>
+    <div class="line"></div>
+
+    <h3 id="glossary">Słowniki</h3>
+    <p>
+        Do dyspozycj w tej sekcji jest 5 zasobów słownikowych:
+    </p>
+    <ul>
+        <li><a href="#benefit"><code>benefits</code></a></li>
+        <li><a href="#localities"><code>localities</code></a></li>
+        <li><a href="#places"><code>places</code></a></li>
+        <li><a href="#providers"><code>providers</code></a></li>
+        <li><a href="#streets"><code>streets</code></a></li>
+    </ul>
+
+    <h4 id="benefit"><code>/benefits</code></h4>
+    <p>
+        Słownik nazw świadczeń opieki zdrowotnej (procedur medycznych, programów lekowych, świadczeń w poradni specjalistycznej, w oddziale szpitalnym, w pracowni diagnostycznej, w ośrodku opieki pozaszpitalnej).
+    </p>
+    <p>
+        Wynik żądania zgodnie ze <a href="#structure">strukturą</a> zwraca obiekt <a href="/app-itl-api/schemas#benefit"><code>benefit</code></a>
+        (<a href="/app-itl-api/swagger-docs?region=model-benefits-response">SwaggerUi</a>).
+    </p>
+    <div class="swagger-ui">
+        <div id="benefits-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=benefits"></div>
+    </div>
+    <div class="line"></div>
+
+    <h4 id="localities"><code>/localities</code></h4>
+    <p>
+        Słownik miejscowości z adresów miejsca udzielania świadczeń (szpitala/przychodni).
+    </p>
+    <p>
+        Wynik żądania zgodnie ze <a href="#structure">strukturą</a> zwraca obiekt <a href="/app-itl-api/schemas#locality"><code>locality</code></a>
+        (<a href="/app-itl-api/swagger-docs?region=model-localities-response">SwaggerUi</a>).
+    </p>
+    <div class="swagger-ui">
+        <div id="localities-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=localities"></div>
+    </div>
+    <div class="line"></div>
+
+
+    <h4 id="places"><code>/places</code></h4>
+    <p>
+        Słownik nazw miejsc udzielania świadczeń w szpitalu/przychodni.
+    </p>
+    <p>
+        Wynik żądania zgodnie ze <a href="#structure">strukturą</a> zwraca obiekt <a href="/app-itl-api/schemas#place"><code>place</code></a>
+        (<a href="/app-itl-api/swagger-docs?region=model-places-response">SwaggerUi</a>).
+    </p>
+    <div class="swagger-ui">
+        <div id="places-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=places"></div>
+    </div>
+    <div class="line"></div>
+
+    <h4 id="providers"><code>/providers</code></h4>
+    <p>
+        Słownik nazw świadczeniodawców, którzy udzielają świadczeń w ramach zawartej umowy z NFZ.
+    </p>
+    <p>
+        Wynik żądania zgodnie ze <a href="#structure">strukturą</a> zwraca obiekt <a href="/app-itl-api/schemas#provider"><code>provider</code></a>
+        (<a href="/app-itl-api/swagger-docs?region=model-providers-response">SwaggerUi</a>).
+    </p>
+    <div class="swagger-ui">
+        <div id="providers-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=providers"></div>
+    </div>
+    <div class="line"></div>
+
+    <h4 id="streets"><code>/streets</code></h4>
+    <p>
+        Słownik nazw ulic z adresów miejsca udzielania świadczeń (szpitala/przychodni).
+    </p>
+    <p>
+        Wynik żądania zgodnie ze <a href="#structure">strukturą</a> zwraca obiekt <a href="/app-itl-api/schemas#street"><code>street</code></a>
+        (<a href="/app-itl-api/swagger-docs?region=model-streets-response">SwaggerUi</a>).
+    </p>
+    <div class="swagger-ui">
+        <div id="streets-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=streets"></div>
+    </div>
+    <div class="line"></div>
+
+    <h3 id="info">Info</h3>
+    <p>
+        W sekcji "Info" znajduje się zasób zwracający aktualną wersję API.
+    </p>
+
+    <div class="swagger-ui">
+        <div id="version-swagger-code" class="swagger-code" data-url="https://api.nfz.gov.pl/app-itl-api/methods?name=version"></div>
+    </div>
+    <div class="line"></div>
+
+    <h3 id="structure">Struktura danych</h3>
+    <p>
+        Dane z API zwracane są zgodnie ze standardem <a href="https://jsonapi.org">JSON API</a>.
+        W każdej odpowiedzi znajduje się co najmniej jedna z poniższych sekcji:
+    </p>
+    <ul>
+        <li><a href="#data"><code>data</code></a></li>
+        <li><a href="#errors"><code>errors</code></a></li>
+        <li><a href="#meta"><code>meta</code></a></li>
+    </ul>
+    <p>
+        z zastrzeżeniem, że <a href="#data"><code>data</code></a> i <a href="#errors"><code>errors</code></a> nie mogą wystąpić razem w jednej odpowiedzi.
+    </p>
+
+    <h4 id="links"><code>links</code></h4>
+    <p>
+        Ponieważ zasoby zwracające listę wyników są stronicowane (25 wyników na stronę),
+        dodatkowo w odpowiedziach dodawana jest sekcja <code>links</code>, ułatwiająca poruszanie się po API (<a href="https://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>).
+    </p>
+
+
+    <p>
+        Dostępnych w sekcji jest 5 linków:
+        <ul>
+            <li><code>first</code> - do pierwszej strony wyników,</li>
+            <li><code>prev</code> - do następnej strony wyników,</li>
+            <li><code>self</code> - do aktualnej strony wyników,</li>
+            <li><code>next</code> - do następnej strony wyników,</li>
+            <li><code>last</code> - do ostaniej strony wyników,</li>
+        </ul>
+    </p>
+    <p>Na przykład poniższe żądanie:</p>
+
+    <code>
+        <a href="https://api.nfz.gov.pl/app-itl-api/queues?case=1&amp;province=07&amp;benefit=poradnia" target="_blank">
+            <code>https://api.nfz.gov.pl/app-itl-api/queues?case=1&amp;province=07&amp;benefit=poradnia</code>
+        </a>
+    </code>
+
+    <p>zwróci listę pierwszych wolnych terminów leczenia dla świadczenia zawierającego słowo <i>"poradnia"</i>:</p>
+
+<pre class="metadane-code">
+<code>{
+    "meta": {
+        "@context": "/schema/queue",
+        "count": 4088,
+        "page": 1,
+        "limit": 10
+    },
+    "links": {
+        "first": "/queues?page=1&limit=10&case=1&province=07&benefit=poradnia",
+        "prev": null,
+        "self": "/queues?page=1&limit=10&case=1&province=07&benefit=poradnia",
+        "next": "/queues?page=2&limit=10&case=1&province=07&benefit=poradnia",
+        "last": "/queues?page=409&limit=10&case=1&province=07&benefit=poradnia"
+    },
+    "data": [
+        ...
+    ]
+}
+    </code>
+</pre>
+
+    <p>
+        Należy zwrócić uwagę na link <code>prev</code>, który nie zawiera żadnej wartości (<code>null</code>).
+        Spowodowane jest to użyciem domyślnych wartości paramterów (ponieważ ich nie przekazano). Domyślnie parametr <code>page</code>&nbsp;=&nbsp;1, dlatego opdowiedź z API zawiera pierwszą stronę wyników
+        dla której <strong>poprzednia nie istnieje</strong>.
+    </p>
+    <div class="line"></div>
+
+    <h4 id="data"><code>data</code></h4>
+    <p>
+        Sekcja <code>data</code> zawiera dane pasujące do kryteriów wyszukiwania. W tej sekcji możemy odnaleźć różnego rodzaju struktury w zależności od przeszukiwanego zasobu.
+    </p>
+
+    <p>Przykład opowiedzi na zapytanie przeszukujące nazwy świadczeń zawierające słowo <i>poradnia</i></p>
+
+    <code>
+        <a href="https://api.nfz.gov.pl/app-itl-api/benefits?name=poradnia" target="_blank">
+            <code>https://api.nfz.gov.pl/app-itl-api/benefits?name=poradnia</code>
+        </a>
+    </code>
+    <br /><br />
+
+<pre class="metadane-code">
+<code>{
+  "meta": {
+    "@context": "/schema/benefit",
+    "count": 167,
+    "page": 1,
+    "limit": 10
+  },
+  "links": {
+    "first": "/benefits?page=1&limit=10&name=poradnia",
+    "prev": null,
+    "self": "/benefits?page=1&limit=10&name=poradnia",
+    "next": "/benefits?page=2&limit=10&name=poradnia",
+    "last": "/benefits?page=17&limit=10&name=poradnia"
+  },
+    "data": [
+        "PORADNIA ALERGOLOGICZNA",
+        "PORADNIA ALERGOLOGICZNA DLA DZIECI",
+        "PORADNIA ANESTEZJOLOGICZNA",
+        "PORADNIA ANESTEZJOLOGICZNA DLA DZIECI",
+        "PORADNIA ANTYNIKOTYNOWA",
+        "PORADNIA AUDIOLOGICZNA",
+        "PORADNIA AUDIOLOGICZNA DLA DZIECI",
+        "PORADNIA CHIRURGII KLATKI PIERSIOWEJ",
+        "PORADNIA CHIRURGII KLATKI PIERSIOWEJ DLA DZIECI",
+        "PORADNIA CHIRURGII NACZYNIOWEJ"
+      ]
+    }</>
+        </code>
+    </pre>
+
+    <p>
+        Lista wszystkich możliwych schematów zwracanych w sekcji <code>data</code> została opisana w osobnej sekcji dokumentacji - <a href="/app-itl-api/schemas">Schematy</a>.
+    </p>
+    <h4 id="errors"><code>errors</code></h4>
+    <p>
+        Podczas pracy z API można natrafić na błędy, które w sposób zgodny ze <a href="https://jsonapi.org/format/#errors">standardem</a> zawierają możliwie jak najwięcej informacji,
+        ułatwiających rozwiązanie problemu.
+    </p>
+    <p>
+        Przykładowy błąd zwracany w przypadku gdy nie zostanie przekazany wymagany paramter (<code>case</code>):
+    </p>
+    <pre class="metadane-code">
+<code>{
+  "errors": [
+    {
+      "id": "bf99b2fa-8b84-4488-9e6f-85e324dea9ff",
+      "errorr-result": "Cannot return results",
+      "errorr-reason": "Invalid value for {case} attribute",
+      "errorr-solution": "Provide proper value for attribute",
+      "error-help": "/errors/#1200007",
+      "error-code": 1200007
+    }
+  ]
+}
+    </code>
+</pre>
+
+    <p>
+        Struktura odpowiedzi została opisana w osobnej sekcji dokumentacji -  <a href="/app-itl-api/schemas#error-response">Schematy</a>.<br />
+        Lista możliwych błędów została opisana w osobnej sekcji dokumentacji - <a href="/app-itl-api/errors">Opis błędów</a>
+    </p>
+
+    <h4 id="meta"><code>meta</code></h4>
+    <p>
+        Szczegóły dotyczące metadanych zostały opisanę w osobnej sekcji dokumentacji - <a href="/app-itl-api/metadata">Metadane</a>
+    </p>
+    <div class="line"></div>
+
+
+
+
+
+    <h3 id="searching">Standardowy mechanizm wyszukiwania danych</h3>
+    <p>
+        API Terminy Leczenia oferuje mechanizmy wyszukiwania z filtrowaniem pełnotekstowym po konkretnych polach oraz stronicowanie.
+        Wszystkie parametry wyszukiwania podaje się w części <i>query</i> zaraz po przeszukiwanym zasobie porzedzając go znakiem pytajnika.(?)
+    </p>
+    <p>Podaczas wyszukiwania w cześci <i>query</i> możemy używać standardowych pól:</p>
+    <p><code>page</code> - numer strony wyników do zwrócenia. Strony numerowane są od 1. Domyślna ilość wyników na stronie opisana jest w dokumentacji <a href="/app-itl-api/swagger-docs">Swagger UI</a>.</p>
+    <p><code>limit</code> - ilość wyników zróconych na stronie. Wartości domyślne i maksymalne zostały opisane szczegółowo w dokumentacji <a href="/app-itl-api/swagger-docs">Swagger UI</a>.</p>
+    <p><code>format</code> - określa format zwracanych wyników. Domyślnie dane zwracane są w formacie json — JavaScript object notation.</p>
+    <p>Pozostałe pola filtrowania pełnetekstowego opisuje szczegółowo dokumentacja <a href="/app-itl-api/swagger-docs">Swagger UI</a> dla każdego przeszukiwanego zasobu.</p>
+
+    <p>Ponizej przedstawiamy przykład wywołania pobrania listy pierwszych dostępnych terminów leczenia dla przypadku stablinego,  ograniczonego do województwa mazowieckiego i miasta Warszawa.</p>
+    <code>
+        <a href="https://api.nfz.gov.pl/app-itl-api/queues?page=1&amp;limit=10&amp;format=json&amp;case=1&amp;province=07&amp;locality=Warszawa" target="_blank">
+            <code>https://api.nfz.gov.pl/app-itl-api/queues?page=1&amp;limit=10&amp;format=json&amp;case=1&amp;province=07&amp;locality=Warszawa</code>
+        </a>
+    </code>
+</div>
+<br/>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <footer class="footer-block">
+                <hr>
+                <div class="logoue1 box-right">
+                    <img class="logoue" src="/app-itl-api/images/logo_ue.png" alt="Logo Europejski Fundusz Rozwoju Regionalnego" title="Logo Europejski Fundusz Rozwoju Regionalnego">
+                </div>
+                <div class="logood box-center">
+                    <a href="https://dane.gov.pl/" title="Otwórz stronę https://dane.gov.pl/" rel="noreferrer" target="_blank"><img class="logoue" src="/app-itl-api/images/logo_od.png" alt="Logo Projektu Otwarte Dane" title="Logo Projektu Otwarte Dane"></a>
+                </div>
+                <div class="logoue2 box-left">
+                    <img class="logoue" src="/app-itl-api/images/logo_uepc.png" alt="Logo Fundusze Europejskie Polska Cyfrowa" title="Logo Fundusze Europejskie Polska Cyfrowa">
+                </div>
+                <div class="box-right">
+                    <img src="/app-itl-api/images/powered_by_google_on_white.png" />
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="/app-itl-api/js/jquery.min.js" nonce="DkyoAq11eYVXZR1VZirw"></script>
+    <script src="/app-itl-api/js/bootstrap.min.js" nonce="DkyoAq11eYVXZR1VZirw"></script>
+    <script src="/app-itl-api/js/mCustomScrollbar.min.js" nonce="DkyoAq11eYVXZR1VZirw"></script>
+
+
+    <script src="/app-itl-api/js/lined-text-div.js" nonce="DkyoAq11eYVXZR1VZirw"></script>
+
+    
+    
+        <script src="/app-itl-api/js/site.min.js" nonce="DkyoAq11eYVXZR1VZirw"></script>
+    
+
+    
+    <script src="/app-itl-api/js/swagger-ui-bundle.js" nonce="DkyoAq11eYVXZR1VZirw"></script>
+    <script src="/app-itl-api/js/swagger-ui-standalone-preset.js" nonce="DkyoAq11eYVXZR1VZirw"></script>    
+    
+    
+        <script src="/app-itl-api/js/index.min.js" nonce="DkyoAq11eYVXZR1VZirw"></script>
+    
+
+</body>
+</html>

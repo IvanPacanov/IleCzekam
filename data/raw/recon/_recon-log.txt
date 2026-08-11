@@ -1,0 +1,62 @@
+[200] 00-root <- https://api.nfz.gov.pl/app-itl-api/ --data-urlencode format=json
+[400] 01-benefits-kardiolog <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=1 -d limit=100 -d format=json --data-urlencode name=kardiolog
+[400] 02-benefits-poradnia <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=1 -d limit=100 -d format=json --data-urlencode name=PORADNIA
+[400] 03-benefits-all-p1 <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=1 -d limit=100 -d format=json
+[400] 04-benefits-all-p2 <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=2 -d limit=100 -d format=json
+[400] 05-localities-slaskie <- https://api.nfz.gov.pl/app-itl-api/localities -d page=1 -d limit=100 -d format=json -d province=12
+[200] 06-localities-gliwice <- https://api.nfz.gov.pl/app-itl-api/localities -d page=1 -d limit=25 -d format=json -d province=12 --data-urlencode name=GLIWICE
+[404] 07-provinces <- https://api.nfz.gov.pl/app-itl-api/provinces -d format=json
+[404] 08-dictionaries <- https://api.nfz.gov.pl/app-itl-api/dictionaries -d format=json
+[200] 10-queues-stabilny-p1 <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 --data-urlencode benefit=PORADNIA KARDIOLOGICZNA -d page=1 -d limit=25 -d format=json -d api-version=1.3
+[200] 11-queues-pilny-p1 <- https://api.nfz.gov.pl/app-itl-api/queues -d case=2 -d province=12 --data-urlencode benefit=PORADNIA KARDIOLOGICZNA -d page=1 -d limit=25 -d format=json -d api-version=1.3
+[200] 12-queues-dzieci <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 --data-urlencode benefit=PORADNIA KARDIOLOGICZNA DLA DZIECI -d page=1 -d limit=25 -d format=json -d api-version=1.3
+[200] 13-queues-benefitForChildren <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 --data-urlencode benefit=PORADNIA KARDIOLOGICZNA -d benefitForChildren=true -d page=1 -d limit=25 -d format=json -d api-version=1.3
+[200] 14-queues-locality <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 --data-urlencode benefit=PORADNIA KARDIOLOGICZNA --data-urlencode locality=GLIWICE -d page=1 -d limit=25 -d format=json -d api-version=1.3
+[200] 15-queues-v12 <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 --data-urlencode benefit=PORADNIA KARDIOLOGICZNA -d page=1 -d limit=25 -d format=json -d api-version=1.2
+[200] 16-queues-cala-polska <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 --data-urlencode benefit=PORADNIA KARDIOLOGICZNA -d page=1 -d limit=1 -d format=json -d api-version=1.3
+[200] 17-queues-brak-benefit <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 -d page=1 -d limit=1 -d format=json -d api-version=1.3
+[200] slaskie page 1
+stron pobranych: 1
+--- burst test (5 x 100ms) ---
+burst 1 -> 400
+burst 2 -> 400
+burst 3 -> 400
+burst 4 -> 400
+burst 5 -> 400
+GOTOWE
+=== RUNDA 2 ===
+[200] 20-benefits-kardiologii <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=1 -d limit=25 -d format=json --data-urlencode name=KARDIOLOG
+[200] 21-benefits-swiadczenia-w-zakresie <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=1 -d limit=25 -d format=json --data-urlencode name=W ZAKRESIE KARDIOLOGII
+[400] 22-limit-26 <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=1 -d limit=26 -d format=json --data-urlencode name=KARDIO
+[200] 23-limit-25 <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=1 -d limit=25 -d format=json --data-urlencode name=KARDIO
+[400] 24-queues-limit-100 <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 -d page=1 -d limit=100 -d format=json --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[200] 25-queues-limit-25 <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 -d page=1 -d limit=25 -d format=json --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[200] 26-queues-v12 <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 -d page=1 -d limit=10 -d format=json -d api-version=1.2 --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[200] 27-queues-v13 <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 -d page=1 -d limit=10 -d format=json -d api-version=1.3 --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[200] 28-queues-pilny <- https://api.nfz.gov.pl/app-itl-api/queues -d case=2 -d province=12 -d page=1 -d limit=25 -d format=json --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[200] 29-queues-dzieci <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 -d benefitForChildren=true -d page=1 -d limit=25 -d format=json --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[200] 30-queues-gliwice <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=12 -d page=1 -d limit=25 -d format=json --data-urlencode locality=GLIWICE --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[400] 31-blad-province <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=99 -d page=1 -d limit=25 -d format=json --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[400] 32-blad-case <- https://api.nfz.gov.pl/app-itl-api/queues -d case=5 -d province=12 -d page=1 -d limit=25 -d format=json --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[400] 33-provinces-24 <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d province=24 -d page=1 -d limit=1 -d format=json --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[200] 34-queues-polska <- https://api.nfz.gov.pl/app-itl-api/queues -d case=1 -d page=1 -d limit=1 -d format=json --data-urlencode benefit=ŚWIADCZENIA W ZAKRESIE KARDIOLOGII
+[200] case=1 page 1
+case=1 stron: 1
+[200] case=2 page 1
+case=2 stron: 1
+RUNDA 2 GOTOWE
+=== RUNDA 3 (API v1.4 / PCUS) ===
+[200] 40-pcus-benefits-kardio <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/benefits -d page=1 -d limit=25 -d format=json --data-urlencode name=KARDIO
+[200] 41-pcus-benefits-poradnia <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/benefits -d page=1 -d limit=25 -d format=json --data-urlencode name=PORADNIA KARDIO
+[200] 42-pcus-localities <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/localities -d page=1 -d limit=25 -d format=json -d province=12 --data-urlencode name=GLIWICE
+[200] 43-pcus-queues-kardio <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/queues -d case=1 -d province=12 -d page=1 -d limit=25 -d format=json --data-urlencode benefit=PORADNIA KARDIOLOGICZNA
+[200] 44-pcus-queues-nobenefit <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/queues -d case=1 -d province=12 -d page=1 -d limit=1 -d format=json
+[200] 45-pcus-queues-v14 <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/queues -d case=1 -d province=12 -d page=1 -d limit=25 -d format=json -d api-version=1.4 --data-urlencode benefit=PORADNIA KARDIOLOGICZNA
+[200] 46-pcus-queues-pilny <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/queues -d case=2 -d province=12 -d page=1 -d limit=25 -d format=json --data-urlencode benefit=PORADNIA KARDIOLOGICZNA
+[200] 47-pcus-queues-gliwice <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/queues -d case=1 -d province=12 -d page=1 -d limit=25 -d format=json --data-urlencode locality=GLIWICE --data-urlencode benefit=PORADNIA KARDIOLOGICZNA
+[200] 48-pcus-queues-dzieci <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/queues -d case=1 -d province=12 -d benefitForChildren=true -d page=1 -d limit=25 -d format=json --data-urlencode benefit=PORADNIA KARDIOLOGICZNA
+[200] 49-pcus-queues-polska <- https://apinfz.nfz.gov.pl/app-itl-api-pcus/queues -d case=1 -d page=1 -d limit=1 -d format=json --data-urlencode benefit=PORADNIA KARDIOLOGICZNA
+[200] 50-old-benefits-poradnia-k <- https://api.nfz.gov.pl/app-itl-api/benefits -d page=1 -d limit=25 -d format=json --data-urlencode name=PORADNIA K
+RUNDA 3 GOTOWE
+=== RUNDA 4: pelny skan slaskie case=1 (v1.4) ===
+skan zakonczony, stron: 340

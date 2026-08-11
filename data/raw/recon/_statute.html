@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="border-content">
+        <h3>Regulamin API Terminy Leczenia</h3>
+
+        <p>
+            Regulamin API Terminy Leczenia, zwany dalej „Regulaminem” określa zasady i warunki korzystania przez Usługobiorców z usługi API Terminy Leczenia, świadczonej drogą elektroniczną przez Narodowy Fundusz Zdrowia, umożliwiającej zdalny dostęp do danych znajdujących się w zasobach Narodowego Funduszu Zdrowia (NFZ). Dane udostępniane są poprzez REST-owe API w formacie JSON oraz XML. Korzystanie z usługi - API Terminy Leczenia możliwe jest wyłącznie na zasadach określonych niniejszym Regulaminem.
+        </p>
+
+
+        <h2>I. Definicje</h2>
+        <p>Terminy użyte w Regulaminie oznaczają:</p>
+        <ol>
+            <li><strong>Usługodawca</strong> – Narodowy Fundusz Zdrowia, ul. Grójecka 186, 02-390 Warszawa.</li>
+            <li><strong>Usługobiorca</strong> – użytkownik korzystający z API Umowy NFZ.</li>
+            <li><strong>API Terminy Leczenia</strong> - usługa sieciowa świadczona przez Usługodawcę polegająca na udostępnianiu danych znajdujących się w Informatorze o Terminach Leczenia. Usługa umożliwia korzystanie z interfejsu dostępowego, wykorzystującego protokół elektronicznej wymiany danych.</li>
+            <li>
+                <strong>Informator o Terminach Leczenia </strong> – zbiór danych znajdujący się w zasobach Narodowego Funduszu Zdrowia obejmujący informacje o świadczeniach opieki zdrowotnej (procedury medyczne, programy lekowe, świadczenia w poradniach specjalistycznych, w oddziałach szpitalnych, w pracowniach diagnostycznych, w ośrodkach opieki pozaszpitalnej), dla których świadczeniodawcy prowadzą listy oczekujących. Informacje gromadzone w ramach list oczekujących obejmują w szczególności:
+                <ol>
+                    <li>dane świadczeniodawcy,</li>
+                    <li>dane o miejscach udzielania świadczeń,</li>
+                    <li>liczbę osób wpisanych na listę oczekujących na świadczenie zdrowotne według stanu na koniec miesiąca,</li>
+                    <li>datę pierwszego wolnego terminu udzielenia świadczenia.</li>
+                </ol>
+            </li>
+            <li>Dane, o których mowa w ust. 4, przekazywane są do Narodowego Funduszu Zdrowia przez świadczeniodawców mających umowę o udzielanie świadczeń opieki zdrowotnej (np. szpitale, poradnie specjalistyczne).</li>
+            <li><strong>Oprogramowanie</strong> – zewnętrzny system teleinformatyczny będący we władaniu  Usługobiorcy.</li>
+        </ol>
+
+        <h2>II. Zasady korzystania z API Terminy Leczenia</h2>
+
+        <ol>
+            <li>Korzystanie przez Usługobiorcę z API Umowy oznacza akceptację niniejszego Regulaminu (wraz z późniejszymi zmianami).</li>
+            <li>
+                API Terminy Leczenia nie może być wykorzystywane przez Usługobiorców do funkcjonowania Oprogramowania, które mogłyby:
+                <ol type="a">
+                    <li>naruszać przepisy prawa powszechnie obowiązującego w tym prawa osób trzecich,</li>
+                    <li>naruszać dobre obyczaje,</li>
+                    <li>wprowadzać użytkowników w błąd,</li>
+                    <li>działać złośliwie lub na szkodę jakiegokolwiek podmiotu.</li>
+                </ol>
+            </li>
+            <li>Niedozwolone są̨ działania mogące doprowadzić́ do „przeciążenia” API Umowy bądź jej nieprawidłowego działania.</li>
+            <li>Niedozwolone jest modyfikowanie danych przez Usługobiorcę.</li>
+            <li>Usługobiorca wykorzystujący Oprogramowanie API Terminy Leczenia obowiązany jest jednocześnie do informowania o źródle pochodzenia danych poprzez wskazanie adresu https://api.nfz.gov.pl/.</li>
+            <li>Usługodawca obowiązany jest do dołożenia wszelkich starań, aby zestaw metod API Terminy Leczenia dostępnych dla Usługobiorców był wolny od błędów, z zastrzeżeniem, iż użytkowanie usługi odbywa się na własne ryzyko Usługobiorcy na podstawie dokumentacji, opisu i informacji udostępnionej przez Usługodawcę.</li>
+            <li>W uzasadnionych przypadkach, w szczególności dotyczących bezpieczeństwa API Terminy Leczenia, lub naruszenia w inny sposób niniejszego Regulaminu oraz innych działań na szkodę Usługodawcy, Usługodawca zastrzega sobie prawo do blokady Usługobiorcy.</li>
+        </ol>
+
+        <h2>III. Limity</h2>
+        <ol>
+            <li>API Terminy Leczenia posiada zaimplementowane mechanizmy limitowania ustawione na 10 zapytań na sekundę per jeden adres IP.</li>
+        </ol>
+
+        <h2>IV. Odpowiedzialność</h2>
+        <ol>
+            <li>Usługodawca zastrzega sobie prawo do wprowadzania modyfikacji do API Terminy Leczenia, prowadzenia prac konserwacyjnych oraz innych działań́ mogących powodować́ czasową niedostępność́ lub utrudnienia w korzystaniu z API Terminy Leczenia.</li>
+            <li>Usługodawca nie ponosi odpowiedzialności z tytułu utraconych korzyści poniesionych przez Usługobiorcę̨ lub osoby trzecie korzystające z API Terminy Leczenia.</li>
+            <li>Usługodawca nie ponosi odpowiedzialności za brak dostępu do API Terminy Leczenia wynikający z niezgodnego ze specyfikacją techniczną wykorzystywania API Terminy Leczenia.</li>
+            <li>Odpowiedzialność za naruszenie przepisów prawa powszechnie obowiązującego w tym praw osób trzecich wynikłych z korzystania API Terminy Leczenia spoczywa na Usługobiorcy.</li>
+            <li>Odpowiedzialność za opracowanie, eksploatację, wspieranie aplikacji wykorzystujących API Terminy Leczenia ponosi Usługobiorca.</li>
+        </ol>
+
+        <h2>V. Kontakt</h2>
+        <p>Zgłoszenia dotyczące API Terminy Leczenia prosimy kierować́ na adres api@nfz.gov.pl (podając w temacie: API Terminy Leczenia Pomoc).</p>
+    </div>
+</body>
+</html>

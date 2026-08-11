@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ChangeLog</title>
+    <style>
+        :root {
+            --border: #d9dee5;
+            --header-bg: #f3f5f7;
+            --row-alt: #fafbfc;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --link: #0f6cbd;
+        }
+
+        .border-content {
+            width: 100%;
+            max-width: none;
+        }
+
+        h3 {
+            margin: 0 0 16px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .version {
+            margin: 2%;
+            width: 96%;
+            border: 1px solid var(--border);
+            border-collapse: separate;
+            border-spacing: 0;
+            table-layout: fixed;
+            background: #fff;
+            font-size: 14px;
+            line-height: 1.45;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .version th,
+        .version td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+            text-align: left;
+        }
+
+
+        .version th {
+            background: var(--header-bg);
+            font-weight: 600;
+            color: #111827;
+            white-space: nowrap;
+        }
+
+        .version tr:last-child td {
+            border-bottom: none;
+        }
+
+        .version code {
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 0.92em;
+            background: #f5f7fa;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            padding: 1px 5px;
+        }
+
+        .version a {
+            color: var(--link);
+            text-decoration: none;
+        }
+
+        .version a:hover {
+            text-decoration: underline;
+        }
+
+        .line {
+            border-top: 1px solid var(--border);
+            height: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-content">
+        <h3>Changelog</h3>
+
+        <table class="version">
+            <colgroup>
+                <col style="width: 10%;">
+                <col style="width: 20%;">
+                <col style="width: 70%;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>
+                        Wersja
+                    </th>
+                    <th>
+                        Data publikacji API
+                    </th>
+                    <th>
+                        Opis zmian
+                    </th>
+                </tr>
+                <tr>
+                    <td class="ver">API v.1.4</td>
+                    <td class="date">29 lipca 2026</td>
+                    <td class="info">
+                        - dodanie property <code>queue-in-cer</code> dla kolejek oraz miejsc świadczeń
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ver">API v.1.4</td>
+                    <td class="date">10 lipca 2026</td>
+                    <td class="info">
+                        - dodanie informacji o prognozowanym czasie oczekiwania<br />
+                        - rezygnacja z prezentowania informacji o pierwszym wolnym terminie <br />
+                        - zmiana sposobu filtrowania miejsc świadczeń udzielanym dzieciom <code>benefitForAdultsChildren</code><br />
+                        - podział filtru świadczeń dla dzieci na grupy wiekowe <br /> <code>benefitForChildren_0_3</code> <code>benefitForChildren_4_9</code> <code>benefitForChildren_10_15</code> <code>benefitForChildren_16_18</code><br />
+                        - ujednolicenie formatu zwracanych danych. Property <code>anesthesia</code> zwracająca dotychczas T/N teraz zwraca Y/N <br />
+                        - rozszerzenie zakresu informacji o udogodnieniach
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+    </div>
+</body>
+</html>

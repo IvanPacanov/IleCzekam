@@ -1,0 +1,10 @@
+HTTP/2 200 
+date: Mon, 10 Aug 2026 20:06:01 GMT
+server: Kestrel
+content-type: application/json; charset=utf-8
+api-supported-versions: 1.4
+set-cookie: visid_incap_3348811=+AR9kgWxQG233whKsJwxcScvemoAAAAAQUIPAAAAAADHxqw3ycmTPAHobXD+3MUC; expires=Tue, 10 Aug 2027 09:14:56 GMT; HttpOnly; path=/; Domain=.nfz.gov.pl
+set-cookie: incap_ses_683_3348811=W183Xwf3NXaW6udY5oB6CSkvemoAAAAAbTDqEOBzl7Z3MpAlLwe5Tw==; path=/; Domain=.nfz.gov.pl
+x-cdn: Imperva
+x-iinfo: 50-32351918-32351928 NNNN CT(3 14 0) RT(1786392361553 42) q(0 0 1 0) r(1 1) U12
+

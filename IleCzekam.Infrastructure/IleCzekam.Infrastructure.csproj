@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>IleCzekam.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IleCzekam.Application\IleCzekam.Application.csproj" />
+    <ProjectReference Include="..\IleCzekam.Common\IleCzekam.Common.csproj" />
+    <ProjectReference Include="..\IleCzekam.Domain\IleCzekam.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

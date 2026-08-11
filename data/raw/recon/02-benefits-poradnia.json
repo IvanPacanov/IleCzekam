@@ -1,0 +1,1 @@
+{"errors":[{"id":"f65920ec-76ec-4499-96d5-def78842ccc6","error-result":"Cannot return results","error-reason":"Invalid value for {limit} attribute","error-solution":"Provide proper value for attribute","error-help":"https://api.nfz.gov.pl/app-itl-api/errors/#1001003","error-code":1001003}]}

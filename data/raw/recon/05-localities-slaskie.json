@@ -1,0 +1,1 @@
+{"errors":[{"id":"a7043ebb-7163-4617-b645-de5fd7e4436d","error-result":"Cannot return results","error-reason":"Missing required {name} attribute","error-solution":"Provide required attribute (min. 3 chars)","error-help":"https://api.nfz.gov.pl/app-itl-api/errors/#1200017","error-code":1200017}]}

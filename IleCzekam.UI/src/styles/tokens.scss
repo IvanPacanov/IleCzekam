@@ -1,0 +1,32 @@
+// Design tokens serwisu ileczekam.pl — estetyka redakcyjna/prasowa, jasna.
+// Jedyne źródło kolorów i typografii; komponenty używają wyłącznie var(--...).
+:root {
+  // Powierzchnie
+  --color-bg: #fafaf9; // chłodna biel tła strony
+  --color-surface: #ffffff; // karty
+  --color-track: #ededeb; // tor słupków/pasków porównawczych
+  --color-border: #e3e3e0;
+
+  // Tekst
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+
+  // Dane i akcje
+  --color-data: #0e7c9e; // teal: linki, wykres trendu, akcenty danych
+  --color-data-soft: #9cc8d6; // jaśniejszy teal: wcześniejsze lata trendu
+  --color-action: #e8a413; // bursztyn: WYŁĄCZNIE przyciski akcji
+  --color-action-text: #1a1a1a;
+  --color-badge-bg: #fbf3dc; // plakietka
+  --color-flag-bg: #fdf6e7; // pasek ostrzeżenia (dane nieaktualne, mała próba)
+
+  // Paleta "pigułki" czasu oczekiwania (kubełki z ETL: config/settings.yml -> wait_buckets)
+  --wait-krotko: #2f7d52;
+  --wait-umiarkowanie: #8a7413;
+  --wait-dlugo: #b35c1e;
+  --wait-bardzo-dlugo: #a32b2b;
+  --wait-brak-danych: #6b6b6b;
+
+  // Typografia
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}

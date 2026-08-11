@@ -1,0 +1,52 @@
+# Ustawienia pipeline'u ETL czasów oczekiwania NFZ (API "Terminy Leczenia").
+# Klucz API NIE jest potrzebny — API jest publiczne i nie wymaga rejestracji.
+# Regulamin wymaga natomiast: (1) informowania o źródle danych (https://api.nfz.gov.pl/),
+# (2) nieprzeciążania API. Limit: 10 zapytań na sekundę na adres IP.
+
+api:
+  # Wersja 1.4 (PCUŚ). Stary host api.nfz.gov.pl/app-itl-api (v1.3) jest oznaczony
+  # jako nieaktualny od 10 lipca 2026 — szczegóły w RECON.md.
+  base_url: https://apinfz.nfz.gov.pl/app-itl-api-pcus/
+  user_agent_env: NFZ_USER_AGENT
+  throttle_ms: 600          # z dużym zapasem względem limitu 10 req/s
+  page_limit: 25            # twardy limit API: maks. 25 pozycji na stronę
+  retry:
+    max_attempts: 5
+    initial_backoff_ms: 1000  # podwajany przy każdej kolejnej próbie (429/5xx)
+
+validation:
+  stale_data_months: 3      # starsza data aktualizacji placówki -> flaga stale_data
+  max_plausible_days: 1825  # > 5 lat -> flaga suspicious_value, poza medianę
+  low_sample_threshold: 3   # mediana z mniej niż tylu placówek -> flaga low_sample
+
+# Progi "pigułki" czasu oczekiwania w dniach (górne granice kubełków).
+# Propozycja startowa z promptu — do potwierdzenia na danych, patrz RECON.md.
+wait_buckets:
+  krotko_max_days: 29         # < 30 dni
+  umiarkowanie_max_days: 90   # 30-90 dni
+  dlugo_max_days: 180         # 91-180 dni; powyżej: bardzo_dlugo
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  serving: data/serving
+
+# Kody województw wg oddziałów wojewódzkich NFZ (NIE kody TERYT!).
+# 12 = śląskie (TERYT dla śląskiego to 24 — API odrzuca 24 błędem 400).
+provinces:
+  - "01"  # dolnośląskie
+  - "02"  # kujawsko-pomorskie
+  - "03"  # lubelskie
+  - "04"  # lubuskie
+  - "05"  # łódzkie
+  - "06"  # małopolskie
+  - "07"  # mazowieckie
+  - "08"  # opolskie
+  - "09"  # podkarpackie
+  - "10"  # podlaskie
+  - "11"  # pomorskie
+  - "12"  # śląskie
+  - "13"  # świętokrzyskie
+  - "14"  # warmińsko-mazurskie
+  - "15"  # wielkopolskie
+  - "16"  # zachodniopomorskie

@@ -1,0 +1,20 @@
+HTTP/2 200 
+date: Mon, 10 Aug 2026 19:05:09 GMT
+server: 
+x-frame-options: SAMEORIGIN
+content-type: application/json; charset=utf-8
+referrer-policy: no-referrer
+x-xss-protection: 1; mode=block
+x-frame-options: SameOrigin
+content-security-policy: default-src 'none';script-src 'self';object-src 'none';style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;img-src 'self' data:;media-src 'none';font-src 'self' https://fonts.gstatic.com;connect-src 'self';base-uri 'self';child-src 'self';form-action 'self';frame-ancestors 'self';block-all-mixed-content;report-uri /report/data.log
+x-content-type-options: nosniff
+feature-policy: geolocation 'none';midi 'none';notifications 'none';push 'none';sync-xhr 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';speaker 'self';vibrate 'none';fullscreen 'self';payment 'none';
+x-permitted-cross-domain-policies: 'none'
+api-supported-versions: 1.2, 1.3
+api-deprecated-versions: 1.2
+strict-transport-security: max-age=31536000; includeSubDomains
+set-cookie: visid_incap_3271785=Ut/RvAa0SRWdN8b2S6u4zeUgemoAAAAAQUIPAAAAAAANNEtUmhM/Jn3Cg4/7D922; expires=Tue, 10 Aug 2027 09:14:56 GMT; HttpOnly; path=/; Domain=.nfz.gov.pl
+set-cookie: incap_ses_683_3271785=dgAxQ1A43yXP2aJY5oB6CeUgemoAAAAA1RpsX738yWv75uC/P3FUEQ==; path=/; Domain=.nfz.gov.pl
+x-cdn: Imperva
+x-iinfo: 47-21313080-21310344 PNNN RT(1786388707728 63) q(0 0 0 -1) r(28 28) U12
+

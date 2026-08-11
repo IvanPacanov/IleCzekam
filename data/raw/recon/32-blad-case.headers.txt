@@ -1,0 +1,13 @@
+HTTP/2 400 
+date: Mon, 10 Aug 2026 19:07:47 GMT
+server: 
+x-frame-options: SAMEORIGIN
+content-type: application/json; charset=utf-8
+x-content-type-options: nosniff
+x-cnection: close
+strict-transport-security: max-age=31536000; includeSubDomains
+set-cookie: visid_incap_3271785=kjUn7tZjQwCRDBHzkFV9goMhemoAAAAAQUIPAAAAAACjh1nARIInqWNrlU9Blisl; expires=Tue, 10 Aug 2027 09:14:56 GMT; HttpOnly; path=/; Domain=.nfz.gov.pl
+set-cookie: incap_ses_683_3271785=kYkObqqIXXe/E6ZY5oB6CYMhemoAAAAA0CW8LhdAjFko5V8pPxRv9Q==; path=/; Domain=.nfz.gov.pl
+x-cdn: Imperva
+x-iinfo: 62-81551044-81547399 PNNN RT(1786388867896 56) q(0 0 0 -1) r(0 0) U11
+
