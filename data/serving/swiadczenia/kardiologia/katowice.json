@@ -1,0 +1,213 @@
+{
+  "benefit": {
+    "slug": "kardiologia",
+    "label": "Kardiologia — oddział szpitalny",
+    "nfz_benefits": [
+      "ODDZIAŁ KARDIOLOGICZNY"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "KATOWICE",
+    "slug": "katowice",
+    "teryt": "2469011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-11T09:13:03.8486660+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia — Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 90,
+    "median_label": "ok. 3 miesiące",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "121-100089-de49ce6a",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "locality": "KATOWICE",
+      "raw_days": 74,
+      "human_label": "ok. 2 miesiące i 2 tygodnie"
+    },
+    "places_total": 5,
+    "places_with_data": 5,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 90,
+    "province_median_days": 44,
+    "best_city_in_province": {
+      "name": "BIELSKO-BIAŁA",
+      "slug": "bielsko-biala",
+      "median_days": 30,
+      "median_label": "ok. 4 tygodnie",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 90,
+      "places_with_data": 5
+    }
+  ],
+  "places": [
+    {
+      "id": "121-100089-de49ce6a",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "II ODDZIAŁ KARDIOLOGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 86 94",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 114,
+      "average_period_days": 84,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-46db9ca7",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ ELEKTROKARDIOLOGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 86 81",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 248,
+      "average_period_days": 87,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-cf642bb9",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "III ODDZIAŁ KARDIOLOGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 86 92",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 39,
+      "average_period_days": 92,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-b58e12ad",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "I ODDZIAŁ KARDIOLOGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 87 35",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 298,
+      "average_period_days": 124,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-101006-876b0cb5",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM ZDROWIA DZIECKA IM. ŚW. JANA PAWŁA II SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY NR 6 ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ KARDIOLOGII DZIECIĘCEJ",
+      "address": "MEDYKÓW 16",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 207 18 55",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 2 tyg.",
+        "raw_days": 134,
+        "human_label": "ok. 4 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 168,
+      "average_period_days": 141,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

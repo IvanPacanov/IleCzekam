@@ -1,5 +1,9 @@
 using IleCzekam.Etl;
+using IleCzekam.Etl.Analytics;
 using IleCzekam.Etl.Configuration;
+using IleCzekam.Etl.Fetch;
+using IleCzekam.Etl.Raw;
+using IleCzekam.Etl.Transform;
 
 // ETL czasów oczekiwania NFZ (API Terminy Leczenia). Dwa niezależne polecenia:
 //   fetch --benefits <slug[,slug...]|all> --provinces <kod[,kod...]|all>   (sieć -> data/raw/snapshots/{YYYY-MM})
@@ -15,6 +19,7 @@ try
     {
         "fetch" => await RunFetchAsync(args.Skip(1).ToArray()),
         "transform" => RunTransform(),
+        "db" => RunDb(),
         _ => PrintUsage(),
     };
 }
@@ -29,10 +34,11 @@ static int PrintUsage()
     Console.Error.WriteLine("Użycie:");
     Console.Error.WriteLine("  fetch --benefits <slug[,slug...]|all> --provinces <kod[,kod...]|all>");
     Console.Error.WriteLine("  transform");
+    Console.Error.WriteLine("  db          (processed/facts.jsonl -> baza analityczna SQLite)");
     return 64;
 }
 
-static Task<int> RunFetchAsync(string[] args)
+static async Task<int> RunFetchAsync(string[] args)
 {
     EtlSettings settings = ConfigLoader.LoadSettings(configDir);
     BenefitsConfig benefits = ConfigLoader.LoadBenefits(configDir);
@@ -43,19 +49,41 @@ static Task<int> RunFetchAsync(string[] args)
     IReadOnlyList<BenefitConfig> selected = ResolveBenefits(benefits, benefitsArg);
     IReadOnlyList<string> provinces = ResolveProvinces(settings, provincesArg);
 
-    throw new EtlException(
-        $"fetch nie jest jeszcze zaimplementowany (faza B). Wybrano świadczenia: "
-        + $"{string.Join(", ", selected.Select(b => b.Slug))}; województwa: {string.Join(", ", provinces)}; "
-        + $"API: {settings.Api.BaseUrl}"
-    );
+    // Regulamin API nie wymaga klucza, ale identyfikacja klienta pozwala NFZ skontaktować się
+    // z nami zamiast blokować ruch. Bez zmiennej — działamy, tylko głośno o tym mówimy.
+    string? userAgent = Environment.GetEnvironmentVariable(settings.Api.UserAgentEnv);
+    if (string.IsNullOrWhiteSpace(userAgent))
+    {
+        userAgent = "ileczekam.pl/0.1 (+https://ileczekam.pl)";
+        Console.WriteLine($"Uwaga: brak {settings.Api.UserAgentEnv} w env — używam domyślnego User-Agent bez kontaktu.");
+    }
+
+    using NfzHttpClient http = new(settings.Api, userAgent);
+    FetchCommand fetch = new(http, new RawStore(settings.Paths.Raw), settings);
+
+    return await fetch.RunAsync(selected, provinces, DateTimeOffset.Now, CancellationToken.None);
 }
 
 static int RunTransform()
 {
-    ConfigLoader.LoadSettings(configDir);
-    ConfigLoader.LoadBenefits(configDir);
+    EtlSettings settings = ConfigLoader.LoadSettings(configDir);
+    BenefitsConfig benefits = ConfigLoader.LoadBenefits(configDir);
 
-    throw new EtlException("transform nie jest jeszcze zaimplementowany (faza B).");
+    TransformCommand transform = new(new RawStore(settings.Paths.Raw), settings, benefits);
+    return transform.Run(DateTimeOffset.Now);
+}
+
+static int RunDb()
+{
+    EtlSettings settings = ConfigLoader.LoadSettings(configDir);
+
+    SqliteExporter.ExportResult result = new SqliteExporter(settings.Paths.AnalyticsDb)
+        .Export(TransformCommand.FactsPath(settings));
+
+    Console.WriteLine($"Załadowano {result.FactRows} faktów -> {result.DatabasePath}");
+    Console.WriteLine($"Agregaty: city_month_stats {result.CityStatRows} wierszy, province_month_stats {result.ProvinceStatRows}");
+    Console.WriteLine("Gotowe zapytania: queries/*.sql — np. sqlite3 data/analytics.sqlite < queries/ranking-miast.sql");
+    return 0;
 }
 
 static IReadOnlyList<BenefitConfig> ResolveBenefits(BenefitsConfig config, string arg)

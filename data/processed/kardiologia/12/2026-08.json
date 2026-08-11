@@ -1,0 +1,972 @@
+{
+  "benefit_slug": "kardiologia",
+  "province": "12",
+  "month": "2026-08",
+  "places": [
+    {
+      "id": "122-207776-ace3fbf5",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "ŚW. ANDRZEJA BOBOLI 20",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 472 63 10",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "29 dni",
+        "raw_days": 29,
+        "human_label": "ok. 29 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "wait_urgent": {
+        "pcus_raw": "22 dni",
+        "raw_days": 22,
+        "human_label": "ok. 22 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "awaiting": 16,
+      "average_period_days": 36,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-112476-1b26c4f2",
+      "provider": "BESKIDZKIE CENTRUM ONKOLOGII-SZPITAL MIEJSKI IM.JANA PAWŁA II W BIELSKU-BIAŁEJ",
+      "place": "ODDZIAŁ KARDIOLOGII I KARDIOONKOLOGII",
+      "address": "STANISŁAWA WYSPIAŃSKIEGO 21",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 827 25 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "30 dni",
+        "raw_days": 30,
+        "human_label": "ok. 30 dni",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 dni",
+        "raw_days": 11,
+        "human_label": "ok. 11 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 25,
+      "average_period_days": 28,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100069-e8759356",
+      "provider": "SZPITAL WOJEWÓDZKI W BIELSKU-BIAŁEJ",
+      "place": "ODDZIAŁ KARDIOLOGICZNY Z PODODDZIAŁEM INTENSYWNEGO NADZORU KARDIOLOGICZNEGO",
+      "address": "AL.ARMII KRAJOWEJ 101",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 810 21 91",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "28 dni",
+        "raw_days": 28,
+        "human_label": "ok. 28 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-07"
+      },
+      "awaiting": 77,
+      "average_period_days": 46,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100375-e30373b8",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ SZPITAL SPECJALISTYCZNY NR 1 W BYTOMIU",
+      "place": "ODDZIAŁ KARDIOLOGII ZE STANOWISKAMI INTENSYWNEGO NADZORU",
+      "address": "ŻEROMSKIEGO  7",
+      "locality": "BYTOM",
+      "teryt": "2462011",
+      "phone": "+48 32 396 32 62",
+      "latitude": 50.3522,
+      "longitude": 18.9223,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "20 dni",
+        "raw_days": 20,
+        "human_label": "ok. 20 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-07"
+      },
+      "awaiting": 0,
+      "average_period_days": 57,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100463-3e3a7df2",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 4 W BYTOMIU",
+      "place": "ODDZIAŁ KARDIOLOGII",
+      "address": "ALEJA LEGIONÓW 10",
+      "locality": "BYTOM",
+      "teryt": "2462011",
+      "phone": "+48 32 281 02 71 wew. 4170",
+      "latitude": 18.9123,
+      "longitude": 50.3539,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-09"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-09"
+      },
+      "awaiting": 15,
+      "average_period_days": 60,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "123-210439-6fed1f14",
+      "provider": "SCANMED SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGII",
+      "address": "STRZELCÓW BYTOMSKICH 11",
+      "locality": "CHORZÓW",
+      "teryt": "2463011",
+      "phone": "+48 32 349 92 75",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "26 dni",
+        "raw_days": 26,
+        "human_label": "ok. 26 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 12,
+      "average_period_days": 38,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-a932e5fd",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ KARDIOLOGII",
+      "address": "BIELSKA 4",
+      "locality": "CIESZYN",
+      "teryt": "2403011",
+      "phone": "+48 33 852 05 11 wew. 335",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 57,
+      "average_period_days": 81,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "123-210439-8fdf364f",
+      "provider": "SCANMED SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "MICKIEWICZA 12",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 321 40 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-04"
+      },
+      "awaiting": 15,
+      "average_period_days": 41,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "123-100147-b536a709",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. N.M.P. W CZĘSTOCHOWIE",
+      "place": "KLINICZNY ODDZIAŁ KARDIOLOGII",
+      "address": "BIALSKA 104/118",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 367 34 63",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "27 dni",
+        "raw_days": 27,
+        "human_label": "ok. 27 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "16 dni",
+        "raw_days": 16,
+        "human_label": "ok. 16 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-04"
+      },
+      "awaiting": 35,
+      "average_period_days": 36,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-207776-c29e85de",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "SZPITALNA 13",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 764 27 24",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "13 dni",
+        "raw_days": 13,
+        "human_label": "ok. 13 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-14"
+      },
+      "wait_urgent": {
+        "pcus_raw": "12 dni",
+        "raw_days": 12,
+        "human_label": "ok. 12 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-14"
+      },
+      "awaiting": 11,
+      "average_period_days": 17,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "126-112510-d92754de",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ KARDIOLOGII",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 32 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 1 tydz.",
+        "raw_days": 97,
+        "human_label": "ok. 3 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 50,
+      "average_period_days": 105,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100448-1b746e1e",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "place": "ODDZIAŁ KARDIOLOGII",
+      "address": "ALEJA JANA PAWŁA II 7",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 478 43 91",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-09"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 dni",
+        "raw_days": 4,
+        "human_label": "ok. 4 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-09"
+      },
+      "awaiting": 70,
+      "average_period_days": 24,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "125-100178-b012d62d",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "26 dni",
+        "raw_days": 26,
+        "human_label": "ok. 26 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "19 dni",
+        "raw_days": 19,
+        "human_label": "ok. 19 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-04"
+      },
+      "awaiting": 35,
+      "average_period_days": 21,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100089-de49ce6a",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "II ODDZIAŁ KARDIOLOGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 86 94",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 114,
+      "average_period_days": 84,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-46db9ca7",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ ELEKTROKARDIOLOGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 86 81",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 248,
+      "average_period_days": 87,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-cf642bb9",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "III ODDZIAŁ KARDIOLOGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 86 92",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 39,
+      "average_period_days": 92,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-b58e12ad",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "I ODDZIAŁ KARDIOLOGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 87 35",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 298,
+      "average_period_days": 124,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-101006-876b0cb5",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM ZDROWIA DZIECKA IM. ŚW. JANA PAWŁA II SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY NR 6 ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ KARDIOLOGII DZIECIĘCEJ",
+      "address": "MEDYKÓW 16",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 207 18 55",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 2 tyg.",
+        "raw_days": 134,
+        "human_label": "ok. 4 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 168,
+      "average_period_days": 141,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-100327-c405e817",
+      "provider": "SAMODZIELNY PUBLICZNY ZESPÓŁ OPIEKI ZDROWOTNEJ W MYSZKOWIE",
+      "place": "ODDZIAŁ KARDIOLOGII",
+      "address": "ALEJA WOLNOŚCI 29",
+      "locality": "MYSZKÓW",
+      "teryt": "2409011",
+      "phone": "+48 34 315 82 26",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "24 dni",
+        "raw_days": 24,
+        "human_label": "ok. 24 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "20 dni",
+        "raw_days": 20,
+        "human_label": "ok. 20 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 79,
+      "average_period_days": 25,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-210439-6b01e212",
+      "provider": "SCANMED SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGII, ELEKTROTERAPII I ANGIOLOGII",
+      "address": "GAMOWSKA 3A",
+      "locality": "RACIBÓRZ",
+      "teryt": "2411011",
+      "phone": "+48 324 545 985",
+      "latitude": 50.08333,
+      "longitude": 18.23333,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "18 dni",
+        "raw_days": 18,
+        "human_label": "ok. 18 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-04"
+      },
+      "awaiting": 28,
+      "average_period_days": 38,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "124-100443-4a3bdf3a",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 3 W RYBNIKU",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "ENERGETYKÓW  46",
+      "locality": "RYBNIK",
+      "teryt": "2473011",
+      "phone": "+48 32 429 11 24",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 2 tyg.",
+        "raw_days": 134,
+        "human_label": "ok. 4 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 77,
+      "average_period_days": 50,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-210439-41f173a4",
+      "provider": "SCANMED SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGII",
+      "address": "EMILA ZEGADŁOWICZA 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 02 75",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "12 dni",
+        "raw_days": 12,
+        "human_label": "ok. 12 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 dni",
+        "raw_days": 4,
+        "human_label": "ok. 4 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-04"
+      },
+      "awaiting": 3,
+      "average_period_days": 12,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "125-100468-71b089bb",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "place": "ODDZIAŁ KARDIOLOGII OGÓLNEJ",
+      "address": "PLAC MEDYKÓW 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 368 20 62",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-04"
+      },
+      "awaiting": 123,
+      "average_period_days": 41,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212114-db57a17f",
+      "provider": "\"SZPITAL MIEJSKI W TYCHACH\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "CICHA 27",
+      "locality": "TYCHY",
+      "teryt": "2477011",
+      "phone": "+48 32 780 87 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "6 dni",
+        "raw_days": 6,
+        "human_label": "ok. 6 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-10"
+      },
+      "wait_urgent": {
+        "pcus_raw": "6 dni",
+        "raw_days": 6,
+        "human_label": "ok. 6 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-10"
+      },
+      "awaiting": 13,
+      "average_period_days": 25,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-207776-7826abb3",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "EDUKACJI 102",
+      "locality": "TYCHY",
+      "teryt": "2477011",
+      "phone": "+48 32 758 67 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 2,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "122-207776-f0f72372",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 472 28 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "17 dni",
+        "raw_days": 17,
+        "human_label": "ok. 17 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "wait_urgent": {
+        "pcus_raw": "10 dni",
+        "raw_days": 10,
+        "human_label": "ok. 10 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "awaiting": 22,
+      "average_period_days": 18,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-100372-ad9946c5",
+      "provider": "SZPITAL SPECJALISTYCZNY W ZABRZU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "KLINICZNY ODDZIAŁ KARDIOLOGII",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 10",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 373 23 72",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 90,
+      "average_period_days": 90,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-101003-015ce6df",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "ODDZIAŁ WRODZONYCH WAD SERCA I KARDIOLOGII DZIECIĘCEJ",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 479 36 69",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "16 dni",
+        "raw_days": 16,
+        "human_label": "ok. 16 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-04"
+      },
+      "awaiting": 146,
+      "average_period_days": 52,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "126-101003-54900928",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "II ODDZIAŁ KARDIOLOGII I ANGIOLOGII",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 479 38 23",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "5 mies. 1 tydz.",
+        "raw_days": 157,
+        "human_label": "ok. 5 miesięcy i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "5 mies.",
+        "raw_days": 150,
+        "human_label": "ok. 5 miesięcy",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 161,
+      "average_period_days": 158,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-101003-53497986",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "I ODDZIAŁ KARDIOLOGII I ANGIOLOGII",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 479 36 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 103,
+      "average_period_days": 94,
+      "stats_month": "2026-06",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "122-214327-10b5f2da",
+      "provider": "ICZ HEALTHCARE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "POLA LISICKICH 80",
+      "locality": "ŻYWIEC",
+      "teryt": "2417011",
+      "phone": "+48 33 440 14 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "15 dni",
+        "raw_days": 15,
+        "human_label": "ok. 15 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-01"
+      },
+      "wait_urgent": {
+        "pcus_raw": "6 dni",
+        "raw_days": 6,
+        "human_label": "ok. 6 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-01"
+      },
+      "awaiting": 117,
+      "average_period_days": 23,
+      "stats_month": "2026-06",
+      "flags": []
+    }
+  ]
+}

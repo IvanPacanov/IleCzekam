@@ -1,0 +1,308 @@
+[
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "BIELSKO-BIAŁA",
+    "city_slug": "bielsko-biala",
+    "province": "12",
+    "median_days": 30,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "BYTOM",
+    "city_slug": "bytom",
+    "province": "12",
+    "median_days": 63,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "CHORZÓW",
+    "city_slug": "chorzow",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "CIESZYN",
+    "city_slug": "cieszyn",
+    "province": "12",
+    "median_days": 90,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "CZĘSTOCHOWA",
+    "city_slug": "czestochowa",
+    "province": "12",
+    "median_days": 32,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "DĄBROWA GÓRNICZA",
+    "city_slug": "dabrowa-gornicza",
+    "province": "12",
+    "median_days": 13,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "GLIWICE",
+    "city_slug": "gliwice",
+    "province": "12",
+    "median_days": 104,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "JASTRZĘBIE-ZDRÓJ",
+    "city_slug": "jastrzebie-zdroj",
+    "province": "12",
+    "median_days": 67,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "JAWORZNO",
+    "city_slug": "jaworzno",
+    "province": "12",
+    "median_days": 26,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 90,
+    "places_total": 5
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "MYSZKÓW",
+    "city_slug": "myszkow",
+    "province": "12",
+    "median_days": 24,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "RACIBÓRZ",
+    "city_slug": "raciborz",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "RYBNIK",
+    "city_slug": "rybnik",
+    "province": "12",
+    "median_days": 134,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "SOSNOWIEC",
+    "city_slug": "sosnowiec",
+    "province": "12",
+    "median_days": 28,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "TYCHY",
+    "city_slug": "tychy",
+    "province": "12",
+    "median_days": 6,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "USTROŃ",
+    "city_slug": "ustron",
+    "province": "12",
+    "median_days": 17,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "ZABRZE",
+    "city_slug": "zabrze",
+    "province": "12",
+    "median_days": 111,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "kardiologia",
+    "benefit_label": "Kardiologia — oddział szpitalny",
+    "synonyms": [
+      "serce",
+      "kardiolog",
+      "choroby serca",
+      "zawał",
+      "arytmia",
+      "oddział kardiologiczny"
+    ],
+    "city": "ŻYWIEC",
+    "city_slug": "zywiec",
+    "province": "12",
+    "median_days": 15,
+    "places_total": 1
+  }
+]

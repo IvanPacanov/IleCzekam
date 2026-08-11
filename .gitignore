@@ -23,3 +23,6 @@ Thumbs.db
 .vscode/*
 !.vscode/settings.json
 !.vscode/launch.json
+
+# Baza analityczna — pochodna, odtwarzalna przez `make db`
+data/analytics.sqlite

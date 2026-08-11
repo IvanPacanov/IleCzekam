@@ -15,9 +15,10 @@ to 10 zapytań na sekundę na adres IP; ETL trzyma się throttlingu z `config/se
 
 ## Stan prac
 
-Faza A (rozpoznanie API) zakończona — wyniki w **[RECON.md](RECON.md)**.
-Faza B (ETL: fetch + transform) czeka na akceptację RECON.md; polecenia `fetch` i `transform`
-są na razie szkieletem, który waliduje konfigurację i kończy się komunikatem „faza B”.
+- **Faza A** (rozpoznanie API) — zakończona, wyniki w **[RECON.md](RECON.md)**.
+- **Faza B** (ETL: `fetch` + `transform`) — zaimplementowana i uruchomiona na przypadku
+  testowym: `ODDZIAŁ KARDIOLOGICZNY` w województwie śląskim.
+- Frontend poza stroną startową — do zrobienia.
 
 ## Struktura rozwiązania
 
@@ -41,6 +42,7 @@ Clean Architecture (DDD):
 - Frontend: w `IleCzekam.UI` — `npm install`, potem `npm start` (http://localhost:4200).
 - ETL: `make fetch BENEFITS=kardiologia PROVINCES=12`, `make transform`, `make etl-test` —
   instrukcje w [Etl/README.md](Etl/README.md).
+- Analityka: `make db` buduje bazę SQLite z tabeli faktów; gotowe zapytania w [queries/](queries/).
 
 ## Konfiguracja
 
@@ -50,8 +52,10 @@ config/
   benefits.yml   # badane świadczenia + słownik synonimów pacjenta
 data/
   raw/           # odpowiedzi API 1:1 — nigdy nie modyfikowane, nigdy nie kasowane
-  processed/     # dane po transformacji i walidacji
+  processed/     # dane po transformacji i walidacji + facts.jsonl (tabela faktów)
   serving/       # finalne JSON-y pod prerender stron
+  analytics.sqlite  # baza analityczna (pochodna, odtwarzalna; frontend jej NIE używa)
+queries/         # gotowe zapytania SQL: rankingi, udziały procentowe, zmiana m/m
 ```
 
 Sekrety i identyfikatory klienta idą wyłącznie ze zmiennych środowiskowych — wzorzec

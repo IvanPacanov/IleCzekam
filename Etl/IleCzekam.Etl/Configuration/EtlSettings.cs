@@ -57,4 +57,5 @@ public sealed class PathsSettings
     public string Raw { get; set; } = "data/raw";
     public string Processed { get; set; } = "data/processed";
     public string Serving { get; set; } = "data/serving";
+    public string AnalyticsDb { get; set; } = "data/analytics.sqlite";
 }

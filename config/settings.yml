@@ -30,6 +30,9 @@ paths:
   raw: data/raw
   processed: data/processed
   serving: data/serving
+  # Baza analityczna (SQLite) — warsztat do porównań i zestawień procentowych.
+  # W całości odtwarzalna z raw; frontend jej NIE używa.
+  analytics_db: data/analytics.sqlite
 
 # Kody województw wg oddziałów wojewódzkich NFZ (NIE kody TERYT!).
 # 12 = śląskie (TERYT dla śląskiego to 24 — API odrzuca 24 błędem 400).

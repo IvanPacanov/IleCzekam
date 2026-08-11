@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "kardiologia",
+    "label": "Kardiologia — oddział szpitalny",
+    "nfz_benefits": [
+      "ODDZIAŁ KARDIOLOGICZNY"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "DĄBROWA GÓRNICZA",
+    "slug": "dabrowa-gornicza",
+    "teryt": "2465011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-11T09:13:03.8486660+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia — Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 13,
+    "median_label": "ok. 13 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "122-207776-c29e85de",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "locality": "DĄBROWA GÓRNICZA",
+      "raw_days": 13,
+      "human_label": "ok. 13 dni"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 13,
+    "province_median_days": 44,
+    "best_city_in_province": {
+      "name": "BIELSKO-BIAŁA",
+      "slug": "bielsko-biala",
+      "median_days": 30,
+      "median_label": "ok. 4 tygodnie",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 13,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "122-207776-c29e85de",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "SZPITALNA 13",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 764 27 24",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "13 dni",
+        "raw_days": 13,
+        "human_label": "ok. 13 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-14"
+      },
+      "wait_urgent": {
+        "pcus_raw": "12 dni",
+        "raw_days": 12,
+        "human_label": "ok. 12 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-14"
+      },
+      "awaiting": 11,
+      "average_period_days": 17,
+      "stats_month": "2026-06",
+      "flags": []
+    }
+  ]
+}

@@ -492,16 +492,20 @@ TERYT jest stabilny i wprost daje mapowanie miasto → slug URL.
 
 ---
 
-## 8. Co dalej
+## 8. Decyzje podjęte po fazie A
 
-Zgodnie z zasadami pracy z promptu **zatrzymuję się tutaj i czekam na akceptację**.
-Do rozstrzygnięcia przed fazą B:
+Rozstrzygnięcia właściciela (2026-08-11), na których oparta jest faza B:
 
-1. **R1** — który benefit robimy jako vertical slice (rekomendacja: `ODDZIAŁ KARDIOLOGICZNY`,
-   ze świadomością n=1 dla Gliwic; alternatywa: okulistyka)?
-2. **R3** — czy `human_label` bierzemy wprost z `pcus` NFZ, czy generujemy własny z `raw_days`
-   wg reguł zaokrągleń z promptu (dni / tygodnie / miesiące)?
-3. Czy szósty kubełek `nie_dotyczy` wchodzi do modelu (rekomendacja: tak).
+1. **R1 — vertical slice: `ODDZIAŁ KARDIOLOGICZNY`.** Ze świadomością, że Gliwice mają
+   dokładnie jedną placówkę, więc plik serving dla Gliwic ma `low_sample`.
+2. **R3 — `human_label` budowany WPROST z tekstu `pcus`**, nie odtwarzany z `raw_days`.
+   Rozwijamy wyłącznie skróty NFZ do pełnych polskich słów z odmianą
+   (`"3 mies. 2 tyg."` → `"ok. 3 miesiące i 2 tygodnie"`). Reguły zaokrągleń z promptu
+   (dni / tygodnie / miesiące) stosujemy tylko tam, gdzie tekstu z NFZ nie ma —
+   czyli do median i innych wartości wyliczonych.
+3. **Szósty kubełek `nie_dotyczy` wchodzi do modelu** — dla `applicable: false`.
+
+Faza B jest zaimplementowana; instrukcja uruchomienia w [Etl/README.md](Etl/README.md).
 
 ---
 

@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "kardiologia",
+    "label": "Kardiologia — oddział szpitalny",
+    "nfz_benefits": [
+      "ODDZIAŁ KARDIOLOGICZNY"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "JAWORZNO",
+    "slug": "jaworzno",
+    "teryt": "2468011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-11T09:13:03.8486660+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia — Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 26,
+    "median_label": "ok. 26 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "125-100178-b012d62d",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "locality": "JAWORZNO",
+      "raw_days": 26,
+      "human_label": "ok. 26 dni"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 26,
+    "province_median_days": 44,
+    "best_city_in_province": {
+      "name": "BIELSKO-BIAŁA",
+      "slug": "bielsko-biala",
+      "median_days": 30,
+      "median_label": "ok. 4 tygodnie",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 26,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "125-100178-b012d62d",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ KARDIOLOGICZNY",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY",
+      "wait_stable": {
+        "pcus_raw": "26 dni",
+        "raw_days": 26,
+        "human_label": "ok. 26 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "19 dni",
+        "raw_days": 19,
+        "human_label": "ok. 19 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-04"
+      },
+      "awaiting": 35,
+      "average_period_days": 21,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}
