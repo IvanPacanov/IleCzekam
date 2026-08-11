@@ -1,9 +1,9 @@
 # Świadczenia badane przez ETL + słownik synonimów pacjenta.
 #
-# UWAGA (ustalenie z fazy A — patrz RECON.md, rozbieżność R1):
+# UWAGA (ustalenie z fazy A - patrz RECON.md, rozbieżność R1):
 # w słowniku NFZ NIE MA świadczenia "PORADNIA KARDIOLOGICZNA" ani żadnego innego
 # ambulatoryjnego świadczenia kardiologicznego. Nazwy w `nfz_benefits` muszą być
-# DOKŁADNIE takie, jak zwraca /benefits — fetch weryfikuje je w słowniku, bo zapytanie
+# DOKŁADNIE takie, jak zwraca /benefits - fetch weryfikuje je w słowniku, bo zapytanie
 # o kolejki z literówką zwraca po cichu 0 wyników zamiast błędu.
 #
 # Liczby w komentarzach = liczba kolejek w woj. śląskim (kod 12), przypadek stabilny,
@@ -12,7 +12,7 @@
 benefits:
   # Przypadek testowy vertical slice (decyzja właściciela po fazie A).
   - slug: kardiologia
-    label: Kardiologia — oddział szpitalny
+    label: Kardiologia - oddział szpitalny
     synonyms:
       - serce
       - kardiolog
@@ -24,7 +24,7 @@ benefits:
       - ODDZIAŁ KARDIOLOGICZNY                    # 29 placówek, 18 miejscowości
 
   - slug: kardiologia-dziecieca
-    label: Kardiologia dziecięca — oddział szpitalny
+    label: Kardiologia dziecięca - oddział szpitalny
     synonyms:
       - serce dziecka
       - kardiolog dziecięcy

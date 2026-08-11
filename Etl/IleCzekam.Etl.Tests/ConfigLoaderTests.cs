@@ -4,7 +4,7 @@ using IleCzekam.Etl.Configuration;
 namespace IleCzekam.Etl.Tests;
 
 /// <summary>
-/// Testy czytają prawdziwe pliki z config/ — pilnują, żeby literówka w YAML-u
+/// Testy czytają prawdziwe pliki z config/ - pilnują, żeby literówka w YAML-u
 /// nie przeszła niezauważona. Zero ruchu sieciowego.
 /// </summary>
 [TestFixture]
@@ -72,7 +72,7 @@ public sealed class ConfigLoaderTests
             benefit.Label.Should().NotBeEmpty();
             benefit.NfzBenefits.Should().NotBeEmpty($"świadczenie '{benefit.Slug}' bez nazw NFZ nic nie pobierze");
 
-            // Nazwy muszą być dokładnie jak w słowniku NFZ — wielkimi literami, bez białych
+            // Nazwy muszą być dokładnie jak w słowniku NFZ - wielkimi literami, bez białych
             // znaków na brzegach. Literówka nie daje błędu HTTP, tylko cicho zero wyników.
             benefit.NfzBenefits.Should().OnlyContain(name => name == name.Trim());
             benefit.NfzBenefits.Should().OnlyContain(name => name == name.ToUpperInvariant());

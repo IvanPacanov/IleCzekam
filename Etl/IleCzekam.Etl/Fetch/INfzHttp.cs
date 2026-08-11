@@ -1,6 +1,6 @@
 namespace IleCzekam.Etl.Fetch;
 
-/// <summary>Surowa odpowiedź API — treść trafia do warstwy raw bajt w bajt.</summary>
+/// <summary>Surowa odpowiedź API - treść trafia do warstwy raw bajt w bajt.</summary>
 public sealed record NfzResponse(int StatusCode, string Body, string Url);
 
 /// <summary>

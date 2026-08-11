@@ -1,0 +1,39 @@
+@if (urgent()) {
+  <span class="urgent-badge">Przypadek pilny</span>
+}
+
+<h3 class="name">{{ title() }}</h3>
+<p class="address">{{ address() }}</p>
+
+<app-wait-pill
+  [wait]="wait()"
+  [size]="pillSize()" />
+
+@if (hasNoData()) {
+  <p class="no-data-note">
+    Placówka nie przekazała danych za {{ monthName() }}.
+    <strong>To nie znaczy, że kolejka jest krótka</strong> - zadzwoń i zapytaj.
+  </p>
+} @else {
+  @if (stats() !== '') {
+    <p class="stats">
+      @if (urgent()) {
+        Kolejka pilna ·
+      }
+      {{ stats() }}
+    </p>
+  }
+  @if (isStale()) {
+    <p class="stats stale">Statystyki placówki starsze niż pozostałe - potwierdź telefonicznie.</p>
+  }
+}
+
+@if (phoneLink(); as href) {
+  <a
+    class="phone-cta phone-number"
+    [href]="href">
+    <span aria-hidden="true">☎</span>
+    <span class="visually-hidden">Zadzwoń:</span>
+    {{ phoneText() }}
+  </a>
+}

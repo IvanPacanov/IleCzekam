@@ -1,11 +1,11 @@
 # Ustawienia pipeline'u ETL czasów oczekiwania NFZ (API "Terminy Leczenia").
-# Klucz API NIE jest potrzebny — API jest publiczne i nie wymaga rejestracji.
+# Klucz API NIE jest potrzebny - API jest publiczne i nie wymaga rejestracji.
 # Regulamin wymaga natomiast: (1) informowania o źródle danych (https://api.nfz.gov.pl/),
 # (2) nieprzeciążania API. Limit: 10 zapytań na sekundę na adres IP.
 
 api:
   # Wersja 1.4 (PCUŚ). Stary host api.nfz.gov.pl/app-itl-api (v1.3) jest oznaczony
-  # jako nieaktualny od 10 lipca 2026 — szczegóły w RECON.md.
+  # jako nieaktualny od 10 lipca 2026 - szczegóły w RECON.md.
   base_url: https://apinfz.nfz.gov.pl/app-itl-api-pcus/
   user_agent_env: NFZ_USER_AGENT
   throttle_ms: 600          # z dużym zapasem względem limitu 10 req/s
@@ -20,7 +20,7 @@ validation:
   low_sample_threshold: 3   # mediana z mniej niż tylu placówek -> flaga low_sample
 
 # Progi "pigułki" czasu oczekiwania w dniach (górne granice kubełków).
-# Propozycja startowa z promptu — do potwierdzenia na danych, patrz RECON.md.
+# Propozycja startowa z promptu - do potwierdzenia na danych, patrz RECON.md.
 wait_buckets:
   krotko_max_days: 29         # < 30 dni
   umiarkowanie_max_days: 90   # 30-90 dni
@@ -30,12 +30,12 @@ paths:
   raw: data/raw
   processed: data/processed
   serving: data/serving
-  # Baza analityczna (SQLite) — warsztat do porównań i zestawień procentowych.
+  # Baza analityczna (SQLite) - warsztat do porównań i zestawień procentowych.
   # W całości odtwarzalna z raw; frontend jej NIE używa.
   analytics_db: data/analytics.sqlite
 
 # Kody województw wg oddziałów wojewódzkich NFZ (NIE kody TERYT!).
-# 12 = śląskie (TERYT dla śląskiego to 24 — API odrzuca 24 błędem 400).
+# 12 = śląskie (TERYT dla śląskiego to 24 - API odrzuca 24 błędem 400).
 provinces:
   - "01"  # dolnośląskie
   - "02"  # kujawsko-pomorskie

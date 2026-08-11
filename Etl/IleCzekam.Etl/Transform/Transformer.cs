@@ -9,7 +9,7 @@ namespace IleCzekam.Etl.Transform;
 /// <summary>Rekord kolejki wraz z kontekstem, który przychodzi z manifestu snapshotu.</summary>
 public sealed record SnapshotEntry(string Province, string BenefitSlug, QueueRecord Record);
 
-/// <summary>Jeden miesięczny snapshot — podstawa trendu.</summary>
+/// <summary>Jeden miesięczny snapshot - podstawa trendu.</summary>
 public sealed record MonthSnapshot(string Month, IReadOnlyList<SnapshotEntry> Entries);
 
 /// <summary>Placówka po scaleniu przypadku stabilnego i pilnego.</summary>
@@ -34,7 +34,7 @@ public sealed class ValidationReport
 
 /// <summary>
 /// Warstwa processed: pełny wynik transformacji i walidacji dla (świadczenie, województwo,
-/// miesiąc) — wszystkie placówki z kompletem flag, także te wykluczone z agregatów.
+/// miesiąc) - wszystkie placówki z kompletem flag, także te wykluczone z agregatów.
 /// </summary>
 public sealed record ProcessedFileDto(
     [property: System.Text.Json.Serialization.JsonPropertyName("benefit_slug")] string BenefitSlug,
@@ -43,7 +43,7 @@ public sealed record ProcessedFileDto(
     [property: System.Text.Json.Serialization.JsonPropertyName("places")] IReadOnlyList<PlaceDto> Places
 );
 
-/// <summary>Wynik transformacji jednego świadczenia — pliki do zapisania i raport.</summary>
+/// <summary>Wynik transformacji jednego świadczenia - pliki do zapisania i raport.</summary>
 public sealed record BenefitOutput(
     IReadOnlyList<(string RelativePath, ServingFileDto File)> ServingFiles,
     IReadOnlyList<(string RelativePath, ProcessedFileDto File)> ProcessedFiles,
@@ -53,7 +53,7 @@ public sealed record BenefitOutput(
 );
 
 /// <summary>
-/// Cała logika transformacji — czysta funkcja ze snapshotów na pliki serving.
+/// Cała logika transformacji - czysta funkcja ze snapshotów na pliki serving.
 /// Bez IO i bez sieci, żeby dała się przetestować na fiksturach.
 /// </summary>
 public sealed class Transformer
@@ -84,7 +84,7 @@ public sealed class Transformer
 
         report.PlacesOk = flagsByPlace.Count(f => f.Value.Count == 0);
 
-        // Trend liczymy z KAŻDEGO dostępnego snapshotu — historia powstaje u nas,
+        // Trend liczymy z KAŻDEGO dostępnego snapshotu - historia powstaje u nas,
         // API NFZ zna wyłącznie stan bieżący.
         List<(string Month, IReadOnlyList<MergedPlace> Places)> history = months
             .Select(m => (m.Month, MergePlaces(m.Entries, new ValidationReport())))
@@ -227,7 +227,7 @@ public sealed class Transformer
 
     /// <summary>
     /// Scala rekordy w placówki: przypadek stabilny + pilny to ta sama placówka widziana
-    /// dwa razy. Przy okazji usuwa realne duplikaty (ta sama komórka wykazana wielokrotnie) —
+    /// dwa razy. Przy okazji usuwa realne duplikaty (ta sama komórka wykazana wielokrotnie) -
     /// wygrywa rekord z nowszą datą aktualności prognozy.
     /// </summary>
     private static IReadOnlyList<MergedPlace> MergePlaces(IReadOnlyList<SnapshotEntry> entries, ValidationReport report)
@@ -257,7 +257,7 @@ public sealed class Transformer
             QueueRecord? stablePick = Newest(stable);
             QueueRecord? urgentPick = Newest(urgent);
 
-            // Placówka wykazana wyłącznie w przypadku pilnym nadal jest placówką —
+            // Placówka wykazana wyłącznie w przypadku pilnym nadal jest placówką -
             // pokazujemy ją, tylko bez prognozy dla przypadku stabilnego.
             QueueRecord primary = stablePick ?? urgentPick!;
 
@@ -279,7 +279,7 @@ public sealed class Transformer
             ? records.FirstOrDefault()
             : records.OrderByDescending(r => r.AsAt ?? string.Empty, StringComparer.Ordinal).First();
 
-    /// <summary>Stabilny identyfikator placówki — ten sam w każdym miesięcznym snapshocie.</summary>
+    /// <summary>Stabilny identyfikator placówki - ten sam w każdym miesięcznym snapshocie.</summary>
     private static string PlaceId(QueueRecord record)
     {
         (string benefit, string providerCode, string place, string address) = record.BusinessKey;
@@ -329,7 +329,7 @@ public sealed class Transformer
 
     /// <summary>
     /// „Nieświeżość” mierzymy miesiącem statystyk placówki (`provider-data.update`),
-    /// nie datą prognozy — patrz RECON.md, rozbieżność R5.
+    /// nie datą prognozy - patrz RECON.md, rozbieżność R5.
     /// </summary>
     private bool IsStale(string? statsMonth, string snapshotMonth)
     {
@@ -345,7 +345,7 @@ public sealed class Transformer
     }
 
     /// <summary>
-    /// Mediana z dni oczekiwania. Wartości podejrzane i braki NIE wchodzą do agregatu —
+    /// Mediana z dni oczekiwania. Wartości podejrzane i braki NIE wchodzą do agregatu -
     /// brak danych nigdy nie może zostać policzony jako zero.
     /// </summary>
     private static int? Median(IReadOnlyList<MergedPlace> places, IReadOnlyDictionary<string, IReadOnlyList<string>> flags)
@@ -410,7 +410,7 @@ public sealed class Transformer
         {
             List<MergedPlace> inScope = monthPlaces.Where(scope).ToList();
 
-            // Flagi liczymy dla historycznych placówek od nowa — placówka mogła nie istnieć
+            // Flagi liczymy dla historycznych placówek od nowa - placówka mogła nie istnieć
             // w poprzednim miesiącu albo mieć wtedy inną wartość.
             Dictionary<string, IReadOnlyList<string>> flags = inScope.ToDictionary(
                 p => p.Id,

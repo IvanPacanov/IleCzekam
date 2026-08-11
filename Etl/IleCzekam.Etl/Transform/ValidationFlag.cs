@@ -12,7 +12,7 @@ public static class ValidationFlag
     /// <summary>PCUŚ z definicji nie dotyczy tego świadczenia (opieka domowa, hospicja).</summary>
     public const string NotApplicable = "not_applicable";
 
-    /// <summary>Wartość poza granicą wiarygodności — nie wchodzi do median.</summary>
+    /// <summary>Wartość poza granicą wiarygodności - nie wchodzi do median.</summary>
     public const string SuspiciousValue = "suspicious_value";
 
     /// <summary>Statystyki placówki starsze niż próg z configu.</summary>

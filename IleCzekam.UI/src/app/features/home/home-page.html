@@ -1,20 +1,114 @@
+<app-site-header />
+
 <div class="page">
-  <app-site-header />
-
   <main class="hero">
-    <h1>Sprawdź, ile realnie czeka się na leczenie NFZ</h1>
+    <h1>Ile się czeka na leczenie z NFZ?</h1>
     <p class="lede">
-      Prognozowane czasy oczekiwania w poradniach i szpitalach — placówka po placówce,
-      w Twoim mieście. Dane: Narodowy Fundusz Zdrowia, Informator o Terminach Leczenia.
+      Wpisz, czego szukasz - swoimi słowami. Pokażemy, gdzie termin jest najkrótszy
+      i do kogo zadzwonić.
     </p>
 
-    <p class="search-note">
-      Wyszukiwarka świadczeń pojawi się, gdy ETL zacznie produkować pliki
-      <code>data/serving/swiadczenia</code>.
-    </p>
+    <search class="search">
+      <label
+        class="visually-hidden"
+        for="benefit-search"
+        >Czego szukasz?</label
+      >
+      <div class="search-field">
+        <span
+          class="search-icon"
+          aria-hidden="true"
+          >⌕</span
+        >
+        <input
+          id="benefit-search"
+          type="search"
+          autocomplete="off"
+          placeholder="np. kardiolog, oddział kardiologiczny"
+          [value]="query()"
+          (input)="query.set($any($event.target).value)"
+          role="combobox"
+          aria-controls="search-results"
+          [attr.aria-expanded]="hasResults()" />
+      </div>
+
+      @if (state() === 'error') {
+        <p
+          class="search-note"
+          role="alert">
+          Nie udało się wczytać listy świadczeń - odśwież stronę.
+        </p>
+      } @else if (showEmptyState()) {
+        <p class="search-note">
+          Brak wyników dla „{{ query() }}”. W serwisie są na razie świadczenia kardiologiczne
+          w województwie śląskim - kolejne dojdą wraz z kolejnymi pobraniami danych.
+        </p>
+      }
+
+      @if (query().trim() !== '' && hasResults()) {
+        <div
+          id="search-results"
+          class="results">
+          @for (benefit of suggestions(); track benefit.slug) {
+            <div class="result-group">
+              <p class="result-benefit">{{ benefit.label }}</p>
+              <p class="result-synonyms">{{ benefit.synonyms.join(' · ') }}</p>
+              <ul class="result-cities">
+                @for (city of benefit.cities; track city.city_slug) {
+                  <li>
+                    <a [href]="cityHref(benefit.slug, city.city_slug)">
+                      {{ cityLabel(city.city) }}
+                      @if (city.median_days !== null) {
+                        <span class="result-days">{{ city.median_days }} dni</span>
+                      }
+                    </a>
+                  </li>
+                }
+              </ul>
+            </div>
+          }
+        </div>
+      }
+    </search>
+
+    <section
+      class="popular"
+      aria-label="Najczęściej szukane">
+      <p class="metric-label">Dostępne świadczenia</p>
+      <div class="chips">
+        @for (item of popular(); track item.slug) {
+          <a
+            class="chip"
+            [href]="item.href"
+            >{{ item.label }}</a
+          >
+        }
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    Źródło danych: <a href="https://api.nfz.gov.pl/">api.nfz.gov.pl</a> — Narodowy Fundusz Zdrowia
-  </footer>
+  <aside class="how">
+    <h2>Jak to działa</h2>
+    <ol>
+      <li>
+        <span class="step">1</span>
+        <span><strong>Znajdź</strong> - wpisz problem swoimi słowami, bez nomenklatury NFZ.</span>
+      </li>
+      <li>
+        <span class="step">2</span>
+        <span><strong>Porównaj</strong> czasy oczekiwania w placówkach.</span>
+      </li>
+      <li>
+        <span class="step">3</span>
+        <span
+          ><strong>Zadzwoń</strong> i umów się. Nie rezerwujemy terminów - łączymy Cię
+          z placówką.</span
+        >
+      </li>
+    </ol>
+    <p class="source">
+      Dane pochodzą z API Narodowego Funduszu Zdrowia
+      (<a href="https://api.nfz.gov.pl/">api.nfz.gov.pl</a>) i są odświeżane raz w miesiącu.
+    </p>
+  </aside>
 </div>

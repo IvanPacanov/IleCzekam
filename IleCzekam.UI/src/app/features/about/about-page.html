@@ -1,0 +1,81 @@
+<app-site-header />
+
+<div class="page">
+  <main>
+    <h1>Skąd bierzemy te liczby</h1>
+    <p class="lede">
+      Wszystkie czasy oczekiwania pochodzą z publicznego API Narodowego Funduszu Zdrowia -
+      <a href="https://api.nfz.gov.pl/">api.nfz.gov.pl</a>. Nie zmieniamy liczb: tłumaczymy je
+      na zdania, których używa się w rozmowie.
+    </p>
+
+    <h2>Co znaczy „prognozowany czas oczekiwania”</h2>
+    <p>
+      NFZ liczy, ile średnio czekali pacjenci przyjęci w ostatnich miesiącach, i na tej podstawie
+      prognozuje, ile poczeka osoba zapisująca się dziś. To szacunek dla całej kolejki, a nie
+      termin przypisany do Ciebie.
+    </p>
+    <p>
+      Od 10 lipca 2026 NFZ zrezygnował z podawania „pierwszego wolnego terminu” i zastąpił go
+      właśnie tą prognozą. API zwraca ją jako tekst - na przykład „3 mies. 2 tyg.” - a my
+      przeliczamy go na dni, żeby móc porównywać miasta. Przy przeliczeniu przyjmujemy, że
+      miesiąc ma 30 dni, więc różnice rzędu kilku dni między placówkami są w granicach szumu.
+    </p>
+
+    <h2>Pilny a stabilny</h2>
+    <p>
+      Na skierowaniu lekarz zaznacza, czy przypadek jest <strong>stabilny</strong>, czy
+      <strong>pilny</strong>. Placówki prowadzą dwie osobne kolejki, a kolejka pilna bywa
+      wyraźnie krótsza. Jeśli nie wiesz, którą wybrać - sprawdź skierowanie; bez adnotacji
+      „cito” obowiązuje kolejka stabilna.
+    </p>
+
+    <h2>Dlaczego rejestracja mówi co innego</h2>
+    <p>
+      Dane spływają raz w miesiącu i opisują stan sprzed kilku tygodni. W międzyczasie ktoś
+      rezygnuje, placówka dostaje dodatkowy kontrakt albo lekarz idzie na urlop. Dlatego zawsze
+      prosimy: zadzwoń i potwierdź.
+    </p>
+
+    <h2>Brak danych to nie krótka kolejka</h2>
+    <p>
+      Część placówek nie przekazuje sprawozdania. Takie miejsca zostawiamy na liście - z
+      telefonem i wyraźnym oznaczeniem „brak danych”. Nigdy nie pokazujemy ich jako „0 dni”
+      i nie wliczamy do median.
+    </p>
+
+    <h2>Czego tu nie ma</h2>
+    <p>
+      Nie rezerwujemy wizyt, nie prowadzimy kont pacjenta i nie oceniamy placówek. Serwis
+      pokazuje, gdzie warto zadzwonić.
+    </p>
+  </main>
+
+  <aside>
+    <section class="panel">
+      <h3>Cykl danych</h3>
+      <dl>
+        <div>
+          <dt>Źródło</dt>
+          <dd>API NFZ „Terminy Leczenia” v1.4</dd>
+        </div>
+        <div>
+          <dt>Częstotliwość</dt>
+          <dd>raz w miesiącu</dd>
+        </div>
+        <div>
+          <dt>Historia</dt>
+          <dd>budowana z naszych snapshotów</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="panel rules">
+      <h3>Nasze reguły języka</h3>
+      <p>do 30 dni → <strong>„ok. 12 dni”</strong></p>
+      <p>31–84 dni → <strong>„ok. 8 tygodni”</strong></p>
+      <p>powyżej → <strong>„ok. 5 miesięcy”</strong></p>
+      <p>brak sprawozdania → <strong>„brak danych”</strong>, nigdy „0 dni”</p>
+    </section>
+  </aside>
+</div>

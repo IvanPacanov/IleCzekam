@@ -7,7 +7,7 @@ namespace IleCzekam.Etl.Raw;
 /// <summary>
 /// Metadane jednego pobrania: (miesiąc, województwo, przypadek, świadczenie NFZ).
 /// Manifest jest jedynym źródłem prawdy o tym, KTÓRE pliki stron należą do danego
-/// snapshotu — dzięki niemu ponowny fetch w tym samym miesiącu może nadpisać snapshot
+/// snapshotu - dzięki niemu ponowny fetch w tym samym miesiącu może nadpisać snapshot
 /// (idempotentność per miesiąc) BEZ kasowania czegokolwiek z raw: gdyby kolejne pobranie
 /// dało mniej stron, osierocone pliki po prostu nie są wymienione w manifeście.
 /// </summary>
@@ -27,7 +27,7 @@ public sealed record SnapshotManifest(
 ///
 /// Układ: {raw}/snapshots/{YYYY-MM}/{province}/case-{case}/{benefit-slug}/page-NNN.json
 /// plus `_manifest.json` w tym samym katalogu. Partycjonowanie po MIESIĄCU POBRANIA jest
-/// tym, co w ogóle tworzy historię — API NFZ pokazuje wyłącznie stan bieżący.
+/// tym, co w ogóle tworzy historię - API NFZ pokazuje wyłącznie stan bieżący.
 /// </summary>
 public sealed class RawStore
 {

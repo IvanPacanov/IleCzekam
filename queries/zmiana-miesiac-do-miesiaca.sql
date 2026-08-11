@@ -1,4 +1,4 @@
--- Zmiana mediany miesiąc do miesiąca. Ma sens dopiero od DRUGIEGO snapshotu —
+-- Zmiana mediany miesiąc do miesiąca. Ma sens dopiero od DRUGIEGO snapshotu -
 -- historia powstaje u nas, API NFZ zna wyłącznie stan bieżący.
 .mode box
 .headers on

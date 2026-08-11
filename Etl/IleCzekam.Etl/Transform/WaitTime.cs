@@ -16,7 +16,7 @@ public enum WaitBucket
     BrakDanych,
 
     /// <summary>
-    /// PCUŚ z definicji nie dotyczy tego świadczenia (`applicable: false`, `pcus: "-"`) —
+    /// PCUŚ z definicji nie dotyczy tego świadczenia (`applicable: false`, `pcus: "-"`) -
     /// opieka domowa, hospicja. Osobny stan, żeby nie sugerować pacjentowi zaginionych danych.
     /// </summary>
     NieDotyczy,
@@ -25,7 +25,7 @@ public enum WaitBucket
 /// <summary>
 /// Prognozowany czas udzielenia świadczenia (PCUŚ) po transformacji.
 ///
-/// API NFZ zwraca PCUŚ jako TEKST po polsku ("3 mies. 2 tyg."), nie jako liczbę dni —
+/// API NFZ zwraca PCUŚ jako TEKST po polsku ("3 mies. 2 tyg."), nie jako liczbę dni -
 /// dlatego trzymamy oryginał (<see cref="PcusRaw"/>) obok naszego wyliczenia
 /// (<see cref="RawDays"/>). Dzięki temu zmiana reguły konwersji nie wymaga ponownego fetchu.
 /// </summary>
@@ -44,7 +44,7 @@ public sealed record WaitTime(
 
 /// <summary>
 /// Parser i formatter PCUŚ. Wzorce zaobserwowane empirycznie na pełnym snapshocie
-/// woj. śląskiego (8 478 rekordów) — patrz RECON.md, sekcja 2:
+/// woj. śląskiego (8 478 rekordów) - patrz RECON.md, sekcja 2:
 /// "N dni" | "N dzień" | "N mies." | "N mies. N tyg." | "N mies. N tydz." | "-" | null.
 /// </summary>
 public static class Pcus
@@ -57,7 +57,7 @@ public static class Pcus
 
     /// <summary>
     /// Zamienia tekst PCUŚ na liczbę dni. Zwraca <c>null</c> dla braku wartości ("-", null,
-    /// pusty). Rzuca <see cref="EtlException"/> dla wzorca, którego nie znamy — nowy format
+    /// pusty). Rzuca <see cref="EtlException"/> dla wzorca, którego nie znamy - nowy format
     /// ze strony NFZ ma zatrzymać pipeline, a nie po cichu zniknąć z danych.
     /// </summary>
     public static int? ToDays(string? pcus)
@@ -83,11 +83,11 @@ public static class Pcus
         }
 
         throw new EtlException(
-            $"Nieznany format PCUŚ: '{pcus}'. API NFZ zmieniło format — zaktualizuj parser w Transform/WaitTime.cs.");
+            $"Nieznany format PCUŚ: '{pcus}'. API NFZ zmieniło format - zaktualizuj parser w Transform/WaitTime.cs.");
     }
 
     /// <summary>
-    /// Etykieta dla pacjenta. Budowana WPROST z tekstu PCUŚ (nie z przeliczonych dni) —
+    /// Etykieta dla pacjenta. Budowana WPROST z tekstu PCUŚ (nie z przeliczonych dni) -
     /// NFZ już podał zaokrągloną formę, my tylko rozwijamy skróty do pełnych polskich słów
     /// z poprawną odmianą.
     /// </summary>
@@ -128,13 +128,13 @@ public static class Pcus
         }
 
         throw new EtlException(
-            $"Nieznany format PCUŚ: '{pcus}'. API NFZ zmieniło format — zaktualizuj parser w Transform/WaitTime.cs.");
+            $"Nieznany format PCUŚ: '{pcus}'. API NFZ zmieniło format - zaktualizuj parser w Transform/WaitTime.cs.");
     }
 
     /// <summary>
     /// Etykieta dla wartości WYLICZONYCH (mediany, agregaty), które nie mają tekstu z NFZ.
     /// Reguły zaokrągleń: &lt; 30 dni → dni, 30–84 → tygodnie, ≥ 85 → miesiące; zawsze z „ok.”.
-    /// Dla pojedynczej placówki używamy <see cref="ToHumanLabel"/> — tam tekst przychodzi z API.
+    /// Dla pojedynczej placówki używamy <see cref="ToHumanLabel"/> - tam tekst przychodzi z API.
     /// </summary>
     public static string DaysToHumanLabel(int? days)
     {

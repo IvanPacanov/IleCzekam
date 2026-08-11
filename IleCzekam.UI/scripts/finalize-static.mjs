@@ -1,5 +1,5 @@
 // Przy RenderMode.Client dla trasy '' Angular zapisuje tylko index.csr.html.
-// Statyczny hosting oczekuje index.html pod '/' — kopiujemy po buildzie.
+// Statyczny hosting oczekuje index.html pod '/' - kopiujemy po buildzie.
 import { copyFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 

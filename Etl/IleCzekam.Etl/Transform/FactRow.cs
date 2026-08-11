@@ -4,11 +4,11 @@ namespace IleCzekam.Etl.Transform;
 
 /// <summary>
 /// Płaska tabela faktów: jeden wiersz na (miesiąc, świadczenie, województwo, placówka,
-/// przypadek medyczny), po deduplikacji. Ziarno celowo najniższe z możliwych — wszystkie
+/// przypadek medyczny), po deduplikacji. Ziarno celowo najniższe z możliwych - wszystkie
 /// zestawienia i procenty da się z tego policzyć, a formatem (JSON Lines) posłuży się
 /// każde narzędzie: SQLite, DuckDB, pandas, arkusz.
 ///
-/// To NIE jest warstwa serving — frontend czyta pliki `serving/`, nie fakty.
+/// To NIE jest warstwa serving - frontend czyta pliki `serving/`, nie fakty.
 /// </summary>
 public sealed record FactRow(
     [property: JsonPropertyName("month")] string Month,

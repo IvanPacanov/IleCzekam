@@ -6,13 +6,13 @@ namespace IleCzekam.Etl.Analytics;
 /// <summary>
 /// Ładuje tabelę faktów (`processed/facts.jsonl`) do bazy SQLite i dolicza agregaty.
 ///
-/// Baza jest w całości ODTWARZALNA z warstwy raw — nie jest źródłem prawdy, tylko
+/// Baza jest w całości ODTWARZALNA z warstwy raw - nie jest źródłem prawdy, tylko
 /// warsztatem analitycznym obok pipeline'u. Frontend jej nie dotyka: strony powstają
 /// z plików `serving/`.
 ///
 /// Mediany i percentyle są policzone RAZ, przy ładowaniu, i wylądowały w tabelach
 /// `city_month_stats` / `province_month_stats`. Dzięki temu zwykłe zapytanie z konsoli
-/// `sqlite3` nie musi powtarzać konstrukcji ROW_NUMBER — SQLite nie ma wbudowanej mediany.
+/// `sqlite3` nie musi powtarzać konstrukcji ROW_NUMBER - SQLite nie ma wbudowanej mediany.
 /// </summary>
 public sealed class SqliteExporter
 {
@@ -30,7 +30,7 @@ public sealed class SqliteExporter
             throw new EtlException($"Brak tabeli faktów: {factsJsonlPath}. Uruchom najpierw `make transform`.");
         }
 
-        // Pełne przeładowanie — baza jest pochodną, więc nie ma czego migrować.
+        // Pełne przeładowanie - baza jest pochodną, więc nie ma czego migrować.
         if (File.Exists(_databasePath))
         {
             File.Delete(_databasePath);
@@ -61,7 +61,7 @@ public sealed class SqliteExporter
 
     public sealed record ExportResult(int FactRows, int CityStatRows, int ProvinceStatRows, string DatabasePath);
 
-    // Kolumna `case` z JSON-a nazywa się w bazie `case_type` — `case` to słowo kluczowe SQL
+    // Kolumna `case` z JSON-a nazywa się w bazie `case_type` - `case` to słowo kluczowe SQL
     // i wymuszałoby cytowanie w każdym zapytaniu użytkownika.
     private const string Schema = """
         PRAGMA journal_mode = MEMORY;
@@ -109,7 +109,7 @@ public sealed class SqliteExporter
         CREATE INDEX idx_facts_city    ON facts (city_slug, benefit_slug, month);
         CREATE INDEX idx_facts_bucket  ON facts (bucket);
 
-        -- Agregaty miejskie. Wartości podejrzane i braki nie wchodzą do median —
+        -- Agregaty miejskie. Wartości podejrzane i braki nie wchodzą do median -
         -- ta sama reguła, co w warstwie serving.
         CREATE TABLE city_month_stats AS
         WITH counts AS (
@@ -142,7 +142,7 @@ public sealed class SqliteExporter
         quantiles AS (
             SELECT benefit_slug, province, city_slug, month, case_type,
                    -- ROUND w SQLite zaokrągla połówki „od zera”, tak samo jak
-                   -- MidpointRounding.AwayFromZero w transformie — mediana w bazie
+                   -- MidpointRounding.AwayFromZero w transformie - mediana w bazie
                    -- musi być co do dnia tą samą liczbą, co w warstwie serving.
                    CAST(ROUND(AVG(CASE WHEN rn IN ((n + 1) / 2, (n + 2) / 2) THEN raw_days END)) AS INTEGER) AS median_days,
                    MAX(CASE WHEN rn = MAX(1, (n * 25 + 99) / 100)  THEN raw_days END) AS p25_days,
@@ -170,7 +170,7 @@ public sealed class SqliteExporter
 
         CREATE UNIQUE INDEX idx_city_stats ON city_month_stats (benefit_slug, province, city_slug, month, case_type);
 
-        -- Agregaty wojewódzkie — ta sama konstrukcja, inne grupowanie.
+        -- Agregaty wojewódzkie - ta sama konstrukcja, inne grupowanie.
         CREATE TABLE province_month_stats AS
         WITH counts AS (
             SELECT benefit_slug, benefit_label, province, province_name, month, case_type,
@@ -199,7 +199,7 @@ public sealed class SqliteExporter
         quantiles AS (
             SELECT benefit_slug, province, month, case_type,
                    -- ROUND w SQLite zaokrągla połówki „od zera”, tak samo jak
-                   -- MidpointRounding.AwayFromZero w transformie — mediana w bazie
+                   -- MidpointRounding.AwayFromZero w transformie - mediana w bazie
                    -- musi być co do dnia tą samą liczbą, co w warstwie serving.
                    CAST(ROUND(AVG(CASE WHEN rn IN ((n + 1) / 2, (n + 2) / 2) THEN raw_days END)) AS INTEGER) AS median_days,
                    MAX(CASE WHEN rn = MAX(1, (n * 25 + 99) / 100)  THEN raw_days END) AS p25_days,
@@ -255,7 +255,7 @@ public sealed class SqliteExporter
         FROM city_month_stats
         WINDOW w AS (PARTITION BY benefit_slug, city_slug, case_type ORDER BY month);
 
-        -- Rozkład kubełków w formacie długim — wygodne pod wykresy.
+        -- Rozkład kubełków w formacie długim - wygodne pod wykresy.
         CREATE VIEW v_bucket_shares AS
         SELECT benefit_slug, month, case_type, province_name, city, city_slug, bucket, n, places_total,
                ROUND(100.0 * n / places_total, 1) AS pct

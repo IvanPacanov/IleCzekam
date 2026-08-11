@@ -28,7 +28,7 @@ public static class TestData
     public static BenefitConfig Benefit() => new()
     {
         Slug = "kardiologia",
-        Label = "Kardiologia — oddział szpitalny",
+        Label = "Kardiologia - oddział szpitalny",
         NfzBenefits = ["ODDZIAŁ KARDIOLOGICZNY"],
         Synonyms = ["serce"],
     };

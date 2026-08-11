@@ -1,0 +1,176 @@
+<app-site-header />
+
+<p class="data-notice">
+  <span aria-hidden="true">ⓘ</span>
+  Dane NFZ za {{ snapshotAfterZa() }}, aktualizowane raz w miesiącu.
+  Przed wizytą potwierdź termin telefonicznie w placówce.
+</p>
+
+<div class="page">
+  <main class="main">
+    <p class="breadcrumb">
+      {{ serving().benefit.label }} · {{ city() }} · woj. {{ provinceName() }}
+    </p>
+
+    <h1>{{ headline() }}</h1>
+
+    <p class="lede">
+      @if (summary().median_days !== null) {
+        Typowy czas oczekiwania w {{ cityIn() }} (przypadek stabilny):
+        <strong>{{ summary().median_label }}</strong>.
+        @if (summary().fastest; as fastest) {
+          Najkrótszy termin w mieście to {{ fastest.human_label }}.
+        }
+      } @else {
+        Żadna placówka w {{ cityIn() }} nie przekazała prognozy czasu oczekiwania za
+        {{ snapshotAfterZa() }}. Zadzwoń i zapytaj - numery są niżej.
+      }
+    </p>
+
+    <!-- Nagłówek-odpowiedź: mediana, najszybsza placówka i jej telefon w jednym miejscu. -->
+    <section
+      class="answer"
+      aria-label="Typowy czas oczekiwania">
+      <app-wait-pill
+        [wait]="medianWait()"
+        size="lg" />
+
+      @if (summary().fastest; as fastest) {
+        <div class="fastest">
+          <p class="metric-label">Najszybciej w mieście</p>
+          <p class="fastest-name">{{ fastestName() }}</p>
+          <p class="fastest-stats">{{ fastestStats() }}</p>
+        </div>
+      }
+
+      @if (fastestPhone(); as phone) {
+        <a
+          class="phone-cta phone-number"
+          [href]="phone.href">
+          <span aria-hidden="true">☎</span>
+          <span class="visually-hidden">Zadzwoń do najszybszej placówki:</span>
+          {{ phone.text }}
+        </a>
+      }
+    </section>
+
+    @if (lowSample()) {
+      <p class="caveat">
+        Mediana policzona z {{ lowSampleText() }} - przy tak małej próbie
+        traktuj ją jako orientacyjną, nie jako średnią dla miasta.
+      </p>
+    }
+
+    @if (comparisonBars().length > 1) {
+      <h2>Gdzie indziej jest szybciej</h2>
+      <div class="bars">
+        @for (bar of comparisonBars(); track bar.label) {
+          <div class="bar-row">
+            <p class="bar-label">{{ bar.label }}</p>
+            <div class="bar-track">
+              <span
+                class="bar"
+                [class]="'tone-' + bar.tone"
+                [style.width.%]="bar.widthPercent"></span>
+              <span class="bar-value">{{ bar.text }}</span>
+            </div>
+          </div>
+        }
+      </div>
+    }
+
+    <h2>Jak zmieniało się oczekiwanie</h2>
+    @if (hasTrend()) {
+      <div class="trend">
+        @for (point of trendBars(); track point.month) {
+          <div class="trend-col">
+            <span class="trend-value">{{ point.text }}</span>
+            <span
+              class="trend-bar"
+              [style.height.%]="point.heightPercent"></span>
+            <span class="trend-month">{{ point.label }}</span>
+          </div>
+        }
+      </div>
+    } @else {
+      <p class="caveat">
+        Historia powstaje u nas - API NFZ pokazuje wyłącznie stan bieżący. Mamy na razie
+        jeden snapshot ({{ snapshotLabel() }}); wykres pojawi się po kolejnym pobraniu danych.
+      </p>
+    }
+  </main>
+
+  <aside class="aside">
+    <section
+      class="places-panel"
+      aria-label="Lista placówek">
+      <h2 class="panel-title">{{ placesHeading() }}</h2>
+
+      @if (urgentPlaces().length > 0) {
+        <div
+          class="case-switch"
+          role="group"
+          aria-label="Rodzaj przypadku">
+          <button
+            type="button"
+            [class.active]="!showUrgent()"
+            (click)="showUrgent.set(false)">
+            Stabilny
+          </button>
+          <button
+            type="button"
+            [class.active]="showUrgent()"
+            (click)="showUrgent.set(true)">
+            Pilny
+          </button>
+        </div>
+        @if (showUrgent()) {
+          <p class="case-note">
+            Kolejka pilna dotyczy skierowań z adnotacją „cito”.
+            {{ urgentPlaces().length }} z {{ places().length }} placówek ją prowadzi.
+          </p>
+        }
+      }
+
+      <div class="places">
+        @for (place of visiblePlaces(); track place.id) {
+          <app-place-card
+            [place]="place"
+            [snapshotMonth]="serving().snapshot_month"
+            [urgent]="showUrgent() && place.wait_urgent !== null"
+            pillSize="sm" />
+        }
+      </div>
+
+      @if (hiddenCount() > 0) {
+        <button
+          type="button"
+          class="ghost-button"
+          (click)="toggleExpanded()">
+          {{ expanded() ? 'Pokaż mniej' : 'Pokaż wszystkie ' + places().length }}
+        </button>
+      }
+    </section>
+
+    <section
+      class="share"
+      aria-label="Udostępnij porównanie">
+      <h2 class="panel-title">Udostępnij porównanie</h2>
+      <p class="share-preview">{{ shareText() }}</p>
+      <button
+        type="button"
+        class="primary-button"
+        (click)="copyShareText()">
+        {{ copied() ? 'Skopiowano' : 'Kopiuj tekst' }}
+      </button>
+    </section>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <p>
+    Źródło danych: <a href="https://api.nfz.gov.pl/">api.nfz.gov.pl</a> - Narodowy Fundusz Zdrowia,
+    Informator o Terminach Leczenia. Dane za {{ snapshotAfterZa() }}.
+  </p>
+  <p>Nie rezerwujemy wizyt. Przed wizytą potwierdź termin telefonicznie w placówce.</p>
+</footer>

@@ -4,7 +4,7 @@ namespace IleCzekam.Etl.Transform;
 
 /// <summary>
 /// Jeden rekord kolejki z API NFZ, sprowadzony do pól, których używa serwis.
-/// Odwzorowanie 1:1 nazw z API jest w <see cref="FromApi"/> — reszta pipeline'u
+/// Odwzorowanie 1:1 nazw z API jest w <see cref="FromApi"/> - reszta pipeline'u
 /// nie zna już myślnikowych nazw pól NFZ.
 /// </summary>
 public sealed record QueueRecord(
@@ -32,7 +32,7 @@ public sealed record QueueRecord(
 {
     /// <summary>
     /// Klucz biznesowy placówki. `id` z API jest unikalne w KAŻDYM rekordzie (8 478/8 478
-    /// w snapshocie rozpoznania), więc deduplikacja po nim nigdy nic nie usuwa — realne
+    /// w snapshocie rozpoznania), więc deduplikacja po nim nigdy nic nie usuwa - realne
     /// duplikaty widać dopiero po tej czwórce. Patrz RECON.md, rozbieżność R6.
     /// </summary>
     public (string, string, string, string) BusinessKey => (Benefit, ProviderCode, Place, Address);

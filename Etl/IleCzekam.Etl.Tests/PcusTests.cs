@@ -5,7 +5,7 @@ using IleCzekam.Etl.Transform;
 namespace IleCzekam.Etl.Tests;
 
 /// <summary>
-/// PCUŚ przychodzi z API jako polski tekst, nie jako liczba — te testy pilnują
+/// PCUŚ przychodzi z API jako polski tekst, nie jako liczba - te testy pilnują
 /// wszystkich siedmiu wzorców zaobserwowanych na pełnym snapshocie w fazie A.
 /// </summary>
 [TestFixture]

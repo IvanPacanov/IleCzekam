@@ -9,7 +9,7 @@ namespace IleCzekam.Etl.Tests;
 
 /// <summary>
 /// Baza analityczna jest pochodną tabeli faktów. Najważniejszy test to ten, który pilnuje,
-/// żeby mediana z SQL-a i mediana z transformu były TĄ SAMĄ liczbą — inaczej serwis
+/// żeby mediana z SQL-a i mediana z transformu były TĄ SAMĄ liczbą - inaczej serwis
 /// i analizy mówiłyby o tej samej metryce co innego.
 /// </summary>
 [TestFixture]
@@ -65,7 +65,7 @@ public sealed class SqliteExporterTests
             return default;
         }
 
-        // SQLite zwraca liczby jako Int64/Double — Convert.ChangeType nie umie w Nullable<T>.
+        // SQLite zwraca liczby jako Int64/Double - Convert.ChangeType nie umie w Nullable<T>.
         Type target = Nullable.GetUnderlyingType(typeof(T)) ?? typeof(T);
         return (T)Convert.ChangeType(value, target);
     }

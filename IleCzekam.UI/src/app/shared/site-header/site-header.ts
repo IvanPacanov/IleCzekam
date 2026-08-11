@@ -5,52 +5,56 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <header class="site-header">
-      <a class="logo" href="/">Ile <span class="logo-accent">czekam</span></a>
+      <a
+        class="logo"
+        href="/"
+        >ilecze<span class="logo-accent">kam</span>.pl</a
+      >
       <nav aria-label="Nawigacja główna">
-        <!-- Linki-atrapy — pozostałe widoki poza zakresem tego etapu. -->
-        <a href="#">Świadczenia</a>
-        <a href="#">Miasta</a>
-        <a href="#">O danych</a>
+        <a href="/o-danych">O danych</a>
       </nav>
     </header>
   `,
   styles: `
     .site-header {
       display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-      padding: 1.25rem 0;
-      border-bottom: 2px solid var(--color-text);
+      align-items: center;
+      gap: 28px;
+      padding: 18px 48px;
+      max-width: 1280px;
+      margin: 0 auto;
     }
 
     .logo {
-      font-family: var(--font-serif);
-      font-weight: 700;
-      font-size: 1.375rem;
+      font-family: var(--font-display);
+      font-size: 22px;
       color: var(--color-text);
       text-decoration: none;
+      margin-right: auto;
     }
 
     .logo-accent {
-      color: var(--color-data);
+      color: var(--color-accent-700);
     }
 
-    nav {
-      display: flex;
-      gap: 1.25rem;
+    nav a {
+      // Cel dotykowy min. 48px - link w nagłówku też jest klikany kciukiem.
+      display: inline-flex;
+      align-items: center;
+      min-height: var(--touch-target);
+      font-size: 17px;
+      color: var(--color-text);
+      text-decoration: none;
 
-      a {
-        color: var(--color-text);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 0.9375rem;
+      &:hover {
+        color: var(--color-accent-700);
+        text-decoration: underline;
+      }
+    }
 
-        &:hover {
-          color: var(--color-data);
-          text-decoration: underline;
-        }
+    @media (max-width: 900px) {
+      .site-header {
+        padding: 14px 20px 6px;
       }
     }
   `,

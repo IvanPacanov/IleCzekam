@@ -11,7 +11,7 @@ public sealed record WaitDto(
     [property: JsonPropertyName("as_at")] string? AsAt
 );
 
-/// <summary>Jedna placówka na liście. Placówka BEZ danych też tu jest — z telefonem.</summary>
+/// <summary>Jedna placówka na liście. Placówka BEZ danych też tu jest - z telefonem.</summary>
 public sealed record PlaceDto(
     [property: JsonPropertyName("id")] string Id,
     [property: JsonPropertyName("provider")] string Provider,
@@ -66,7 +66,7 @@ public sealed record BestCityDto(
     [property: JsonPropertyName("low_sample")] bool LowSample
 );
 
-/// <summary>Punkt trendu — jeden miesięczny snapshot.</summary>
+/// <summary>Punkt trendu - jeden miesięczny snapshot.</summary>
 public sealed record TrendPointDto(
     [property: JsonPropertyName("month")] string Month,
     [property: JsonPropertyName("median_days")] int? MedianDays,
@@ -100,13 +100,13 @@ public sealed record ServingFileDto(
     [property: JsonPropertyName("places")] IReadOnlyList<PlaceDto> Places
 );
 
-/// <summary>Atrybucja wymagana regulaminem API NFZ — musi dojechać aż na stronę.</summary>
+/// <summary>Atrybucja wymagana regulaminem API NFZ - musi dojechać aż na stronę.</summary>
 public sealed record SourceDto(
     [property: JsonPropertyName("name")] string Name,
     [property: JsonPropertyName("url")] string Url
 )
 {
-    public static SourceDto Nfz { get; } = new("Narodowy Fundusz Zdrowia — Informator o Terminach Leczenia", "https://api.nfz.gov.pl/");
+    public static SourceDto Nfz { get; } = new("Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia", "https://api.nfz.gov.pl/");
 }
 
 /// <summary>Wpis indeksu wyszukiwarki: świadczenie w mieście.</summary>

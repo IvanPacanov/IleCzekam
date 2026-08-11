@@ -1,6 +1,6 @@
 namespace IleCzekam.Etl.Configuration;
 
-// Mutowalne POCO — wymóg deserializacji YamlDotNet.
+// Mutowalne POCO - wymóg deserializacji YamlDotNet.
 public sealed class EtlSettings
 {
     public ApiSettings Api { get; set; } = new();

@@ -7,7 +7,7 @@ namespace IleCzekam.Etl.Fetch;
 /// Klient API NFZ „Terminy Leczenia”.
 ///
 /// Regulamin API dopuszcza 10 zapytań na sekundę na adres IP i zakazuje działań mogących
-/// doprowadzić do przeciążenia — stąd throttling PRZED każdym zapytaniem (nie tylko między
+/// doprowadzić do przeciążenia - stąd throttling PRZED każdym zapytaniem (nie tylko między
 /// stronami) oraz retry z wykładniczym backoffem na 429/5xx. Klucz API nie jest wymagany,
 /// ale identyfikujemy się nagłówkiem User-Agent z adresem kontaktowym.
 /// </summary>

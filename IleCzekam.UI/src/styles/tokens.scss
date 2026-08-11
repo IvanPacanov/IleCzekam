@@ -1,32 +1,88 @@
-// Design tokens serwisu ileczekam.pl — estetyka redakcyjna/prasowa, jasna.
+// Design tokens serwisu ileczekam.pl - przeniesione z projektu „Terminy NFZ” (iteracja 2).
 // Jedyne źródło kolorów i typografii; komponenty używają wyłącznie var(--...).
+//
+// Wartości pochodzą z audytu kontrastów WCAG 2.1 (sekcja „it. 2 · 1” projektu):
+// elementy kluczowe - czas na pigułce, numer telefonu, nagłówek-odpowiedź - trzymają AAA.
 :root {
-  // Powierzchnie
-  --color-bg: #fafaf9; // chłodna biel tła strony
-  --color-surface: #ffffff; // karty
-  --color-track: #ededeb; // tor słupków/pasków porównawczych
-  --color-border: #e3e3e0;
+  // Powierzchnie - piaskowe, nie białe (mniej olśnienia)
+  --color-bg: #f5ead8; // tło strony, 14,0:1 z tekstem
+  --color-surface: #ebddc5; // karty i pola, 12,4:1 z tekstem
+  --color-surface-muted: #f9f4ed;
+  --color-surface-sunken: #eee7db; // pasek informacyjny
+  --color-surface-highlight: #fff2eb; // boksy ostrzegawcze / share
+  --color-skeleton: #dcd3c4;
+  --color-border: rgba(32, 30, 29, 0.16);
+  --color-border-strong: #201e1d;
+  --color-border-dashed: #645c50;
 
   // Tekst
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b6b6b;
+  --color-text: #201e1d; // 14,0:1 na tle (AAA)
+  --color-text-secondary: #474238; // lid, adresy, opisy - 8,4:1 (AA)
+  --color-text-muted: #645c50; // metryczki - 5,6:1 (AA), min. 15px
 
-  // Dane i akcje
-  --color-data: #0e7c9e; // teal: linki, wykres trendu, akcenty danych
-  --color-data-soft: #9cc8d6; // jaśniejszy teal: wcześniejsze lata trendu
-  --color-action: #e8a413; // bursztyn: WYŁĄCZNIE przyciski akcji
-  --color-action-text: #1a1a1a;
-  --color-badge-bg: #fbf3dc; // plakietka
-  --color-flag-bg: #fdf6e7; // pasek ostrzeżenia (dane nieaktualne, mała próba)
+  // Akcent. UWAGA: accent-700 jest jedynym wypełnieniem pod tekst -
+  // accent-500 nie przechodzi AA jako tło (3,0:1), zostaje na ikony i obrysy.
+  --color-accent-700: #8c491a; // linki, wypełnienie „Zadzwoń”, stany aktywne - 5,8:1
+  --color-accent-500: #c67139; // WYŁĄCZNIE ikony, obrysy, elementy nietekstowe
+  --color-accent-hover: #b2622d;
+  --color-on-accent: #f5ead8;
 
-  // Paleta "pigułki" czasu oczekiwania (kubełki z ETL: config/settings.yml -> wait_buckets)
-  --wait-krotko: #2f7d52;
-  --wait-umiarkowanie: #8a7413;
-  --wait-dlugo: #b35c1e;
-  --wait-bardzo-dlugo: #a32b2b;
-  --wait-brak-danych: #6b6b6b;
+  // Pigułka czasu - cztery stopnie + brak danych.
+  // Trzy niezależne nośniki: jasność wypełnienia, liczba kresek, podpis słowny.
+  --wait-krotko-bg: #e1eecc;
+  --wait-krotko-border: #728157;
+  --wait-krotko-text: #272e1b; // 11,6:1
+  --wait-krotko-label: #3d472b;
+
+  --wait-umiarkowanie-bg: #ffe1d0;
+  --wait-umiarkowanie-border: #d67f48;
+  --wait-umiarkowanie-text: #402310; // 11,6:1
+  --wait-umiarkowanie-label: #643312;
+
+  --wait-dlugo-bg: #ffc6a5;
+  --wait-dlugo-border: #b2622d;
+  --wait-dlugo-text: #402310; // 9,5:1
+  --wait-dlugo-label: #643312;
+
+  --wait-bardzo-dlugo-bg: #643312;
+  --wait-bardzo-dlugo-border: #402310;
+  --wait-bardzo-dlugo-text: #ffe1d0; // 8,4:1
+  --wait-bardzo-dlugo-label: #ffc6a5;
+
+  // Brak danych: szraf 45° to JEDYNY wzór w systemie i jest zarezerwowany wyłącznie
+  // dla tego stanu. Wypełnienie ma luminancję 66% - ciemniejsze niż „krótko” (82%),
+  // więc po odbarwieniu nie może udawać krótkiej kolejki.
+  --wait-brak-danych-bg: repeating-linear-gradient(45deg, #c0b6a5 0 6px, #dcd3c4 6px 12px);
+  --wait-brak-danych-border: #645c50;
+  --wait-brak-danych-text: #201e1d; // 11,2:1
+  --wait-brak-danych-label: #201e1d;
+
+  // Paski porównań
+  --bar-city: #643312;
+  --bar-province: #b2622d;
+  --bar-best: #728157;
 
   // Typografia
-  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Caprasimo', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  // Skala odstępów 4.4 → 35.2px
+  --space-1: 4.4px;
+  --space-2: 8.8px;
+  --space-3: 13.2px;
+  --space-4: 17.6px;
+  --space-6: 26.4px;
+  --space-8: 35.2px;
+
+  // Cele dotykowe - minimum z projektu
+  --touch-target: 48px;
+  --touch-target-lg: 60px;
+
+  --radius-pill: 999px;
+  --radius-card: 28px;
+  --radius-card-sm: 22px;
+  --radius-panel: 32px;
+
+  --shadow-card: 0 1px 2px rgba(46, 43, 37, 0.14);
+  --shadow-raised: 0 3px 10px rgba(46, 43, 37, 0.16);
 }

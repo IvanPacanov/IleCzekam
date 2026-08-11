@@ -3,7 +3,7 @@ using System.Text;
 namespace IleCzekam.Etl.Common;
 
 /// <summary>
-/// Slugi używane w ścieżkach plików i w URL-ach serwisu. Deterministyczne —
+/// Slugi używane w ścieżkach plików i w URL-ach serwisu. Deterministyczne -
 /// ta sama nazwa zawsze daje ten sam slug, niezależnie od kultury systemu.
 /// </summary>
 public static class Slug

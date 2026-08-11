@@ -1,0 +1,143 @@
+:host {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 24px;
+  border: 2px solid transparent;
+}
+
+.time {
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bars {
+  display: flex;
+  gap: 3px;
+}
+
+.bars i {
+  display: block;
+  width: 13px;
+  height: 6px;
+  border-radius: 3px;
+  background: currentColor;
+  opacity: 0.2;
+
+  &.filled {
+    opacity: 1;
+  }
+}
+
+:host(.size-sm) {
+  gap: 5px;
+  padding: 8px 14px;
+  border-radius: 18px;
+
+  .time {
+    font-size: 20px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+}
+
+:host(.size-lg) {
+  padding: 16px 24px;
+
+  .time {
+    font-size: 34px;
+  }
+}
+
+:host(.bucket-krotko) {
+  background: var(--wait-krotko-bg);
+  border-color: var(--wait-krotko-border);
+
+  .time {
+    color: var(--wait-krotko-text);
+  }
+
+  .label {
+    color: var(--wait-krotko-label);
+  }
+}
+
+:host(.bucket-umiarkowanie) {
+  background: var(--wait-umiarkowanie-bg);
+  border-color: var(--wait-umiarkowanie-border);
+
+  .time {
+    color: var(--wait-umiarkowanie-text);
+  }
+
+  .label {
+    color: var(--wait-umiarkowanie-label);
+  }
+}
+
+:host(.bucket-dlugo) {
+  background: var(--wait-dlugo-bg);
+  border-color: var(--wait-dlugo-border);
+
+  .time {
+    color: var(--wait-dlugo-text);
+  }
+
+  .label {
+    color: var(--wait-dlugo-label);
+  }
+}
+
+:host(.bucket-bardzo_dlugo) {
+  background: var(--wait-bardzo-dlugo-bg);
+  border-color: var(--wait-bardzo-dlugo-border);
+
+  .time {
+    color: var(--wait-bardzo-dlugo-text);
+  }
+
+  .label {
+    color: var(--wait-bardzo-dlugo-label);
+  }
+}
+
+// Brak danych i „nie dotyczy” dzielą fakturę: szraf 45° jest jedynym wzorem w systemie
+// i sygnalizuje wyłącznie „tu nie ma liczby”, nigdy krótkiej kolejki.
+:host(.bucket-brak_danych),
+:host(.bucket-nie_dotyczy) {
+  background-image: var(--wait-brak-danych-bg);
+  border-style: dashed;
+  border-color: var(--wait-brak-danych-border);
+
+  .time {
+    font-size: 24px;
+    color: var(--wait-brak-danych-text);
+  }
+
+  .label {
+    color: var(--wait-brak-danych-label);
+  }
+
+  .bars i {
+    opacity: 0.28;
+  }
+}
+
+:host(.size-lg.bucket-brak_danych) .time,
+:host(.size-lg.bucket-nie_dotyczy) .time {
+  font-size: 30px;
+}

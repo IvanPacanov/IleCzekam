@@ -9,7 +9,7 @@ node_modules/
 dist/
 .angular/cache/
 
-# Sekrety — klucze API wyłącznie ze zmiennych środowiskowych
+# Sekrety - klucze API wyłącznie ze zmiennych środowiskowych
 .env
 .env.local
 
@@ -24,5 +24,8 @@ Thumbs.db
 !.vscode/settings.json
 !.vscode/launch.json
 
-# Baza analityczna — pochodna, odtwarzalna przez `make db`
+# Baza analityczna - pochodna, odtwarzalna przez `make db`
 data/analytics.sqlite
+
+# Generowane przed buildem z data/serving
+IleCzekam.UI/public/search-index.json

@@ -50,12 +50,12 @@ static async Task<int> RunFetchAsync(string[] args)
     IReadOnlyList<string> provinces = ResolveProvinces(settings, provincesArg);
 
     // Regulamin API nie wymaga klucza, ale identyfikacja klienta pozwala NFZ skontaktować się
-    // z nami zamiast blokować ruch. Bez zmiennej — działamy, tylko głośno o tym mówimy.
+    // z nami zamiast blokować ruch. Bez zmiennej - działamy, tylko głośno o tym mówimy.
     string? userAgent = Environment.GetEnvironmentVariable(settings.Api.UserAgentEnv);
     if (string.IsNullOrWhiteSpace(userAgent))
     {
         userAgent = "ileczekam.pl/0.1 (+https://ileczekam.pl)";
-        Console.WriteLine($"Uwaga: brak {settings.Api.UserAgentEnv} w env — używam domyślnego User-Agent bez kontaktu.");
+        Console.WriteLine($"Uwaga: brak {settings.Api.UserAgentEnv} w env - używam domyślnego User-Agent bez kontaktu.");
     }
 
     using NfzHttpClient http = new(settings.Api, userAgent);
@@ -82,7 +82,7 @@ static int RunDb()
 
     Console.WriteLine($"Załadowano {result.FactRows} faktów -> {result.DatabasePath}");
     Console.WriteLine($"Agregaty: city_month_stats {result.CityStatRows} wierszy, province_month_stats {result.ProvinceStatRows}");
-    Console.WriteLine("Gotowe zapytania: queries/*.sql — np. sqlite3 data/analytics.sqlite < queries/ranking-miast.sql");
+    Console.WriteLine("Gotowe zapytania: queries/*.sql - np. sqlite3 data/analytics.sqlite < queries/ranking-miast.sql");
     return 0;
 }
 

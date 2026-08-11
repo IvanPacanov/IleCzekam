@@ -18,7 +18,7 @@ public sealed class TransformCommand
         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
     };
 
-    /// <summary>Pliki JSON bez BOM — BOM psuje parsery po stronie frontendu i narzędzi CLI.</summary>
+    /// <summary>Pliki JSON bez BOM - BOM psuje parsery po stronie frontendu i narzędzi CLI.</summary>
     private static readonly UTF8Encoding Utf8NoBom = new(encoderShouldEmitUTF8Identifier: false);
 
     private readonly RawStore _raw;
@@ -57,7 +57,7 @@ public sealed class TransformCommand
         {
             if (!byBenefit.TryGetValue(benefit.Slug, out List<MonthSnapshot>? snapshots))
             {
-                Console.WriteLine($"Pomijam '{benefit.Slug}' — brak danych w snapshotach.");
+                Console.WriteLine($"Pomijam '{benefit.Slug}' - brak danych w snapshotach.");
                 continue;
             }
 
@@ -136,7 +136,7 @@ public sealed class TransformCommand
         return byBenefit;
     }
 
-    /// <summary>Nadpisanie w całości — processed i serving są w pełni odtwarzalne z raw.</summary>
+    /// <summary>Nadpisanie w całości - processed i serving są w pełni odtwarzalne z raw.</summary>
     private static void PrepareOutputDirectory(string path)
     {
         if (Directory.Exists(path))
@@ -150,7 +150,7 @@ public sealed class TransformCommand
     public static string FactsPath(EtlSettings settings) => Path.Combine(settings.Paths.Processed, "facts.jsonl");
 
     /// <summary>
-    /// Tabela faktów w JSON Lines — jeden wiersz na linię, bez tablicy opakowującej.
+    /// Tabela faktów w JSON Lines - jeden wiersz na linię, bez tablicy opakowującej.
     /// Format wybrany celowo: ładuje się strumieniowo i czyta go każde narzędzie
     /// analityczne bez kroku parsowania całego pliku do pamięci.
     /// </summary>

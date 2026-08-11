@@ -8,7 +8,7 @@ namespace IleCzekam.Etl.Fetch;
 /// <summary>
 /// Pobiera kolejki z API NFZ do warstwy raw, partycjonowanej po miesiącu pobrania.
 ///
-/// Pobieramy oba przypadki medyczne (1 stabilny, 2 pilny) — to ta sama placówka widziana
+/// Pobieramy oba przypadki medyczne (1 stabilny, 2 pilny) - to ta sama placówka widziana
 /// z dwóch stron i pacjent potrzebuje obu liczb.
 /// </summary>
 public sealed class FetchCommand
@@ -83,7 +83,7 @@ public sealed class FetchCommand
     /// <summary>
     /// Sprawdza, czy nazwy świadczeń z configu istnieją w słowniku NFZ.
     ///
-    /// API na nieistniejącą nazwę odpowiada HTTP 200 i `count: 0` — literówka jest CICHA
+    /// API na nieistniejącą nazwę odpowiada HTTP 200 i `count: 0` - literówka jest CICHA
     /// i wyglądałaby jak „brak kolejek”. Weryfikacja słownikowa zamienia to w twardy błąd.
     /// </summary>
     private async Task VerifyBenefitNamesAsync(IReadOnlyList<BenefitConfig> benefits, CancellationToken cancellationToken)
@@ -121,7 +121,7 @@ public sealed class FetchCommand
         if (unknown.Count > 0)
         {
             throw new EtlException(
-                "Nazwy świadczeń nieobecne w słowniku NFZ (/benefits) — zapytanie o kolejki zwróciłoby "
+                "Nazwy świadczeń nieobecne w słowniku NFZ (/benefits) - zapytanie o kolejki zwróciłoby "
                 + $"po cichu 0 wyników:{Environment.NewLine}  - {string.Join($"{Environment.NewLine}  - ", unknown)}");
         }
 
