@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "MYSŁOWICE",
+    "slug": "myslowice",
+    "teryt": "2470011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 381,
+    "median_label": "ok. 13 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "121-107024-5319e7ca",
+      "provider": "SP ZOZ SZPITAL NR 2 IM. DR. TADEUSZA BOCZONIA W MYSŁOWICACH",
+      "locality": "MYSŁOWICE",
+      "raw_days": 381,
+      "human_label": "ok. 12 miesięcy i 3 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 381,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 381,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "121-107024-5319e7ca",
+      "provider": "SP ZOZ SZPITAL NR 2 IM. DR. TADEUSZA BOCZONIA W MYSŁOWICACH",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BYTOMSKA 41",
+      "locality": "MYSŁOWICE",
+      "teryt": "2470011",
+      "phone": "+48 723 183 348",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "12 mies. 3 tyg.",
+        "raw_days": 381,
+        "human_label": "ok. 12 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "5 mies. 1 tydz.",
+        "raw_days": 157,
+        "human_label": "ok. 5 miesięcy i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 125,
+      "average_period_days": 416,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

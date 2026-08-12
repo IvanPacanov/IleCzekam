@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "JASTRZĘBIE-ZDRÓJ",
+    "slug": "jastrzebie-zdroj",
+    "teryt": "2467011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 457,
+    "median_label": "ok. 15 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "124-100448-3636131f",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "raw_days": 457,
+      "human_label": "ok. 15 miesięcy i 1 tydzień"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 457,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 457,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "124-100448-3636131f",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA JANA PAWŁA II 7",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 478 44 91",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "15 mies. 1 tydz.",
+        "raw_days": 457,
+        "human_label": "ok. 15 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 430,
+      "average_period_days": 417,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

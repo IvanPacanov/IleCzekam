@@ -1,0 +1,13 @@
+{
+  "month": "2026-08",
+  "province": "12",
+  "case": 1,
+  "benefit_slug": "ortopedia",
+  "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+  "fetched_at": "2026-08-12T07:15:45.290829+02:00",
+  "reported_count": 42,
+  "pages": [
+    "page-001.json",
+    "page-002.json"
+  ]
+}

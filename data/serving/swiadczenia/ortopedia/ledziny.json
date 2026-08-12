@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "LĘDZINY",
+    "slug": "ledziny",
+    "teryt": "2414031",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 28,
+    "median_label": "ok. 28 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "121-100532-5a2570a5",
+      "provider": "MIEJSKI ZESPÓŁ OPIEKI ZDROWOTNEJ W LĘDZINACH",
+      "locality": "LĘDZINY",
+      "raw_days": 28,
+      "human_label": "ok. 28 dni"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 28,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 28,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "121-100532-5a2570a5",
+      "provider": "MIEJSKI ZESPÓŁ OPIEKI ZDROWOTNEJ W LĘDZINACH",
+      "place": "PORADNIA ORTOPEDYCZNA",
+      "address": "POKOJU 17",
+      "locality": "LĘDZINY",
+      "teryt": "2414031",
+      "phone": "+48 32 326 62 53",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "28 dni",
+        "raw_days": 28,
+        "human_label": "ok. 28 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "22 dni",
+        "raw_days": 22,
+        "human_label": "ok. 22 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 130,
+      "average_period_days": 26,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

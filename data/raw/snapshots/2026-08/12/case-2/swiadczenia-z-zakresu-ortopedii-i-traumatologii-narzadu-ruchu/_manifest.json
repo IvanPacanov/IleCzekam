@@ -1,0 +1,18 @@
+{
+  "month": "2026-08",
+  "province": "12",
+  "case": 2,
+  "benefit_slug": "ortopedia",
+  "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+  "fetched_at": "2026-08-12T07:15:45.290829+02:00",
+  "reported_count": 158,
+  "pages": [
+    "page-001.json",
+    "page-002.json",
+    "page-003.json",
+    "page-004.json",
+    "page-005.json",
+    "page-006.json",
+    "page-007.json"
+  ]
+}

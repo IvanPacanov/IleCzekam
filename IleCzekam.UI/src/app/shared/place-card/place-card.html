@@ -3,16 +3,35 @@
 }
 
 <h3 class="name">{{ title() }}</h3>
-<p class="address">{{ address() }}</p>
+<p class="address">
+  {{ address() }}
+  @if (distance() !== null) {
+    <span class="distance">· {{ distance() }}</span>
+  }
+</p>
 
-<app-wait-pill
-  [wait]="wait()"
-  [size]="pillSize()" />
+<!-- Oś akcji: pigułka i telefon w jednej linii - kanoniczny układ karty. -->
+<div class="action-row">
+  <app-wait-pill
+    [wait]="wait()"
+    [size]="pillSize()" />
+
+  @if (phoneLink(); as href) {
+    <a
+      class="phone-cta phone-number"
+      [href]="href">
+      <span aria-hidden="true">☎</span>
+      <span class="visually-hidden">Zadzwoń:</span>
+      {{ phoneText() }}
+    </a>
+  }
+</div>
 
 @if (hasNoData()) {
   <p class="no-data-note">
     Placówka nie przekazała danych za {{ monthName() }}.
-    <strong>To nie znaczy, że kolejka jest krótka</strong> - zadzwoń i zapytaj.
+    <strong>To nie znaczy, że kolejka jest krótka</strong>
+    - zadzwoń i zapytaj.
   </p>
 } @else {
   @if (stats() !== '') {
@@ -26,14 +45,4 @@
   @if (isStale()) {
     <p class="stats stale">Statystyki placówki starsze niż pozostałe - potwierdź telefonicznie.</p>
   }
-}
-
-@if (phoneLink(); as href) {
-  <a
-    class="phone-cta phone-number"
-    [href]="href">
-    <span aria-hidden="true">☎</span>
-    <span class="visually-hidden">Zadzwoń:</span>
-    {{ phoneText() }}
-  </a>
 }

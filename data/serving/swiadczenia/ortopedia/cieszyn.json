@@ -1,0 +1,123 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "CIESZYN",
+    "slug": "cieszyn",
+    "teryt": "2403011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 71,
+    "median_label": "ok. 10 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "122-100178-4c5a532b",
+      "provider": "ZESPÓŁ ZAKŁADÓW OPIEKI ZDROWOTNEJ W CIESZYNIE",
+      "locality": "CIESZYN",
+      "raw_days": 67,
+      "human_label": "ok. 2 miesiące i 1 tydzień"
+    },
+    "places_total": 2,
+    "places_with_data": 2,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 71,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 71,
+      "places_with_data": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "122-100178-4c5a532b",
+      "provider": "ZESPÓŁ ZAKŁADÓW OPIEKI ZDROWOTNEJ W CIESZYNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BIELSKA 4",
+      "locality": "CIESZYN",
+      "teryt": "2403011",
+      "phone": "+48 33 852 05 11",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-05"
+      },
+      "wait_urgent": {
+        "pcus_raw": "16 dni",
+        "raw_days": 16,
+        "human_label": "ok. 16 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "awaiting": 97,
+      "average_period_days": 70,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100178-6cfcbb1d",
+      "provider": "ZESPÓŁ ZAKŁADÓW OPIEKI ZDROWOTNEJ W CIESZYNIE",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BIELSKA 4",
+      "locality": "CIESZYN",
+      "teryt": "2403011",
+      "phone": "+48 33 852 35 62",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 240,
+      "average_period_days": 71,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "KONIECPOL",
+    "slug": "koniecpol",
+    "teryt": "2404064",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 67,
+    "median_label": "ok. 10 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "123-213993-b77be665",
+      "provider": "PAW-MED SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "KONIECPOL",
+      "raw_days": 67,
+      "human_label": "ok. 2 miesiące i 1 tydzień"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 67,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 67,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "123-213993-b77be665",
+      "provider": "PAW-MED SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ZAMKOWA 1",
+      "locality": "KONIECPOL",
+      "teryt": "2404064",
+      "phone": "+48 34 354 05 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 90,
+      "average_period_days": 61,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

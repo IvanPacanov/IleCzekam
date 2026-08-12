@@ -1,0 +1,340 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "SOSNOWIEC",
+    "slug": "sosnowiec",
+    "teryt": "2475011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 97,
+    "median_label": "ok. 3 miesiące",
+    "median_bucket": "dlugo",
+    "fastest": {
+      "place_id": "125-107634-bba515dd",
+      "provider": "PRZYCHODNIA MILOWICE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "SOSNOWIEC",
+      "raw_days": 51,
+      "human_label": "ok. 1 miesiąc i 3 tygodnie"
+    },
+    "places_total": 9,
+    "places_with_data": 8,
+    "places_without_data": 1,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 97,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 97,
+      "places_with_data": 8
+    }
+  ],
+  "places": [
+    {
+      "id": "125-100567-0bbd09c7",
+      "provider": "CENTRUM ZDROWIA DZIECKA I RODZINY IM. JANA PAWŁA II W SOSNOWCU SPÓŁKA Z O.O.",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "address": "G.ZAPOLSKIEJ 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 292 91 93",
+      "latitude": 19.1983,
+      "longitude": 50.2733,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 164,
+      "average_period_days": 98,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212521-c72c8163",
+      "provider": "FUNDACJA \"UNIA BRACKA\"",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "OGRODOWA 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 296 96 21",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 65,
+      "average_period_days": 94,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212521-48c41c5a",
+      "provider": "FUNDACJA \"UNIA BRACKA\"",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ROMANA DMOWSKIEGO 6A",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 298 89 37",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 147,
+      "average_period_days": 53,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "125-107634-bba515dd",
+      "provider": "PRZYCHODNIA MILOWICE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "KRZYSZTOFA KAMILA BACZYŃSKIEGO 14 C",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 363 08 50;+48 32 363 08 51",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 209,
+      "average_period_days": 60,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-111151-f7a9f57f",
+      "provider": "SOSNOWIECKI SZPITAL MIEJSKI SPÓŁKA Z O.O. W RESTRUKTURYZACJI",
+      "place": "ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII ARTROSKOPOWEJ",
+      "address": "EMILA ZEGADŁOWICZA 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 04 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "7 mies.",
+        "raw_days": 210,
+        "human_label": "ok. 7 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-07-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 dni",
+        "raw_days": 11,
+        "human_label": "ok. 11 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-04"
+      },
+      "awaiting": 491,
+      "average_period_days": 208,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "125-111151-0c4d003e",
+      "provider": "SOSNOWIECKI SZPITAL MIEJSKI SPÓŁKA Z O.O. W RESTRUKTURYZACJI",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "EMILA ZEGADŁOWICZA 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 03 48",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 438,
+      "average_period_days": 70,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-111151-e2abc9b4",
+      "provider": "SOSNOWIECKI SZPITAL MIEJSKI SPÓŁKA Z O.O. W RESTRUKTURYZACJI",
+      "place": "PORADNIA ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU - PR-S",
+      "address": "SZPITALNA 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 05 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 113,
+      "average_period_days": 71,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100468-3dcd3ca8",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "place": "KLINICZNY ODDZIAŁ CHIRURGII ORTOPEDYCZNO-URAZOWEJ, ONKOLOGICZNEJ I REKONSTRUKCYJNEJ",
+      "address": "PLAC MEDYKÓW 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 368 25 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "6 mies. 2 tyg.",
+        "raw_days": 194,
+        "human_label": "ok. 6 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-04"
+      },
+      "awaiting": 272,
+      "average_period_days": 178,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100468-3e1ac53d",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "place": "PORADNIA URAZOWO-ORTOPEDYCZNA",
+      "address": "PLAC MEDYKÓW 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 368 27 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "4 mies.",
+        "raw_days": 120,
+        "human_label": "ok. 4 miesiące",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 415,
+      "average_period_days": 104,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

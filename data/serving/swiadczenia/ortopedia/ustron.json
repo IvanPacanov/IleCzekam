@@ -1,0 +1,216 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "USTROŃ",
+    "slug": "ustron",
+    "teryt": "2403021",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 89,
+    "median_label": "ok. 3 miesiące",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "124-500120-96a60bc7",
+      "provider": "SCANMED SPORT SP. Z O.O.",
+      "locality": "USTROŃ",
+      "raw_days": 7,
+      "human_label": "ok. 7 dni"
+    },
+    "places_total": 5,
+    "places_with_data": 4,
+    "places_without_data": 1,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 89,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 89,
+      "places_with_data": 4
+    }
+  ],
+  "places": [
+    {
+      "id": "124-500120-96a60bc7",
+      "provider": "SCANMED SPORT SP. Z O.O.",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 324 759 315",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "7 dni",
+        "raw_days": 7,
+        "human_label": "ok. 7 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 dzień",
+        "raw_days": 1,
+        "human_label": "ok. 1 dzień",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 6,
+      "average_period_days": 7,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-500120-5c103622",
+      "provider": "SCANMED SPORT SP. Z O.O.",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO - ORTOPEDYCZNEJ",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 324 759 315",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "26 mies. 2 tyg.",
+        "raw_days": 794,
+        "human_label": "ok. 26 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "26 dni",
+        "raw_days": 26,
+        "human_label": "ok. 26 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 208,
+      "average_period_days": 897,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100115-2f217a7e",
+      "provider": "ŚLĄSKIE CENTRUM REUMATOLOGII IM. GEN. JERZEGO ZIĘTKA W USTRONIU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 11",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 26 40",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 550,
+      "average_period_days": 180,
+      "stats_month": "2026-06",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "122-100115-e45c629f",
+      "provider": "ŚLĄSKIE CENTRUM REUMATOLOGII IM. GEN. JERZEGO ZIĘTKA W USTRONIU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 11",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 26 40",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 1 tydz.",
+        "raw_days": 97,
+        "human_label": "ok. 3 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 193,
+      "average_period_days": 98,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100178-3671f650",
+      "provider": "ZESPÓŁ ZAKŁADÓW OPIEKI ZDROWOTNEJ W CIESZYNIE",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MICKIEWICZA 1",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 24 52",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 42,
+      "average_period_days": 44,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

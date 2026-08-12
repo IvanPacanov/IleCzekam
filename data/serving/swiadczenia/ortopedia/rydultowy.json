@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "RYDUŁTOWY",
+    "slug": "rydultowy",
+    "teryt": "2415031",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 44,
+    "median_label": "ok. 6 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "124-200891-8b224e22",
+      "provider": "BOŻENA KONIECZNY-FREUND",
+      "locality": "RYDUŁTOWY",
+      "raw_days": 44,
+      "human_label": "ok. 1 miesiąc i 2 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 44,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 44,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "124-200891-8b224e22",
+      "provider": "BOŻENA KONIECZNY-FREUND",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "TETMAJERA 150",
+      "locality": "RYDUŁTOWY",
+      "teryt": "2415031",
+      "phone": "+48 32 729 40 68",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 dni",
+        "raw_days": 3,
+        "human_label": "ok. 3 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 294,
+      "average_period_days": 60,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

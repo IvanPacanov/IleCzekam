@@ -1,0 +1,183 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "DĄBROWA GÓRNICZA",
+    "slug": "dabrowa-gornicza",
+    "teryt": "2465011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 71,
+    "median_label": "ok. 10 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "125-101002-15e646c9",
+      "provider": "ZAGŁĘBIOWSKIE CENTRUM ONKOLOGII SZPITAL SPECJALISTYCZNY IM. SZ. STARKIEWICZA W DĄBROWIE GÓRNICZEJ",
+      "locality": "DĄBROWA GÓRNICZA",
+      "raw_days": 51,
+      "human_label": "ok. 1 miesiąc i 3 tygodnie"
+    },
+    "places_total": 4,
+    "places_with_data": 4,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 71,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 71,
+      "places_with_data": 4
+    }
+  ],
+  "places": [
+    {
+      "id": "125-207650-cdccf935",
+      "provider": "\"MERKURY\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "KAROLA ADAMIECKIEGO 13",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 262 36 71",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 398,
+      "average_period_days": 79,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-210398-9fe140b0",
+      "provider": "POLIKLINIKA DĄBROWSKA PRINN SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "AL. J. PIŁSUDSKIEGO 92",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 757 01 20",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 302,
+      "average_period_days": 106,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-101002-15e646c9",
+      "provider": "ZAGŁĘBIOWSKIE CENTRUM ONKOLOGII SZPITAL SPECJALISTYCZNY IM. SZ. STARKIEWICZA W DĄBROWIE GÓRNICZEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 13",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 621 21 03",
+      "latitude": 50.32,
+      "longitude": 19.1763,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-06"
+      },
+      "wait_urgent": {
+        "pcus_raw": "18 dni",
+        "raw_days": 18,
+        "human_label": "ok. 18 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-06"
+      },
+      "awaiting": 20,
+      "average_period_days": 39,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "125-101002-c6fc35f9",
+      "provider": "ZAGŁĘBIOWSKIE CENTRUM ONKOLOGII SZPITAL SPECJALISTYCZNY IM. SZ. STARKIEWICZA W DĄBROWIE GÓRNICZEJ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 13/.",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 155 56 66",
+      "latitude": 50.32,
+      "longitude": 19.1763,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "28 dni",
+        "raw_days": 28,
+        "human_label": "ok. 28 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 252,
+      "average_period_days": 37,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

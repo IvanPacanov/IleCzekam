@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "ortopedia-dziecieca",
+    "label": "Ortopeda dziecięcy",
+    "nfz_benefits": [
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "KATOWICE",
+    "slug": "katowice",
+    "teryt": "2469011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 44,
+    "median_label": "ok. 6 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "121-101006-97dcc55b",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM ZDROWIA DZIECKA IM. ŚW. JANA PAWŁA II SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY NR 6 ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "locality": "KATOWICE",
+      "raw_days": 44,
+      "human_label": "ok. 1 miesiąc i 2 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 44,
+    "province_median_days": 18,
+    "best_city_in_province": {
+      "name": "GLIWICE",
+      "slug": "gliwice",
+      "median_days": 5,
+      "median_label": "ok. 5 dni",
+      "low_sample": true
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 44,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "121-101006-97dcc55b",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM ZDROWIA DZIECKA IM. ŚW. JANA PAWŁA II SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY NR 6 ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MEDYKÓW 16",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 207 18 08",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "15 dni",
+        "raw_days": 15,
+        "human_label": "ok. 15 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 268,
+      "average_period_days": 30,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

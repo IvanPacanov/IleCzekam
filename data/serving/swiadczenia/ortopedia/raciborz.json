@@ -1,0 +1,125 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "RACIBÓRZ",
+    "slug": "raciborz",
+    "teryt": "2411011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 74,
+    "median_label": "ok. 11 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "124-100582-b8362d4c",
+      "provider": "SZPITAL REJONOWY IM. DR. JÓZEFA ROSTKA W RACIBORZU",
+      "locality": "RACIBÓRZ",
+      "raw_days": 74,
+      "human_label": "ok. 2 miesiące i 2 tygodnie"
+    },
+    "places_total": 2,
+    "places_with_data": 1,
+    "places_without_data": 1,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 74,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 74,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "124-100582-446797c3",
+      "provider": "SZPITAL REJONOWY IM. DR. JÓZEFA ROSTKA W RACIBORZU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "GAMOWSKA 3",
+      "locality": "RACIBÓRZ",
+      "teryt": "2411011",
+      "phone": "+48 32 755 53 52",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 159,
+      "average_period_days": 84,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "124-100582-b8362d4c",
+      "provider": "SZPITAL REJONOWY IM. DR. JÓZEFA ROSTKA W RACIBORZU",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "GAMOWSKA 3",
+      "locality": "RACIBÓRZ",
+      "teryt": "2411011",
+      "phone": "+48 32 755 50 50",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 421,
+      "average_period_days": 64,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

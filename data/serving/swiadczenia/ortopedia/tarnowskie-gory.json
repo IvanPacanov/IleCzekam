@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "TARNOWSKIE GÓRY",
+    "slug": "tarnowskie-gory",
+    "teryt": "2413041",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 104,
+    "median_label": "ok. 3 miesiące",
+    "median_bucket": "dlugo",
+    "fastest": {
+      "place_id": "126-208310-aa98d467",
+      "provider": "USŁUGI MEDYCZNE \"ŚRÓDMIEŚCIE\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "TARNOWSKIE GÓRY",
+      "raw_days": 104,
+      "human_label": "ok. 3 miesiące i 2 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 104,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 104,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "126-208310-aa98d467",
+      "provider": "USŁUGI MEDYCZNE \"ŚRÓDMIEŚCIE\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MARSZAŁKA JÓZEFA PIŁSUDSKIEGO 16",
+      "locality": "TARNOWSKIE GÓRY",
+      "teryt": "2413041",
+      "phone": "+48 32 285 28 28",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 420,
+      "average_period_days": 82,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

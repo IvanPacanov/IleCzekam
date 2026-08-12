@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "JASIENICA",
+    "slug": "jasienica",
+    "teryt": "2402052",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 37,
+    "median_label": "ok. 5 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "122-100175-94e26aee",
+      "provider": "SAMODZIELNY GMINNY ZAKŁAD OPIEKI ZDROWOTNEJ W JASIENICY",
+      "locality": "JASIENICA",
+      "raw_days": 37,
+      "human_label": "ok. 1 miesiąc i 1 tydzień"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 37,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 37,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "122-100175-94e26aee",
+      "provider": "SAMODZIELNY GMINNY ZAKŁAD OPIEKI ZDROWOTNEJ W JASIENICY",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ZDROWOTNA 4",
+      "locality": "JASIENICA",
+      "teryt": "2402052",
+      "phone": "+48 33 815 24 32",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "24 dni",
+        "raw_days": 24,
+        "human_label": "ok. 24 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 60,
+      "average_period_days": 30,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

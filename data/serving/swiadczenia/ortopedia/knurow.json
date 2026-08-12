@@ -1,0 +1,123 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "KNURÓW",
+    "slug": "knurow",
+    "teryt": "2405011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 86,
+    "median_label": "ok. 3 miesiące",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "126-212043-2840bf9a",
+      "provider": "ZESPÓŁ SZPITALI POWIATU GLIWICKIEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "KNURÓW",
+      "raw_days": 60,
+      "human_label": "ok. 2 miesiące"
+    },
+    "places_total": 2,
+    "places_with_data": 2,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 86,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 86,
+      "places_with_data": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "121-212521-7ad91a3c",
+      "provider": "FUNDACJA \"UNIA BRACKA\"",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "DWORCOWA 3",
+      "locality": "KNURÓW",
+      "teryt": "2405011",
+      "phone": "+48 32 235 13 41",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 262,
+      "average_period_days": 108,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-212043-2840bf9a",
+      "provider": "ZESPÓŁ SZPITALI POWIATU GLIWICKIEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA URAZOWO-ORTOPEDYCZNA",
+      "address": "NIEPODLEGŁOŚCI 8",
+      "locality": "KNURÓW",
+      "teryt": "2405011",
+      "phone": "+48 32 331 93 66",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "30 dni",
+        "raw_days": 30,
+        "human_label": "ok. 30 dni",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 152,
+      "average_period_days": 46,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

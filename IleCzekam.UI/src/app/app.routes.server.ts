@@ -9,6 +9,11 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Client,
   },
   {
+    // Wyniki wyszukiwania są w pełni dynamiczne - CSR jak strona startowa.
+    path: 'szukaj',
+    renderMode: RenderMode.Client,
+  },
+  {
     path: 'o-danych',
     renderMode: RenderMode.Prerender,
   },

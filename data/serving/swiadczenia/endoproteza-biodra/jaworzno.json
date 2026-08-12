@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "endoproteza-biodra",
+    "label": "Endoproteza biodra",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "JAWORZNO",
+    "slug": "jaworzno",
+    "teryt": "2468011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 411,
+    "median_label": "ok. 14 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "125-100178-37a78b47",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "locality": "JAWORZNO",
+      "raw_days": 411,
+      "human_label": "ok. 13 miesięcy i 3 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 411,
+    "province_median_days": 360,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 644,
+      "median_label": "ok. 21 miesięcy",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 411,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "125-100178-37a78b47",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "13 mies. 3 tyg.",
+        "raw_days": 411,
+        "human_label": "ok. 13 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "7 mies. 1 tydz.",
+        "raw_days": 217,
+        "human_label": "ok. 7 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 194,
+      "average_period_days": 413,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

@@ -84,6 +84,28 @@ export function plural(count: number, one: string, few: string, many: string): s
   return last >= 2 && last <= 4 && (lastTwo < 12 || lastTwo > 14) ? few : many;
 }
 
+/**
+ * Etykieta dla wyliczonych dni oczekiwania - te same progi zaokrągleń, co w ETL:
+ * < 30 dni → dni, 30–84 → tygodnie, ≥ 85 → miesiące.
+ */
+export function daysApprox(days: number): string {
+  if (days === 0) {
+    return 'bez oczekiwania';
+  }
+
+  if (days < 30) {
+    return `ok. ${days} ${plural(days, 'dzień', 'dni', 'dni')}`;
+  }
+
+  if (days < 85) {
+    const weeks = Math.round(days / 7);
+    return `ok. ${weeks} ${plural(weeks, 'tydzień', 'tygodnie', 'tygodni')}`;
+  }
+
+  const months = Math.round(days / 30);
+  return `ok. ${months} ${plural(months, 'miesiąc', 'miesiące', 'miesięcy')}`;
+}
+
 export function peopleWaiting(count: number): string {
   return `${count} ${plural(count, 'osoba', 'osoby', 'osób')} w kolejce`;
 }

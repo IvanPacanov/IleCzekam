@@ -1,0 +1,69 @@
+{
+  "benefit_slug": "kardiologia-dziecieca",
+  "province": "12",
+  "month": "2026-08",
+  "places": [
+    {
+      "id": "121-101006-876b0cb5",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM ZDROWIA DZIECKA IM. ŚW. JANA PAWŁA II SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY NR 6 ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ KARDIOLOGII DZIECIĘCEJ",
+      "address": "MEDYKÓW 16",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 207 18 55",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 2 tyg.",
+        "raw_days": 134,
+        "human_label": "ok. 4 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 168,
+      "average_period_days": 141,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-101003-015ce6df",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "ODDZIAŁ WRODZONYCH WAD SERCA I KARDIOLOGII DZIECIĘCEJ",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 479 36 69",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ KARDIOLOGICZNY DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "16 dni",
+        "raw_days": 16,
+        "human_label": "ok. 16 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-04"
+      },
+      "awaiting": 146,
+      "average_period_days": 52,
+      "stats_month": "2026-06",
+      "flags": []
+    }
+  ]
+}

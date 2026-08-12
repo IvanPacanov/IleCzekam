@@ -16,9 +16,6 @@ public sealed class ApiSettings
 {
     public string BaseUrl { get; set; } = string.Empty;
 
-    /// <summary>Zmienna środowiskowa z wartością nagłówka User-Agent (identyfikacja klienta).</summary>
-    public string UserAgentEnv { get; set; } = "NFZ_USER_AGENT";
-
     /// <summary>Pauza między zapytaniami. Regulamin NFZ: limit 10 zapytań/s na adres IP.</summary>
     public int ThrottleMs { get; set; } = 600;
 

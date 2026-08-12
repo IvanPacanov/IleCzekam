@@ -4,33 +4,94 @@
   <main class="hero">
     <h1>Ile się czeka na leczenie z NFZ?</h1>
     <p class="lede">
-      Wpisz, czego szukasz - swoimi słowami. Pokażemy, gdzie termin jest najkrótszy
-      i do kogo zadzwonić.
+      Wpisz, czego szukasz - swoimi słowami. Pokażemy, gdzie termin jest najkrótszy i do kogo zadzwonić.
     </p>
 
     <search class="search">
-      <label
-        class="visually-hidden"
-        for="benefit-search"
-        >Czego szukasz?</label
-      >
-      <div class="search-field">
-        <span
-          class="search-icon"
-          aria-hidden="true"
-          >⌕</span
-        >
-        <input
-          id="benefit-search"
-          type="search"
-          autocomplete="off"
-          placeholder="np. kardiolog, oddział kardiologiczny"
-          [value]="query()"
-          (input)="query.set($any($event.target).value)"
-          role="combobox"
-          aria-controls="search-results"
-          [attr.aria-expanded]="hasResults()" />
-      </div>
+      <form (submit)="submitSearch($event)">
+        <label
+          class="visually-hidden"
+          for="benefit-search">
+          Czego szukasz?
+        </label>
+        <div class="search-field">
+          <span
+            class="search-icon"
+            aria-hidden="true">
+            ⌕
+          </span>
+          <input
+            id="benefit-search"
+            [value]="query()"
+            [attr.aria-expanded]="hasResults()"
+            (input)="query.set($any($event.target).value)"
+            type="search"
+            autocomplete="off"
+            placeholder="np. kardiolog, rezonans kolana, endokrynolog dziecięcy"
+            role="combobox"
+            aria-controls="search-results" />
+          <button
+            class="search-submit"
+            type="submit">
+            Szukaj
+          </button>
+        </div>
+
+        <!-- Zasięg wyszukiwania: jeden punkt odniesienia per wyszukiwanie. -->
+        <div
+          class="scope"
+          role="radiogroup"
+          aria-label="Zasięg wyszukiwania">
+          <div class="scope-switch">
+            <button
+              [attr.aria-checked]="mode() === 'all'"
+              [class.active]="mode() === 'all'"
+              (click)="mode.set('all')"
+              type="button"
+              role="radio">
+              @if (mode() === 'all') {
+                <span aria-hidden="true">✓</span>
+              }
+              W całej Polsce - byle szybko
+            </button>
+            <button
+              [attr.aria-checked]="mode() === 'near'"
+              [class.active]="mode() === 'near'"
+              (click)="mode.set('near')"
+              type="button"
+              role="radio">
+              @if (mode() === 'near') {
+                <span aria-hidden="true">✓</span>
+              }
+              Blisko mnie
+            </button>
+          </div>
+          <label
+            class="visually-hidden"
+            for="scope-city">
+            Miejscowość lub kod pocztowy
+          </label>
+          <input
+            class="scope-city"
+            id="scope-city"
+            [class.active]="mode() === 'city'"
+            [value]="cityQuery()"
+            (focus)="mode.set('city')"
+            (input)="onCityInput($any($event.target).value)"
+            type="text"
+            autocomplete="postal-code"
+            placeholder="Miejscowość lub kod pocztowy" />
+        </div>
+
+        @if (mode() === 'near') {
+          <button
+            class="use-location"
+            (click)="submitSearch()"
+            type="button">
+            Użyj mojej lokalizacji
+          </button>
+        }
+      </form>
 
       @if (state() === 'error') {
         <p
@@ -40,15 +101,15 @@
         </p>
       } @else if (showEmptyState()) {
         <p class="search-note">
-          Brak wyników dla „{{ query() }}”. W serwisie są na razie świadczenia kardiologiczne
-          w województwie śląskim - kolejne dojdą wraz z kolejnymi pobraniami danych.
+          Brak wyników dla „{{ query() }}”. W serwisie są na razie świadczenia kardiologiczne w województwie śląskim -
+          kolejne dojdą wraz z kolejnymi pobraniami danych.
         </p>
       }
 
       @if (query().trim() !== '' && hasResults()) {
         <div
-          id="search-results"
-          class="results">
+          class="results"
+          id="search-results">
           @for (benefit of suggestions(); track benefit.slug) {
             <div class="result-group">
               <p class="result-benefit">{{ benefit.label }}</p>
@@ -79,9 +140,9 @@
         @for (item of popular(); track item.slug) {
           <a
             class="chip"
-            [href]="item.href"
-            >{{ item.label }}</a
-          >
+            [href]="item.href">
+            {{ item.label }}
+          </a>
         }
       </div>
     </section>
@@ -92,23 +153,30 @@
     <ol>
       <li>
         <span class="step">1</span>
-        <span><strong>Znajdź</strong> - wpisz problem swoimi słowami, bez nomenklatury NFZ.</span>
+        <span>
+          <strong>Znajdź</strong>
+          - wpisz problem swoimi słowami, bez nomenklatury NFZ.
+        </span>
       </li>
       <li>
         <span class="step">2</span>
-        <span><strong>Porównaj</strong> czasy oczekiwania w placówkach.</span>
+        <span>
+          <strong>Porównaj</strong>
+          czasy oczekiwania w placówkach.
+        </span>
       </li>
       <li>
         <span class="step">3</span>
-        <span
-          ><strong>Zadzwoń</strong> i umów się. Nie rezerwujemy terminów - łączymy Cię
-          z placówką.</span
-        >
+        <span>
+          <strong>Zadzwoń</strong>
+          i umów się. Nie rezerwujemy terminów - łączymy Cię z placówką.
+        </span>
       </li>
     </ol>
     <p class="source">
-      Dane pochodzą z API Narodowego Funduszu Zdrowia
-      (<a href="https://api.nfz.gov.pl/">api.nfz.gov.pl</a>) i są odświeżane raz w miesiącu.
+      Dane pochodzą z API Narodowego Funduszu Zdrowia (
+      <a href="https://api.nfz.gov.pl/">api.nfz.gov.pl</a>
+      ) i są odświeżane raz w miesiącu.
     </p>
   </aside>
 </div>

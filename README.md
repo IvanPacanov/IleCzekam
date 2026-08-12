@@ -59,9 +59,8 @@ data/
 queries/         # gotowe zapytania SQL: rankingi, udziały procentowe, zmiana m/m
 ```
 
-Sekrety i identyfikatory klienta idą wyłącznie ze zmiennych środowiskowych - wzorzec
-w [.env.example](.env.example). API NFZ nie wymaga klucza ani rejestracji, ale warto
-ustawić `NFZ_USER_AGENT` z kontaktem, żeby NFZ mógł się z nami skontaktować.
+API NFZ jest publiczne: nie wymaga klucza, rejestracji ani nagłówka identyfikującego,
+więc ETL nie potrzebuje żadnych zmiennych środowiskowych ani sekretów.
 
 ## Frontend (SSG)
 

@@ -1,0 +1,371 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "BIELSKO-BIAŁA",
+    "slug": "bielsko-biala",
+    "teryt": "2461011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 81,
+    "median_label": "ok. 12 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "122-204036-ad3eea5f",
+      "provider": "KRZYSZTOF PTAK, STANISŁAW PTAK, TOMASZ PTAK - NZOZ PRZYCHODNIA SPORTOWO-REHABILITACYJNA \"ZDROWIE\" S.C. STANISŁAW PTAK, KRZYSZTOF PTAK, TOMASZ PTAK",
+      "locality": "BIELSKO-BIAŁA",
+      "raw_days": 20,
+      "human_label": "ok. 20 dni"
+    },
+    "places_total": 10,
+    "places_with_data": 9,
+    "places_without_data": 1,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 81,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 81,
+      "places_with_data": 9
+    }
+  ],
+  "places": [
+    {
+      "id": "122-200468-50819359",
+      "provider": "BESKIDZKIE CENTRUM MEDYCZNE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MŁODZIEŻOWA 21",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 826 34 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 183,
+      "average_period_days": 74,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-202906-8c2a1953",
+      "provider": "CENTRUM CHIRURGII SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "KOMOROWICKA 23",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 812 37 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "23 dni",
+        "raw_days": 23,
+        "human_label": "ok. 23 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 32,
+      "average_period_days": 13,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-204036-ad3eea5f",
+      "provider": "KRZYSZTOF PTAK, STANISŁAW PTAK, TOMASZ PTAK - NZOZ PRZYCHODNIA SPORTOWO-REHABILITACYJNA \"ZDROWIE\" S.C. STANISŁAW PTAK, KRZYSZTOF PTAK, TOMASZ PTAK",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "IGNACEGO KRASICKIEGO 12A",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 822 32 15",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "20 dni",
+        "raw_days": 20,
+        "human_label": "ok. 20 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "16 dni",
+        "raw_days": 16,
+        "human_label": "ok. 16 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1,
+      "average_period_days": 27,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100423-a7efd2ba",
+      "provider": "OBWÓD LECZNICTWA KOLEJOWEGO - S.P.Z.O.Z. W BIELSKU-BIAŁEJ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ROMUALDA TRAUGUTTA 12",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 828 57 67",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 1 tydz.",
+        "raw_days": 127,
+        "human_label": "ok. 4 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-03"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-03"
+      },
+      "awaiting": 32,
+      "average_period_days": 79,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-202717-188b96d6",
+      "provider": "SZPITAL CHIRURGII MAŁOINWAZYJNEJ I REKONSTRUKCYJNEJ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ARMII KRAJOWEJ 180",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 816 33 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 59,
+      "average_period_days": 54,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100333-cf7bf264",
+      "provider": "SZPITAL PEDIATRYCZNY W BIELSKU-BIAŁEJ",
+      "place": "PORADNIA URAZOWO-ORTOPEDYCZNA DZIECIĘCA",
+      "address": "SOBIESKIEGO 83",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 459 599 010",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "30 dni",
+        "raw_days": 30,
+        "human_label": "ok. 30 dni",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 131,
+      "average_period_days": 57,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-212571-2750f041",
+      "provider": "SZPITAL ŚWIĘTEGO ŁUKASZA SPÓŁKA AKCYJNA",
+      "place": "PORADNIA ORTOPEDYCZNO-TRAUMATOLOGICZNA",
+      "address": "BYSTRZAŃSKA 94B",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 815 11 13",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "5 mies.",
+        "raw_days": 150,
+        "human_label": "ok. 5 miesięcy",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 123,
+      "average_period_days": 105,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100069-266064ab",
+      "provider": "SZPITAL WOJEWÓDZKI W BIELSKU-BIAŁEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "AL.ARMII KRAJOWEJ 101",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 338 102 451",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 20,
+      "average_period_days": 39,
+      "stats_month": "2026-06",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "122-100069-89adc910",
+      "provider": "SZPITAL WOJEWÓDZKI W BIELSKU-BIAŁEJ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "AL.ARMII KRAJOWEJ 101",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 810 20 35",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 180,
+      "average_period_days": 80,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100154-82bff6d6",
+      "provider": "WOJSKOWA SPECJALISTYCZNA PRZYCHODNIA LEKARSKA SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "WILLOWA 2A",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 821 02 29",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 29,
+      "average_period_days": 63,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

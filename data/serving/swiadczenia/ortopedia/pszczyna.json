@@ -1,0 +1,183 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "PSZCZYNA",
+    "slug": "pszczyna",
+    "teryt": "2410054",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 64,
+    "median_label": "ok. 9 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "121-214171-fafc9d14",
+      "provider": "SZPITAL JOANNITAS W PSZCZYNIE SAMORZĄDOWA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "locality": "PSZCZYNA",
+      "raw_days": 44,
+      "human_label": "ok. 1 miesiąc i 2 tygodnie"
+    },
+    "places_total": 4,
+    "places_with_data": 4,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 64,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 64,
+      "places_with_data": 4
+    }
+  ],
+  "places": [
+    {
+      "id": "121-208657-156cd468",
+      "provider": "\"NIEPUBLICZNY SPECJALISTYCZNY ZAKŁAD OPIEKI ZDROWOTNEJ - GABINET USŁUG MEDYCZNYCH TRAUMA-DENT\" ANDRZEJ PARTYKA SPÓŁKA KOMANDYTOWA",
+      "place": "PORADNIA ORTOPEDII DZIECI",
+      "address": "UL. SŁONECZNA 4",
+      "locality": "PSZCZYNA",
+      "teryt": "2410054",
+      "phone": "+48 32 210 55 44",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 44,
+      "average_period_days": 72,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-208657-94d41125",
+      "provider": "\"NIEPUBLICZNY SPECJALISTYCZNY ZAKŁAD OPIEKI ZDROWOTNEJ - GABINET USŁUG MEDYCZNYCH TRAUMA-DENT\" ANDRZEJ PARTYKA SPÓŁKA KOMANDYTOWA",
+      "place": "PORADNIA CHIRURGII URAZOWEJ I ORTOPEDII DOROSŁYCH",
+      "address": "UL. SŁONECZNA 4",
+      "locality": "PSZCZYNA",
+      "teryt": "2410054",
+      "phone": "+48 32 210 55 44",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "4 mies.",
+        "raw_days": 120,
+        "human_label": "ok. 4 miesiące",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 20,
+      "average_period_days": 118,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-214171-487a5116",
+      "provider": "SZPITAL JOANNITAS W PSZCZYNIE SAMORZĄDOWA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "DR. WITOLDA ANTESA 11",
+      "locality": "PSZCZYNA",
+      "teryt": "2410054",
+      "phone": "+48 32 611 53 60",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-05"
+      },
+      "wait_urgent": {
+        "pcus_raw": "29 dni",
+        "raw_days": 29,
+        "human_label": "ok. 29 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "awaiting": 85,
+      "average_period_days": 48,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-214171-fafc9d14",
+      "provider": "SZPITAL JOANNITAS W PSZCZYNIE SAMORZĄDOWA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "DR. WITOLDA ANTESA 11",
+      "locality": "PSZCZYNA",
+      "teryt": "2410054",
+      "phone": "+48 32 611 53 03",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 252,
+      "average_period_days": 47,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

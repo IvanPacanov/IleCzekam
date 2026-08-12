@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "ŚWIĘTOCHŁOWICE",
+    "slug": "swietochlowice",
+    "teryt": "2476011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 81,
+    "median_label": "ok. 12 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "121-100027-e7f3e9e6",
+      "provider": "ZESPÓŁ OPIEKI ZDROWOTNEJ W ŚWIĘTOCHŁOWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "locality": "ŚWIĘTOCHŁOWICE",
+      "raw_days": 81,
+      "human_label": "ok. 2 miesiące i 3 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 81,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 81,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "121-100027-e7f3e9e6",
+      "provider": "ZESPÓŁ OPIEKI ZDROWOTNEJ W ŚWIĘTOCHŁOWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "CHORZOWSKA 36",
+      "locality": "ŚWIĘTOCHŁOWICE",
+      "teryt": "2476011",
+      "phone": "+48 32 621 95 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 198,
+      "average_period_days": 75,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

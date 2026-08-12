@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "RAJCZA",
+    "slug": "rajcza",
+    "teryt": "2417112",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 11,
+    "median_label": "ok. 11 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "122-202200-ac8eac0f",
+      "provider": "PRAKTYKA GRUPOWA LEKARZY PODSTAWOWEJ OPIEKI ZDROWOTNEJ R.MATONÓG I A.MATONÓG S.C.",
+      "locality": "RAJCZA",
+      "raw_days": 11,
+      "human_label": "ok. 11 dni"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 11,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 11,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "122-202200-ac8eac0f",
+      "provider": "PRAKTYKA GRUPOWA LEKARZY PODSTAWOWEJ OPIEKI ZDROWOTNEJ R.MATONÓG I A.MATONÓG S.C.",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "RYNEK  2A",
+      "locality": "RAJCZA",
+      "teryt": "2417112",
+      "phone": "+48 33 864 30 18",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "11 dni",
+        "raw_days": 11,
+        "human_label": "ok. 11 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "8 dni",
+        "raw_days": 8,
+        "human_label": "ok. 8 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 46,
+      "average_period_days": 8,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "BIELSKO-BIAŁA",
+    "slug": "bielsko-biala",
+    "teryt": "2461011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": null,
+    "median_label": "brak danych",
+    "median_bucket": "brak_danych",
+    "fastest": null,
+    "places_total": 1,
+    "places_with_data": 0,
+    "places_without_data": 1,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": null,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": null,
+      "places_with_data": 0
+    }
+  ],
+  "places": [
+    {
+      "id": "122-100069-bd48d22f",
+      "provider": "SZPITAL WOJEWÓDZKI W BIELSKU-BIAŁEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "AL.ARMII KRAJOWEJ 101",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 338 102 451",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 40,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    }
+  ]
+}

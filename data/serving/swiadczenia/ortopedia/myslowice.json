@@ -1,0 +1,183 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "MYSŁOWICE",
+    "slug": "myslowice",
+    "teryt": "2470011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 94,
+    "median_label": "ok. 3 miesiące",
+    "median_bucket": "dlugo",
+    "fastest": {
+      "place_id": "121-210377-a45a4473",
+      "provider": "NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ \"ORTO-MEDIC\" SP. Z O.O.",
+      "locality": "MYSŁOWICE",
+      "raw_days": 23,
+      "human_label": "ok. 23 dni"
+    },
+    "places_total": 4,
+    "places_with_data": 4,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 94,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 94,
+      "places_with_data": 4
+    }
+  ],
+  "places": [
+    {
+      "id": "121-212521-dfca7ea3",
+      "provider": "FUNDACJA \"UNIA BRACKA\"",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "EDMUNDA OSMAŃCZYKA 4",
+      "locality": "MYSŁOWICE",
+      "teryt": "2470011",
+      "phone": "+48 322 239 286",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 1 tydz.",
+        "raw_days": 97,
+        "human_label": "ok. 3 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 116,
+      "average_period_days": 47,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-210377-a45a4473",
+      "provider": "NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ \"ORTO-MEDIC\" SP. Z O.O.",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ŚWIERCZYNY  1",
+      "locality": "MYSŁOWICE",
+      "teryt": "2470011",
+      "phone": "+48 32 223 41 73",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "23 dni",
+        "raw_days": 23,
+        "human_label": "ok. 23 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "17 dni",
+        "raw_days": 17,
+        "human_label": "ok. 17 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 111,
+      "average_period_days": 28,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-107024-fa28a624",
+      "provider": "SP ZOZ SZPITAL NR 2 IM. DR. TADEUSZA BOCZONIA W MYSŁOWICACH",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BYTOMSKA 41",
+      "locality": "MYSŁOWICE",
+      "teryt": "2470011",
+      "phone": "+48 723 183 348",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-09"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-09"
+      },
+      "awaiting": 28,
+      "average_period_days": 47,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-107024-4988b82b",
+      "provider": "SP ZOZ SZPITAL NR 2 IM. DR. TADEUSZA BOCZONIA W MYSŁOWICACH",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BYTOMSKA 41",
+      "locality": "MYSŁOWICE",
+      "teryt": "2470011",
+      "phone": "+48 723 183 332",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "6 mies.",
+        "raw_days": 180,
+        "human_label": "ok. 6 miesięcy",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 19,
+      "average_period_days": 173,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

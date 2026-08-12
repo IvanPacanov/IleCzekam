@@ -1,10 +1,6 @@
 <app-site-header />
 
-<p class="data-notice">
-  <span aria-hidden="true">ⓘ</span>
-  Dane NFZ za {{ snapshotAfterZa() }}, aktualizowane raz w miesiącu.
-  Przed wizytą potwierdź termin telefonicznie w placówce.
-</p>
+<app-data-notice [month]="serving().snapshot_month" />
 
 <div class="page">
   <main class="main">

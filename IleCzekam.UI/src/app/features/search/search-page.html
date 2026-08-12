@@ -1,0 +1,179 @@
+<app-site-header>
+  <div class="header-search">
+    <form
+      class="header-form"
+      (submit)="resubmit($event, headerInput.value)">
+      <label
+        class="visually-hidden"
+        for="header-search-input">
+        Czego szukasz?
+      </label>
+      <div class="header-field">
+        <span
+          class="search-icon"
+          aria-hidden="true">
+          ⌕
+        </span>
+        <input
+          id="header-search-input"
+          #headerInput
+          [value]="q()"
+          type="search"
+          autocomplete="off"
+          placeholder="np. kardiolog, rezonans kolana" />
+      </div>
+    </form>
+
+    @if (chipCity(); as chip) {
+      <button
+        class="city-chip"
+        (click)="clearCity()"
+        type="button">
+        {{ chip }}
+        <span aria-hidden="true">×</span>
+        <span class="visually-hidden">- usuń filtr miejscowości</span>
+      </button>
+    }
+  </div>
+</app-site-header>
+
+<app-data-notice [month]="snapshotMonth()" />
+
+<div class="page">
+  <aside class="side">
+    <section
+      class="filters"
+      aria-label="Filtry">
+      <h2 class="panel-title">Filtry</h2>
+
+      <!-- Kolejność z projektu: Przypadek → Promień → Sortowanie. -->
+      <p class="metric-label">Przypadek</p>
+      <div
+        class="case-switch"
+        role="group"
+        aria-label="Rodzaj przypadku">
+        <button
+          [class.active]="!urgent()"
+          (click)="urgent.set(false)"
+          type="button">
+          @if (!urgent()) {
+            <span aria-hidden="true">✓</span>
+          }
+          Stabilny
+        </button>
+        <button
+          [disabled]="!urgentAvailable()"
+          [class.active]="urgent()"
+          (click)="urgent.set(true)"
+          type="button">
+          Pilny
+        </button>
+      </div>
+      <p class="filter-note">„Pilny” dotyczy skierowań z adnotacją cito.</p>
+
+      @if (reference() !== null) {
+        <p class="metric-label">Promień</p>
+        <div
+          class="radius"
+          role="group"
+          aria-label="Promień wyszukiwania">
+          @for (option of radiusOptions; track option.label) {
+            <button
+              [class.active]="radius() === option.value"
+              (click)="setRadius(option.value)"
+              type="button">
+              {{ option.label }}
+            </button>
+          }
+        </div>
+
+        <p class="metric-label">Sortowanie</p>
+        <div
+          class="sorting"
+          role="group"
+          aria-label="Sortowanie">
+          <button
+            [class.active]="sort() === 'fastest'"
+            (click)="sort.set('fastest')"
+            type="button">
+            @if (sort() === 'fastest') {
+              <span aria-hidden="true">✓</span>
+            }
+            Najkrótszy czas
+          </button>
+          <button
+            [class.active]="sort() === 'nearest'"
+            (click)="sort.set('nearest')"
+            type="button">
+            @if (sort() === 'nearest') {
+              <span aria-hidden="true">✓</span>
+            }
+            Najbliżej mnie
+          </button>
+        </div>
+      }
+    </section>
+
+    @if (travelHint(); as hint) {
+      <app-travel-hint
+        class="hint-desktop"
+        [data]="hint"
+        (showAll)="showAllPoland()" />
+    }
+  </aside>
+
+  <main class="main">
+    <h1>{{ heading() }}</h1>
+
+    @if (indexState() === 'error' || dataState() === 'error') {
+      <p
+        class="note"
+        role="alert">
+        Nie udało się wczytać danych - odśwież stronę.
+      </p>
+    } @else if (q() === '') {
+      <p class="note">Wpisz, czego szukasz - np. „kardiolog” albo „endoproteza kolana”.</p>
+    } @else if (indexState() === 'ready' && benefit() === null) {
+      <p class="note">
+        Brak wyników dla „{{ q() }}”. W serwisie są na razie świadczenia kardiologiczne i ortopedyczne w województwie
+        śląskim - kolejne dojdą wraz z danymi.
+      </p>
+    } @else if (data() === null) {
+      <p class="note">Wczytuję placówki…</p>
+    } @else {
+      <p class="subline">{{ subline() }}</p>
+
+      @if (geoDenied() && mode() === 'near') {
+        <p class="note">
+          Nie mamy dostępu do Twojej lokalizacji - pokazujemy wyniki z całej Polski. Możesz też wpisać miejscowość na
+          stronie głównej.
+        </p>
+      }
+      @if (cityNotFound()) {
+        <p class="note">
+          Nie znaleźliśmy placówek tego świadczenia w „{{ cityParam() }}” - pokazujemy wyniki z całej Polski.
+        </p>
+      }
+
+      <div class="results">
+        @for (row of rows(); track row.place.id) {
+          <app-place-card
+            [place]="row.place"
+            [snapshotMonth]="snapshotMonth() ?? ''"
+            [urgent]="urgent() && row.place.wait_urgent !== null"
+            [distance]="row.distanceLabel" />
+
+          <!-- Mobile: boks „Gotów wyjechać?” po 3. karcie. -->
+          @if ($index === 2 && travelHint(); as hint) {
+            <app-travel-hint
+              class="hint-mobile"
+              [data]="hint"
+              (showAll)="showAllPoland()" />
+          }
+        } @empty {
+          <p class="note">Brak placówek w tym zasięgu. Zwiększ promień albo pokaż całą Polskę.</p>
+        }
+      </div>
+    }
+  </main>
+</div>

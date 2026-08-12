@@ -1,0 +1,125 @@
+{
+  "benefit": {
+    "slug": "endoproteza-rewizja",
+    "label": "Wymiana endoprotezy (rewizja)",
+    "nfz_benefits": [
+      "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "JAWORZNO",
+    "slug": "jaworzno",
+    "teryt": "2468011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 44,
+    "median_label": "ok. 6 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "125-100178-5b6f023c",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "locality": "JAWORZNO",
+      "raw_days": 44,
+      "human_label": "ok. 1 miesiąc i 2 tygodnie"
+    },
+    "places_total": 2,
+    "places_with_data": 1,
+    "places_without_data": 1,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 44,
+    "province_median_days": 51,
+    "best_city_in_province": {
+      "name": "CZĘSTOCHOWA",
+      "slug": "czestochowa",
+      "median_days": 44,
+      "median_label": "ok. 6 tygodni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 44,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "125-100178-e09e8d4a",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "125-100178-5b6f023c",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

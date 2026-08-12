@@ -9,7 +9,7 @@ node_modules/
 dist/
 .angular/cache/
 
-# Sekrety - klucze API wyłącznie ze zmiennych środowiskowych
+# Sekrety (na razie żadne nie są potrzebne - API NFZ jest publiczne)
 .env
 .env.local
 
@@ -29,3 +29,4 @@ data/analytics.sqlite
 
 # Generowane przed buildem z data/serving
 IleCzekam.UI/public/search-index.json
+IleCzekam.UI/public/serving/

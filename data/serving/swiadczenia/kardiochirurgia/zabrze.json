@@ -1,0 +1,160 @@
+{
+  "benefit": {
+    "slug": "kardiochirurgia",
+    "label": "Kardiochirurgia",
+    "nfz_benefits": [
+      "ODDZIAŁ KARDIOCHIRURGICZNY",
+      "ODDZIAŁ KARDIOCHIRURGICZNY DLA DZIECI",
+      "PORADNIA KARDIOCHIRURGICZNA",
+      "PORADNIA KARDIOCHIRURGICZNA DLA DZIECI"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "ZABRZE",
+    "slug": "zabrze",
+    "teryt": "2478011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 67,
+    "median_label": "ok. 10 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "126-101003-aa404c7e",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "locality": "ZABRZE",
+      "raw_days": 67,
+      "human_label": "ok. 2 miesiące i 1 tydzień"
+    },
+    "places_total": 3,
+    "places_with_data": 1,
+    "places_without_data": 2,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 67,
+    "province_median_days": 51,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 5,
+      "median_label": "ok. 5 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 67,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "126-101003-01269b38",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "ODDZIAŁ KARDIOCHIRURGII, TRANSPLANTACJI SERCA I MECHANICZNEGO WSPOMAGANIA KRĄŻENIA U DZIECI",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 479 34 73",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ KARDIOCHIRURGICZNY DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 14,
+      "average_period_days": 41,
+      "stats_month": "2026-06",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "126-101003-aa404c7e",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "ODDZIAŁ KARDIOCHIRURGII, TRANSPLANTACJI SERCA I PŁUC ORAZ MECHANICZNEGO WSPOMAGANIA KRĄŻENIA",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 479 34 66",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOCHIRURGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-01"
+      },
+      "wait_urgent": {
+        "pcus_raw": "5 dni",
+        "raw_days": 5,
+        "human_label": "ok. 5 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-01"
+      },
+      "awaiting": 4,
+      "average_period_days": 116,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "126-101003-35ac330b",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "PORADNIA KARDIOCHIRURGICZNA",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 275 36 43",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "PORADNIA KARDIOCHIRURGICZNA",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 59,
+      "average_period_days": 13,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    }
+  ]
+}

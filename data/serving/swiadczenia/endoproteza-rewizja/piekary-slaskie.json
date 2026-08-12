@@ -1,0 +1,123 @@
+{
+  "benefit": {
+    "slug": "endoproteza-rewizja",
+    "label": "Wymiana endoprotezy (rewizja)",
+    "nfz_benefits": [
+      "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "PIEKARY ŚLĄSKIE",
+    "slug": "piekary-slaskie",
+    "teryt": "2471011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 206,
+    "median_label": "ok. 7 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "121-100358-0fe5f4b7",
+      "provider": "SAMODZIELNY PUBLICZNY WOJEWÓDZKI SZPITAL CHIRURGII URAZOWEJ IM.DR J. DAABA",
+      "locality": "PIEKARY ŚLĄSKIE",
+      "raw_days": 171,
+      "human_label": "ok. 5 miesięcy i 3 tygodnie"
+    },
+    "places_total": 2,
+    "places_with_data": 2,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 206,
+    "province_median_days": 51,
+    "best_city_in_province": {
+      "name": "CZĘSTOCHOWA",
+      "slug": "czestochowa",
+      "median_days": 44,
+      "median_label": "ok. 6 tygodni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 206,
+      "places_with_data": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "121-100358-a3baa8e6",
+      "provider": "SAMODZIELNY PUBLICZNY WOJEWÓDZKI SZPITAL CHIRURGII URAZOWEJ IM.DR J. DAABA",
+      "place": "ODDZIAŁ I URAZOWO-ORTOPEDYCZNY",
+      "address": "BYTOMSKA  62",
+      "locality": "PIEKARY ŚLĄSKIE",
+      "teryt": "2471011",
+      "phone": "+48 32 393 41 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "8 mies.",
+        "raw_days": 240,
+        "human_label": "ok. 8 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 83,
+      "average_period_days": 219,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100358-0fe5f4b7",
+      "provider": "SAMODZIELNY PUBLICZNY WOJEWÓDZKI SZPITAL CHIRURGII URAZOWEJ IM.DR J. DAABA",
+      "place": "ODDZIAŁ I URAZOWO-ORTOPEDYCZNY",
+      "address": "BYTOMSKA  62",
+      "locality": "PIEKARY ŚLĄSKIE",
+      "teryt": "2471011",
+      "phone": "+48 32 393 41 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "5 mies. 3 tyg.",
+        "raw_days": 171,
+        "human_label": "ok. 5 miesięcy i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "5 mies. 1 tydz.",
+        "raw_days": 157,
+        "human_label": "ok. 5 miesięcy i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 43,
+      "average_period_days": 183,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

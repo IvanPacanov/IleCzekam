@@ -49,16 +49,7 @@ static async Task<int> RunFetchAsync(string[] args)
     IReadOnlyList<BenefitConfig> selected = ResolveBenefits(benefits, benefitsArg);
     IReadOnlyList<string> provinces = ResolveProvinces(settings, provincesArg);
 
-    // Regulamin API nie wymaga klucza, ale identyfikacja klienta pozwala NFZ skontaktować się
-    // z nami zamiast blokować ruch. Bez zmiennej - działamy, tylko głośno o tym mówimy.
-    string? userAgent = Environment.GetEnvironmentVariable(settings.Api.UserAgentEnv);
-    if (string.IsNullOrWhiteSpace(userAgent))
-    {
-        userAgent = "ileczekam.pl/0.1 (+https://ileczekam.pl)";
-        Console.WriteLine($"Uwaga: brak {settings.Api.UserAgentEnv} w env - używam domyślnego User-Agent bez kontaktu.");
-    }
-
-    using NfzHttpClient http = new(settings.Api, userAgent);
+    using NfzHttpClient http = new(settings.Api);
     FetchCommand fetch = new(http, new RawStore(settings.Paths.Raw), settings);
 
     return await fetch.RunAsync(selected, provinces, DateTimeOffset.Now, CancellationToken.None);

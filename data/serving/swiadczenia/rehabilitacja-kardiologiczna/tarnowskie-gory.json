@@ -1,0 +1,126 @@
+{
+  "benefit": {
+    "slug": "rehabilitacja-kardiologiczna",
+    "label": "Rehabilitacja kardiologiczna",
+    "nfz_benefits": [
+      "REHABILITACJA KARDIOLOGICZNA W WARUNKACH STACJONARNYCH",
+      "KARDIOLOGICZNA TELEREHABILITACJA HYBRYDOWA W WARUNKACH STACJONARNYCH",
+      "ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ",
+      "ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ DZIENNEJ",
+      "PORADNIA REHABILITACJI KARDIOLOGICZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "TARNOWSKIE GÓRY",
+    "slug": "tarnowskie-gory",
+    "teryt": "2413041",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 29,
+    "median_label": "ok. 29 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "126-100143-bbb4640e",
+      "provider": "\"REPTY\" GÓRNOŚLĄSKIE CENTRUM REHABILITACJI IM. GEN. JERZEGO ZIĘTKA",
+      "locality": "TARNOWSKIE GÓRY",
+      "raw_days": 21,
+      "human_label": "ok. 21 dni"
+    },
+    "places_total": 2,
+    "places_with_data": 2,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 29,
+    "province_median_days": 21,
+    "best_city_in_province": {
+      "name": "CZĘSTOCHOWA",
+      "slug": "czestochowa",
+      "median_days": 10,
+      "median_label": "ok. 10 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 29,
+      "places_with_data": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "126-100143-bbb4640e",
+      "provider": "\"REPTY\" GÓRNOŚLĄSKIE CENTRUM REHABILITACJI IM. GEN. JERZEGO ZIĘTKA",
+      "place": "II ODDZIAŁ REHABILITACJI KARDIOLOGICZNEJ",
+      "address": "JANA ŚNIADECKIEGO 1",
+      "locality": "TARNOWSKIE GÓRY",
+      "teryt": "2413041",
+      "phone": "+48 32 390 13 03",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REHABILITACJA KARDIOLOGICZNA W WARUNKACH STACJONARNYCH",
+      "wait_stable": {
+        "pcus_raw": "21 dni",
+        "raw_days": 21,
+        "human_label": "ok. 21 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "12 dni",
+        "raw_days": 12,
+        "human_label": "ok. 12 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 26,
+      "average_period_days": 28,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-100143-c87da0ec",
+      "provider": "\"REPTY\" GÓRNOŚLĄSKIE CENTRUM REHABILITACJI IM. GEN. JERZEGO ZIĘTKA",
+      "place": "I ODDZIAŁ REHABILITACJI KARDIOLOGICZNEJ",
+      "address": "JANA ŚNIADECKIEGO 1",
+      "locality": "TARNOWSKIE GÓRY",
+      "teryt": "2413041",
+      "phone": "+48 32 390 13 03",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REHABILITACJA KARDIOLOGICZNA W WARUNKACH STACJONARNYCH",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 93,
+      "average_period_days": 36,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

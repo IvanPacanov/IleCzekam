@@ -1,0 +1,245 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "JASTRZĘBIE-ZDRÓJ",
+    "slug": "jastrzebie-zdroj",
+    "teryt": "2467011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 25,
+    "median_label": "ok. 25 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "124-201002-7a23ec2e",
+      "provider": "FUNDACJA OCHRONY ZDROWIA I POMOCY SPOŁECZNEJ W JASTRZĘBIU-ZDROJU",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "raw_days": 19,
+      "human_label": "ok. 19 dni"
+    },
+    "places_total": 6,
+    "places_with_data": 6,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 25,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 25,
+      "places_with_data": 6
+    }
+  ],
+  "places": [
+    {
+      "id": "124-200998-0e924d9d",
+      "provider": "\"MEDICOR\" SP.Z O.O.",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "WIELKOPOLSKA 2A",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 661 831 052",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "17 dni",
+        "raw_days": 17,
+        "human_label": "ok. 17 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 90,
+      "average_period_days": 27,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-201002-7a23ec2e",
+      "provider": "FUNDACJA OCHRONY ZDROWIA I POMOCY SPOŁECZNEJ W JASTRZĘBIU-ZDROJU",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "WĘGLOWA 4C",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 756 11 57",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "19 dni",
+        "raw_days": 19,
+        "human_label": "ok. 19 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "13 dni",
+        "raw_days": 13,
+        "human_label": "ok. 13 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 36,
+      "average_period_days": 17,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-201002-78507b0f",
+      "provider": "FUNDACJA OCHRONY ZDROWIA I POMOCY SPOŁECZNEJ W JASTRZĘBIU-ZDROJU",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "GÓRNICZA 44",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 756 32 35",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "13 dni",
+        "raw_days": 13,
+        "human_label": "ok. 13 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 115,
+      "average_period_days": 27,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-207724-1f40a158",
+      "provider": "LECZNICZO-REHABILITACYJNY NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ ORTHOGON SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "WODECKIEGO 23",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 756 51 07",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "22 dni",
+        "raw_days": 22,
+        "human_label": "ok. 22 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 75,
+      "average_period_days": 36,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100448-a84e4cc9",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA JANA PAWŁA II 7",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 478 44 91",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "7 mies.",
+        "raw_days": 210,
+        "human_label": "ok. 7 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-07-09"
+      },
+      "wait_urgent": {
+        "pcus_raw": "30 dni",
+        "raw_days": 30,
+        "human_label": "ok. 30 dni",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-09"
+      },
+      "awaiting": 244,
+      "average_period_days": 202,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "124-100448-a288a56f",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "place": "PORADNIA URAZOWO-ORTOPEDYCZNA",
+      "address": "ALEJA JANA PAWŁA II 7",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 478 42 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "18 dni",
+        "raw_days": 18,
+        "human_label": "ok. 18 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 131,
+      "average_period_days": 26,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

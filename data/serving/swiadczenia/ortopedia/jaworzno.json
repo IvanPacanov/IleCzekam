@@ -1,0 +1,214 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "JAWORZNO",
+    "slug": "jaworzno",
+    "teryt": "2468011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 29,
+    "median_label": "ok. 29 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "125-208040-15a92f34",
+      "provider": "PRZEDSIĘBIORSTWO ŚWIADCZEŃ ZDROWOTNYCH I PROMOCJI ZDROWIA ELVITA - JAWORZNO III SP. Z O.O.",
+      "locality": "JAWORZNO",
+      "raw_days": 17,
+      "human_label": "ok. 17 dni"
+    },
+    "places_total": 5,
+    "places_with_data": 5,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 29,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 29,
+      "places_with_data": 5
+    }
+  ],
+  "places": [
+    {
+      "id": "125-208040-15a92f34",
+      "provider": "PRZEDSIĘBIORSTWO ŚWIADCZEŃ ZDROWOTNYCH I PROMOCJI ZDROWIA ELVITA - JAWORZNO III SP. Z O.O.",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "GWARKÓW 1",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 754 93 92",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "17 dni",
+        "raw_days": 17,
+        "human_label": "ok. 17 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 dni",
+        "raw_days": 9,
+        "human_label": "ok. 9 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 125,
+      "average_period_days": 14,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-208040-a02e0fb6",
+      "provider": "PRZEDSIĘBIORSTWO ŚWIADCZEŃ ZDROWOTNYCH I PROMOCJI ZDROWIA ELVITA - JAWORZNO III SP. Z O.O.",
+      "place": "PORADNIA ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU DLA DZIECI",
+      "address": "GWARKÓW 1",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 754 93 92",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "29 dni",
+        "raw_days": 29,
+        "human_label": "ok. 29 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "18 dni",
+        "raw_days": 18,
+        "human_label": "ok. 18 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 14,
+      "average_period_days": 23,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100178-d5b95175",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-04"
+      },
+      "wait_urgent": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-04"
+      },
+      "awaiting": 646,
+      "average_period_days": 129,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100178-ecd46b3f",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 317 45 52",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "13 dni",
+        "raw_days": 13,
+        "human_label": "ok. 13 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 152,
+      "average_period_days": 27,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-208647-0587360b",
+      "provider": "ZESPÓŁ LECZNICTWA OTWARTEGO SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "GRUNWALDZKA 235",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 34 79",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "26 dni",
+        "raw_days": 26,
+        "human_label": "ok. 26 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "18 dni",
+        "raw_days": 18,
+        "human_label": "ok. 18 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 98,
+      "average_period_days": 21,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

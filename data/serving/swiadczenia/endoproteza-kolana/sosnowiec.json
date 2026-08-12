@@ -1,0 +1,122 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "SOSNOWIEC",
+    "slug": "sosnowiec",
+    "teryt": "2475011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 397,
+    "median_label": "ok. 13 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "125-100468-97e9685f",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "locality": "SOSNOWIEC",
+      "raw_days": 247,
+      "human_label": "ok. 8 miesięcy i 1 tydzień"
+    },
+    "places_total": 2,
+    "places_with_data": 2,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 397,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 397,
+      "places_with_data": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "125-111151-373f5191",
+      "provider": "SOSNOWIECKI SZPITAL MIEJSKI SPÓŁKA Z O.O. W RESTRUKTURYZACJI",
+      "place": "ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII ARTROSKOPOWEJ",
+      "address": "EMILA ZEGADŁOWICZA 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 04 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "18 mies. 1 tydz.",
+        "raw_days": 547,
+        "human_label": "ok. 18 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 315,
+      "average_period_days": 340,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100468-97e9685f",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "place": "KLINICZNY ODDZIAŁ CHIRURGII ORTOPEDYCZNO-URAZOWEJ, ONKOLOGICZNEJ I REKONSTRUKCYJNEJ",
+      "address": "PLAC MEDYKÓW 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 368 25 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "8 mies. 1 tydz.",
+        "raw_days": 247,
+        "human_label": "ok. 8 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 147,
+      "average_period_days": 222,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "BYTOM",
+    "slug": "bytom",
+    "teryt": "2462011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 817,
+    "median_label": "ok. 27 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "121-100463-5ce85aeb",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 4 W BYTOMIU",
+      "locality": "BYTOM",
+      "raw_days": 817,
+      "human_label": "ok. 27 miesięcy i 1 tydzień"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 817,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 817,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "121-100463-5ce85aeb",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 4 W BYTOMIU",
+      "place": "ODDZIAŁ ORTOPEDYCZNO-URAZOWY",
+      "address": "ALEJA LEGIONÓW 10",
+      "locality": "BYTOM",
+      "teryt": "2462011",
+      "phone": "+48 32 281 02 71 wew. 4230",
+      "latitude": 18.9123,
+      "longitude": 50.3539,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "27 mies. 1 tydz.",
+        "raw_days": 817,
+        "human_label": "ok. 27 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 844,
+      "average_period_days": 973,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

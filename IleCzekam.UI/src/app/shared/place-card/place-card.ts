@@ -8,7 +8,7 @@ import {
   peopleWaiting,
   phoneDisplay,
   phoneHref,
-  titleCasePl,
+  titleCasePl
 } from '@shared/format/pl-format';
 
 /**
@@ -24,10 +24,10 @@ import {
   imports: [WaitPill],
   host: {
     '[class.no-data]': 'hasNoData()',
-    '[class.urgent]': 'urgent()',
+    '[class.urgent]': 'urgent()'
   },
   templateUrl: './place-card.html',
-  styleUrl: './place-card.scss',
+  styleUrl: './place-card.scss'
 })
 export class PlaceCard {
   readonly place = input.required<Place>();
@@ -36,6 +36,12 @@ export class PlaceCard {
   /** Karta pokazuje kolejkę pilną zamiast stabilnej. */
   readonly urgent = input(false);
   readonly pillSize = input<'sm' | 'md'>('md');
+  /**
+   * Gotowa etykieta odległości („12 km od Gliwic” / „1,2 km od Ciebie”).
+   * Punkt odniesienia ustala widok RAZ per wyszukiwanie - karta go nie zna,
+   * więc nie może wyprodukować miksu wariantów na jednej liście.
+   */
+  readonly distance = input<string | null>(null);
 
   protected readonly wait = computed(() => {
     const place = this.place();
@@ -51,15 +57,11 @@ export class PlaceCard {
     // `place` bywa pustą nazwą komórki albo powtórzeniem nazwy świadczenia -
     // wtedy sam świadczeniodawca niesie więcej informacji.
     return titleCasePl(
-      place.place === '' || place.place === place.nfz_benefit
-        ? place.provider
-        : `${place.provider} - ${place.place}`,
+      place.place === '' || place.place === place.nfz_benefit ? place.provider : `${place.provider} - ${place.place}`
     );
   });
 
-  protected readonly address = computed(() =>
-    titleCasePl(`${this.place().address}, ${this.place().locality}`),
-  );
+  protected readonly address = computed(() => titleCasePl(`${this.place().address}, ${this.place().locality}`));
 
   protected readonly stats = computed(() => {
     const place = this.place();

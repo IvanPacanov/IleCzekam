@@ -1,0 +1,276 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "ZABRZE",
+    "slug": "zabrze",
+    "teryt": "2478011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 74,
+    "median_label": "ok. 11 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "126-208835-c01c637d",
+      "provider": "ARTMED SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "ZABRZE",
+      "raw_days": 37,
+      "human_label": "ok. 1 miesiąc i 1 tydzień"
+    },
+    "places_total": 7,
+    "places_with_data": 7,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 74,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 74,
+      "places_with_data": 7
+    }
+  ],
+  "places": [
+    {
+      "id": "126-208835-c01c637d",
+      "provider": "ARTMED SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "HENRYKA SIENKIEWICZA 28",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 271 20 65",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-03"
+      },
+      "wait_urgent": {
+        "pcus_raw": "21 dni",
+        "raw_days": 21,
+        "human_label": "ok. 21 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-03"
+      },
+      "awaiting": 389,
+      "average_period_days": 29,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-208532-5996e358",
+      "provider": "CENTRUM MEDYCZNE \"HEL-MED\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "PŁK. FRANCISZKA NIEPOKÓLCZYCKIEGO 36",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 272 20 10",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 161,
+      "average_period_days": 54,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-200888-03ddacb2",
+      "provider": "CENTRUM MEDYCZNE \"SILESIANA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA  CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "UL.SZYBOWA 2 A",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 274 47 57",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "29 dni",
+        "raw_days": 29,
+        "human_label": "ok. 29 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 42,
+      "average_period_days": 70,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212521-6877b554",
+      "provider": "FUNDACJA \"UNIA BRACKA\"",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "KS. JANA DZIERŻONA 11 A",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 707 67 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "27 dni",
+        "raw_days": 27,
+        "human_label": "ok. 27 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 275,
+      "average_period_days": 37,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-210672-a87ee9e3",
+      "provider": "SANVIMED CENTRUM MEDYCZNE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "STANISŁAWA MONIUSZKI 78",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 271 04 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 128,
+      "average_period_days": 73,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-212018-63dd0f24",
+      "provider": "SZPITAL MIEJSKI W ZABRZU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ZAMKOWA 4",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 277 61 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "20 mies. 3 tyg.",
+        "raw_days": 621,
+        "human_label": "ok. 20 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 mies.",
+        "raw_days": 330,
+        "human_label": "ok. 11 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 338,
+      "average_period_days": 399,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-212018-397cc6f1",
+      "provider": "SZPITAL MIEJSKI W ZABRZU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA URAZOWO-ORTOPEDYCZNA",
+      "address": "ZAMKOWA 4",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 277 61 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "7 mies.",
+        "raw_days": 210,
+        "human_label": "ok. 7 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 187,
+      "average_period_days": 161,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

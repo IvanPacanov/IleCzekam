@@ -23,6 +23,59 @@ benefits:
     nfz_benefits:
       - ODDZIAŁ KARDIOLOGICZNY                    # 29 placówek, 18 miejscowości
 
+  - slug: ortopedia
+    label: Ortopeda
+    synonyms:
+      - ortopeda
+      - kolano
+      - biodro
+      - kręgosłup
+      - złamanie
+      - uraz
+      - staw
+    nfz_benefits:
+      - ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU  # 158 placówek
+      - ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ                        # 37
+
+  # Endoprotezoplastyka rozbita po stawie, a nie zebrana w jedno: kolejka na biodro
+  # i na kolano to osobne listy oczekujących, więc wspólna mediana gubiłaby informację,
+  # po którą pacjent tu przychodzi. Rewizje (reoperacje) to trzecie, odrębne pytanie.
+  - slug: endoproteza-biodra
+    label: Endoproteza biodra
+    synonyms:
+      - wymiana biodra
+      - proteza biodra
+      - staw biodrowy
+    nfz_benefits:
+      - ENDOPROTEZOPLASTYKA STAWU BIODROWEGO       # 32 placówki
+
+  - slug: endoproteza-kolana
+    label: Endoproteza kolana
+    synonyms:
+      - wymiana kolana
+      - proteza kolana
+      - staw kolanowy
+    nfz_benefits:
+      - ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO       # 32
+
+  - slug: endoproteza-rewizja
+    label: Wymiana endoprotezy (rewizja)
+    synonyms:
+      - reoperacja endoprotezy
+      - poluzowana endoproteza
+      - wymiana protezy
+    nfz_benefits:
+      - REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO   # 21
+      - REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO   # 21
+
+  - slug: ortopedia-dziecieca
+    label: Ortopeda dziecięcy
+    synonyms:
+      - ortopeda dziecięcy
+      - wady postawy
+    nfz_benefits:
+      - ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI             # 5
+
   - slug: kardiologia-dziecieca
     label: Kardiologia dziecięca - oddział szpitalny
     synonyms:

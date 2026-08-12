@@ -1,0 +1,152 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "ZAWIERCIE",
+    "slug": "zawiercie",
+    "teryt": "2416021",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 74,
+    "median_label": "ok. 11 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "125-100597-cd2da058",
+      "provider": "SZPITAL POWIATOWY W ZAWIERCIU",
+      "locality": "ZAWIERCIE",
+      "raw_days": 60,
+      "human_label": "ok. 2 miesiące"
+    },
+    "places_total": 3,
+    "places_with_data": 3,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 74,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 74,
+      "places_with_data": 3
+    }
+  ],
+  "places": [
+    {
+      "id": "125-100597-dbf2a5b5",
+      "provider": "SZPITAL POWIATOWY W ZAWIERCIU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIODOWA 14",
+      "locality": "ZAWIERCIE",
+      "teryt": "2416021",
+      "phone": "+48 32 674 02 83",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-09"
+      },
+      "wait_urgent": {
+        "pcus_raw": "23 dni",
+        "raw_days": 23,
+        "human_label": "ok. 23 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-09"
+      },
+      "awaiting": 162,
+      "average_period_days": 71,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "125-100597-cd2da058",
+      "provider": "SZPITAL POWIATOWY W ZAWIERCIU",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "POWSTAŃCÓW ŚLĄSKICH 8",
+      "locality": "ZAWIERCIE",
+      "teryt": "2416021",
+      "phone": "+48 32 672 34 45",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "20 dni",
+        "raw_days": 20,
+        "human_label": "ok. 20 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 206,
+      "average_period_days": 33,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100597-3111f65c",
+      "provider": "SZPITAL POWIATOWY W ZAWIERCIU",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIODOWA 14",
+      "locality": "ZAWIERCIE",
+      "teryt": "2416021",
+      "phone": "+48 32 674 02 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 221,
+      "average_period_days": 72,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

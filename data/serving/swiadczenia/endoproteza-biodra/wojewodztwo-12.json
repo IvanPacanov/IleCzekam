@@ -1,0 +1,1054 @@
+{
+  "benefit": {
+    "slug": "endoproteza-biodra",
+    "label": "Endoproteza biodra",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO"
+    ]
+  },
+  "scope": {
+    "type": "wojewodztwo",
+    "name": "śląskie",
+    "slug": "wojewodztwo-12",
+    "teryt": null,
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 360,
+    "median_label": "ok. 12 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "123-210439-9545a891",
+      "provider": "SCANMED SPÓŁKA AKCYJNA",
+      "locality": "BLACHOWNIA",
+      "raw_days": 51,
+      "human_label": "ok. 1 miesiąc i 3 tygodnie"
+    },
+    "places_total": 32,
+    "places_with_data": 30,
+    "places_without_data": 2,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 360,
+    "province_median_days": 360,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 644,
+      "median_label": "ok. 21 miesięcy",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 360,
+      "places_with_data": 30
+    }
+  ],
+  "places": [
+    {
+      "id": "122-100069-f123b8db",
+      "provider": "SZPITAL WOJEWÓDZKI W BIELSKU-BIAŁEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "AL.ARMII KRAJOWEJ 101",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 338 102 451",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "14 mies. 1 tydz.",
+        "raw_days": 427,
+        "human_label": "ok. 14 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "10 mies. 1 tydz.",
+        "raw_days": 307,
+        "human_label": "ok. 10 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 31,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-210439-9545a891",
+      "provider": "SCANMED SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SOSNOWA 16",
+      "locality": "BLACHOWNIA",
+      "teryt": "2404014",
+      "phone": "+48 34 327 91 75",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 11,
+      "average_period_days": 318,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100463-8f82daa5",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 4 W BYTOMIU",
+      "place": "ODDZIAŁ ORTOPEDYCZNO-URAZOWY",
+      "address": "ALEJA LEGIONÓW 10",
+      "locality": "BYTOM",
+      "teryt": "2462011",
+      "phone": "+48 32 281 02 71 wew. 4230",
+      "latitude": 18.9123,
+      "longitude": 50.3539,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "21 mies. 2 tyg.",
+        "raw_days": 644,
+        "human_label": "ok. 21 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 mies. 2 tyg.",
+        "raw_days": 344,
+        "human_label": "ok. 11 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 350,
+      "average_period_days": 593,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100010-aeea9846",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ ZESPÓŁ SZPITALI MIEJSKICH",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "STRZELCÓW BYTOMSKICH 11",
+      "locality": "CHORZÓW",
+      "teryt": "2463011",
+      "phone": "+48 32 349 91 65",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 233,
+      "average_period_days": 503,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "122-100178-3149e8d6",
+      "provider": "ZESPÓŁ ZAKŁADÓW OPIEKI ZDROWOTNEJ W CIESZYNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BIELSKA 4",
+      "locality": "CIESZYN",
+      "teryt": "2403011",
+      "phone": "+48 33 852 05 11",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "9 mies. 1 tydz.",
+        "raw_days": 277,
+        "human_label": "ok. 9 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "13 dni",
+        "raw_days": 13,
+        "human_label": "ok. 13 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 167,
+      "average_period_days": 458,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-110545-b8018b6c",
+      "provider": "ZAGŁĘBIOWSKI SZPITAL KLINICZNY",
+      "place": "ODDZIAŁ URAZOWO-ORTOPEDYCZNY",
+      "address": "SZPITALNA  40",
+      "locality": "CZELADŹ",
+      "teryt": "2401021",
+      "phone": "+48 32 265 16 44",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "12 mies.",
+        "raw_days": 360,
+        "human_label": "ok. 12 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "7 mies. 2 tyg.",
+        "raw_days": 224,
+        "human_label": "ok. 7 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 116,
+      "average_period_days": 392,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-108020-54930db2",
+      "provider": "MIEJSKI SZPITAL ZESPOLONY",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIROWSKA 15",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 370 22 22",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "7 mies. 2 tyg.",
+        "raw_days": 224,
+        "human_label": "ok. 7 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 144,
+      "average_period_days": 244,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-100147-336c65d6",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. N.M.P. W CZĘSTOCHOWIE",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "BIALSKA 104/118",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 367 34 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "8 mies. 2 tyg.",
+        "raw_days": 254,
+        "human_label": "ok. 8 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "5 mies. 1 tydz.",
+        "raw_days": 157,
+        "human_label": "ok. 5 miesięcy i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 181,
+      "average_period_days": 450,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-101002-d4ac9ae6",
+      "provider": "ZAGŁĘBIOWSKIE CENTRUM ONKOLOGII SZPITAL SPECJALISTYCZNY IM. SZ. STARKIEWICZA W DĄBROWIE GÓRNICZEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 13",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 621 21 03",
+      "latitude": 50.32,
+      "longitude": 19.1763,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 2 tyg.",
+        "raw_days": 134,
+        "human_label": "ok. 4 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "7 dni",
+        "raw_days": 7,
+        "human_label": "ok. 7 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 169,
+      "average_period_days": 145,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-112510-46ce824b",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 32 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "36 mies. 1 tydz.",
+        "raw_days": 1087,
+        "human_label": "ok. 36 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "7 mies. 3 tyg.",
+        "raw_days": 231,
+        "human_label": "ok. 7 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 96,
+      "average_period_days": 2082,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100448-79269147",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA JANA PAWŁA II 7",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 478 44 91",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "15 mies. 3 tyg.",
+        "raw_days": 471,
+        "human_label": "ok. 15 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 mies.",
+        "raw_days": 120,
+        "human_label": "ok. 4 miesiące",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 350,
+      "average_period_days": 596,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100178-37a78b47",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "13 mies. 3 tyg.",
+        "raw_days": 411,
+        "human_label": "ok. 13 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "7 mies. 1 tydz.",
+        "raw_days": 217,
+        "human_label": "ok. 7 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 194,
+      "average_period_days": 413,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-211925-fef4323a",
+      "provider": "BONIFRATERSKIE CENTRUM MEDYCZNE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "L.MARKIEFKI  87",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 357 62 37",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "23 mies.",
+        "raw_days": 690,
+        "human_label": "ok. 23 miesiące",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "8 mies. 1 tydz.",
+        "raw_days": 247,
+        "human_label": "ok. 8 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 522,
+      "average_period_days": 704,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100089-3224034a",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 82 73",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "21 mies. 2 tyg.",
+        "raw_days": 644,
+        "human_label": "ok. 21 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 mies. 3 tyg.",
+        "raw_days": 351,
+        "human_label": "ok. 11 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 252,
+      "average_period_days": 709,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100685-c3b211fb",
+      "provider": "SZPITAL MURCKI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALFREDA SOKOŁOWSKIEGO 2",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 255 61 62",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "12 mies.",
+        "raw_days": 360,
+        "human_label": "ok. 12 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 175,
+      "average_period_days": 245,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-200543-e6075b22",
+      "provider": "\"SZPITAL ŚW. JÓZEFA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "place": "ODDZIAŁ ORTOPEDII I REKONSTRUKCJI NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII KRĘGOSŁUPA",
+      "address": "STEFANA OKRZEI 27",
+      "locality": "MIKOŁÓW",
+      "teryt": "2408021",
+      "phone": "+48 32 226 59 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "7 mies.",
+        "raw_days": 210,
+        "human_label": "ok. 7 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 49,
+      "average_period_days": 265,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-107024-021c6093",
+      "provider": "SP ZOZ SZPITAL NR 2 IM. DR. TADEUSZA BOCZONIA W MYSŁOWICACH",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BYTOMSKA 41",
+      "locality": "MYSŁOWICE",
+      "teryt": "2470011",
+      "phone": "+48 723 183 348",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "11 mies.",
+        "raw_days": 330,
+        "human_label": "ok. 11 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "6 mies. 3 tyg.",
+        "raw_days": 201,
+        "human_label": "ok. 6 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 91,
+      "average_period_days": 312,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-100327-54f7c24f",
+      "provider": "SAMODZIELNY PUBLICZNY ZESPÓŁ OPIEKI ZDROWOTNEJ W MYSZKOWIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA WOLNOŚCI 29",
+      "locality": "MYSZKÓW",
+      "teryt": "2409011",
+      "phone": "+48 34 315 82 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 3 tyg.",
+        "raw_days": 141,
+        "human_label": "ok. 4 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 66,
+      "average_period_days": 252,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100358-056e00f8",
+      "provider": "SAMODZIELNY PUBLICZNY WOJEWÓDZKI SZPITAL CHIRURGII URAZOWEJ IM.DR J. DAABA",
+      "place": "ODDZIAŁ I URAZOWO-ORTOPEDYCZNY",
+      "address": "BYTOMSKA  62",
+      "locality": "PIEKARY ŚLĄSKIE",
+      "teryt": "2471011",
+      "phone": "+48 32 393 41 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "14 mies. 3 tyg.",
+        "raw_days": 441,
+        "human_label": "ok. 14 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 mies.",
+        "raw_days": 270,
+        "human_label": "ok. 9 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1324,
+      "average_period_days": 414,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100582-bb5f0177",
+      "provider": "SZPITAL REJONOWY IM. DR. JÓZEFA ROSTKA W RACIBORZU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "GAMOWSKA 3",
+      "locality": "RACIBÓRZ",
+      "teryt": "2411011",
+      "phone": "+48 32 755 53 52",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "12 mies. 2 tyg.",
+        "raw_days": 374,
+        "human_label": "ok. 12 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 mies. 1 tydz.",
+        "raw_days": 277,
+        "human_label": "ok. 9 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 54,
+      "average_period_days": 496,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212090-18d858e2",
+      "provider": "SZPITAL MIEJSKI W RUDZIE ŚLĄSKIEJ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "WINCENTEGO LIPA 2",
+      "locality": "RUDA ŚLĄSKA",
+      "teryt": "2472011",
+      "phone": "+48 32 344 07 58",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 1 tydz.",
+        "raw_days": 127,
+        "human_label": "ok. 4 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "12 dni",
+        "raw_days": 12,
+        "human_label": "ok. 12 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 47,
+      "average_period_days": 140,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100443-fe85be34",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 3 W RYBNIKU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ENERGETYKÓW  46",
+      "locality": "RYBNIK",
+      "teryt": "2473011",
+      "phone": "+48 32 429 13 02",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "10 mies. 1 tydz.",
+        "raw_days": 307,
+        "human_label": "ok. 10 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 264,
+      "average_period_days": 403,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100474-ad5925c0",
+      "provider": "SZPITAL MIEJSKI W SIEMIANOWICACH ŚLĄSKICH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "1 MAJA 9",
+      "locality": "SIEMIANOWICE ŚLĄSKIE",
+      "teryt": "2474011",
+      "phone": "+48 32 228 30 30",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "14 mies. 3 tyg.",
+        "raw_days": 441,
+        "human_label": "ok. 14 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "14 mies. 2 tyg.",
+        "raw_days": 434,
+        "human_label": "ok. 14 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 831,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-111151-fdb88c89",
+      "provider": "SOSNOWIECKI SZPITAL MIEJSKI SPÓŁKA Z O.O. W RESTRUKTURYZACJI",
+      "place": "ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII ARTROSKOPOWEJ",
+      "address": "EMILA ZEGADŁOWICZA 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 04 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "11 mies. 1 tydz.",
+        "raw_days": 337,
+        "human_label": "ok. 11 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 197,
+      "average_period_days": 436,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100468-4ca4cf73",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "place": "KLINICZNY ODDZIAŁ CHIRURGII ORTOPEDYCZNO-URAZOWEJ, ONKOLOGICZNEJ I REKONSTRUKCYJNEJ",
+      "address": "PLAC MEDYKÓW 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 368 25 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 2 tyg.",
+        "raw_days": 134,
+        "human_label": "ok. 4 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 104,
+      "average_period_days": 117,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212484-46544a73",
+      "provider": "MEGREZ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII REKONSTRUKCYJNEJ NARZĄDU RUCHU",
+      "address": "EDUKACJI 102",
+      "locality": "TYCHY",
+      "teryt": "2477011",
+      "phone": "+48 32 325 53 23",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "19 mies. 3 tyg.",
+        "raw_days": 591,
+        "human_label": "ok. 19 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 mies.",
+        "raw_days": 270,
+        "human_label": "ok. 9 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 99,
+      "average_period_days": 535,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-500120-7cf64567",
+      "provider": "SCANMED SPORT SP. Z O.O.",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO - ORTOPEDYCZNEJ",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 324 759 315",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "16 mies.",
+        "raw_days": 480,
+        "human_label": "ok. 16 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "7 mies.",
+        "raw_days": 210,
+        "human_label": "ok. 7 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 833,
+      "average_period_days": 474,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100115-66f69e69",
+      "provider": "ŚLĄSKIE CENTRUM REUMATOLOGII IM. GEN. JERZEGO ZIĘTKA W USTRONIU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 11",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 26 40",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 476,
+      "average_period_days": 606,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "124-100310-3465a390",
+      "provider": "SZPITAL POWIATOWY W WODZISŁAWIU ŚLĄSKIM",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "26 MARCA 51",
+      "locality": "WODZISŁAW ŚLĄSKI",
+      "teryt": "2415041",
+      "phone": "+48 32 459 19 55",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "12 mies. 3 tyg.",
+        "raw_days": 381,
+        "human_label": "ok. 12 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 mies. 3 tyg.",
+        "raw_days": 291,
+        "human_label": "ok. 9 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 110,
+      "average_period_days": 459,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-212018-91a9bace",
+      "provider": "SZPITAL MIEJSKI W ZABRZU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ZAMKOWA 4",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 277 61 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "41 mies.",
+        "raw_days": 1230,
+        "human_label": "ok. 41 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "13 mies. 1 tydz.",
+        "raw_days": 397,
+        "human_label": "ok. 13 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 362,
+      "average_period_days": 1124,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100597-730cc459",
+      "provider": "SZPITAL POWIATOWY W ZAWIERCIU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIODOWA 14",
+      "locality": "ZAWIERCIE",
+      "teryt": "2416021",
+      "phone": "+48 32 674 02 83",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "6 mies. 2 tyg.",
+        "raw_days": 194,
+        "human_label": "ok. 6 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 123,
+      "average_period_days": 199,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-214327-6bb82087",
+      "provider": "ICZ HEALTHCARE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "POLA LISICKICH 80",
+      "locality": "ŻYWIEC",
+      "teryt": "2417011",
+      "phone": "+48 33 440 14 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "9 mies. 1 tydz.",
+        "raw_days": 277,
+        "human_label": "ok. 9 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "8 mies. 2 tyg.",
+        "raw_days": 254,
+        "human_label": "ok. 8 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 147,
+      "average_period_days": 261,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

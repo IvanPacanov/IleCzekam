@@ -14,8 +14,11 @@ API NFZ jest publiczne - **nie wymaga rejestracji ani klucza**. Regulamin wymaga
 1. informowania o źródle danych przez wskazanie adresu `https://api.nfz.gov.pl/`,
 2. nieprzeciążania API - limit **10 zapytań na sekundę na adres IP**.
 
-Skopiuj `.env.example` do `.env` i ustaw `NFZ_USER_AGENT` z adresem kontaktowym.
-`.env` jest w `.gitignore` i nie trafia do repo.
+Nie wysyłamy też żadnego nagłówka identyfikującego. Sprawdzone empirycznie: zapytanie
+bez `User-Agent` zwraca HTTP 200 mimo WAF-a (Imperva) przed API. Jedyną obroną przed
+blokadą jest trzymanie się limitu, a gdyby do niej doszło - kontakt z NFZ z naszego IP.
+
+ETL nie potrzebuje więc żadnych zmiennych środowiskowych ani pliku `.env`.
 
 ## Uruchamianie
 

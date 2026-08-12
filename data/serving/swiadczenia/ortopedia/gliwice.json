@@ -1,0 +1,462 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "GLIWICE",
+    "slug": "gliwice",
+    "teryt": "2466011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 74,
+    "median_label": "ok. 11 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "126-112510-65938c5b",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "GLIWICE",
+      "raw_days": 5,
+      "human_label": "ok. 5 dni"
+    },
+    "places_total": 13,
+    "places_with_data": 13,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 74,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 74,
+      "places_with_data": 13
+    }
+  ],
+  "places": [
+    {
+      "id": "121-212521-4c21d018",
+      "provider": "FUNDACJA \"UNIA BRACKA\"",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BŁONIE 13",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 331 73 98",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 254,
+      "average_period_days": 83,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212521-f15d155f",
+      "provider": "FUNDACJA \"UNIA BRACKA\"",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BOJKOWSKA 20",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 231 14 90",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "4 mies.",
+        "raw_days": 120,
+        "human_label": "ok. 4 miesiące",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 1 tydz.",
+        "raw_days": 97,
+        "human_label": "ok. 3 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 518,
+      "average_period_days": 173,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-207813-b14c145e",
+      "provider": "NIEPUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ \"VITAMED\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "RÓŻANA 7",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 327 500 802",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "4 mies.",
+        "raw_days": 120,
+        "human_label": "ok. 4 miesiące",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 213,
+      "average_period_days": 126,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-101065-a3fb9318",
+      "provider": "OBWÓD LECZNICTWA KOLEJOWEGO W GLIWICACH - SPZOZ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "OPOLSKA 18",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 331 81 50",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 1 tydz.",
+        "raw_days": 127,
+        "human_label": "ok. 4 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 330,
+      "average_period_days": 117,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-210539-d4beb1c0",
+      "provider": "PRZYCHODNIA AKADEMICKA W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ŁUŻYCKA 5",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 213 47 50",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 119,
+      "average_period_days": 93,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-210166-cd8f7d11",
+      "provider": "PRZYCHODNIA ORTOPEDYCZNA SP. Z O.O.",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "address": "KOZIELSKA 4",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 786 871 694",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "12 dni",
+        "raw_days": 12,
+        "human_label": "ok. 12 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 dni",
+        "raw_days": 11,
+        "human_label": "ok. 11 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 48,
+      "average_period_days": 13,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-210166-6837fd0a",
+      "provider": "PRZYCHODNIA ORTOPEDYCZNA SP. Z O.O.",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ (URAZOWA)",
+      "address": "KOZIELSKA 4",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 786 871 694",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "15 dni",
+        "raw_days": 15,
+        "human_label": "ok. 15 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "14 dni",
+        "raw_days": 14,
+        "human_label": "ok. 14 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 37,
+      "average_period_days": 17,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-210166-9f91c04d",
+      "provider": "PRZYCHODNIA ORTOPEDYCZNA SP. Z O.O.",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ (DOROŚLI)",
+      "address": "KOZIELSKA 4",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 786 871 694",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 605,
+      "average_period_days": 71,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-112510-65938c5b",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ ORTOPEDII DZIECIĘCEJ",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 32 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "5 dni",
+        "raw_days": 5,
+        "human_label": "ok. 5 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 dni",
+        "raw_days": 4,
+        "human_label": "ok. 4 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 9,
+      "average_period_days": 5,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-112510-724e029b",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 32 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "21 mies. 1 tydz.",
+        "raw_days": 637,
+        "human_label": "ok. 21 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 233,
+      "average_period_days": 647,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-112510-1b1ba599",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "address": "ZYGMUNTA STAREGO 20",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 330 83 13",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "22 dni",
+        "raw_days": 22,
+        "human_label": "ok. 22 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 62,
+      "average_period_days": 23,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-112510-19b61f77",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ 2",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 33 80",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 91,
+      "average_period_days": 50,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-112510-98744443",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ZYGMUNTA STAREGO 20",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 330 83 13",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 242,
+      "average_period_days": 58,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

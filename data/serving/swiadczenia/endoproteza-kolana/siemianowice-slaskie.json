@@ -1,0 +1,87 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "SIEMIANOWICE ŚLĄSKIE",
+    "slug": "siemianowice-slaskie",
+    "teryt": "2474011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": null,
+    "median_label": "brak danych",
+    "median_bucket": "brak_danych",
+    "fastest": null,
+    "places_total": 1,
+    "places_with_data": 0,
+    "places_without_data": 1,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": null,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": null,
+      "places_with_data": 0
+    }
+  ],
+  "places": [
+    {
+      "id": "121-100474-bc0e6bd5",
+      "provider": "SZPITAL MIEJSKI W SIEMIANOWICACH ŚLĄSKICH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "1 MAJA 9",
+      "locality": "SIEMIANOWICE ŚLĄSKIE",
+      "teryt": "2474011",
+      "phone": "+48 32 228 30 30",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 1081,
+      "average_period_days": 449,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    }
+  ]
+}

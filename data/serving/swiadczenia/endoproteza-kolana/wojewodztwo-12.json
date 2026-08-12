@@ -1,0 +1,1056 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "wojewodztwo",
+    "name": "śląskie",
+    "slug": "wojewodztwo-12",
+    "teryt": null,
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 457,
+    "median_label": "ok. 15 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "121-212090-6808f162",
+      "provider": "SZPITAL MIEJSKI W RUDZIE ŚLĄSKIEJ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "RUDA ŚLĄSKA",
+      "raw_days": 104,
+      "human_label": "ok. 3 miesiące i 2 tygodnie"
+    },
+    "places_total": 32,
+    "places_with_data": 29,
+    "places_without_data": 3,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 457,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 457,
+      "places_with_data": 29
+    }
+  ],
+  "places": [
+    {
+      "id": "122-100069-bd48d22f",
+      "provider": "SZPITAL WOJEWÓDZKI W BIELSKU-BIAŁEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "AL.ARMII KRAJOWEJ 101",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 338 102 451",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 40,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "123-210439-6197cd08",
+      "provider": "SCANMED SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SOSNOWA 16",
+      "locality": "BLACHOWNIA",
+      "teryt": "2404014",
+      "phone": "+48 34 327 91 75",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "35 mies.",
+        "raw_days": 1050,
+        "human_label": "ok. 35 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 50,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100463-5ce85aeb",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 4 W BYTOMIU",
+      "place": "ODDZIAŁ ORTOPEDYCZNO-URAZOWY",
+      "address": "ALEJA LEGIONÓW 10",
+      "locality": "BYTOM",
+      "teryt": "2462011",
+      "phone": "+48 32 281 02 71 wew. 4230",
+      "latitude": 18.9123,
+      "longitude": 50.3539,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "27 mies. 1 tydz.",
+        "raw_days": 817,
+        "human_label": "ok. 27 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 844,
+      "average_period_days": 973,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100010-013fcd02",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ ZESPÓŁ SZPITALI MIEJSKICH",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "STRZELCÓW BYTOMSKICH 11",
+      "locality": "CHORZÓW",
+      "teryt": "2463011",
+      "phone": "+48 32 349 91 65",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 714,
+      "average_period_days": 502,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "122-100178-c7fb0ed3",
+      "provider": "ZESPÓŁ ZAKŁADÓW OPIEKI ZDROWOTNEJ W CIESZYNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BIELSKA 4",
+      "locality": "CIESZYN",
+      "teryt": "2403011",
+      "phone": "+48 33 852 05 11",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "14 mies. 3 tyg.",
+        "raw_days": 441,
+        "human_label": "ok. 14 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "8 dni",
+        "raw_days": 8,
+        "human_label": "ok. 8 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 251,
+      "average_period_days": 619,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-110545-1a3597db",
+      "provider": "ZAGŁĘBIOWSKI SZPITAL KLINICZNY",
+      "place": "ODDZIAŁ URAZOWO-ORTOPEDYCZNY",
+      "address": "SZPITALNA  40",
+      "locality": "CZELADŹ",
+      "teryt": "2401021",
+      "phone": "+48 32 265 16 44",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "16 mies. 2 tyg.",
+        "raw_days": 494,
+        "human_label": "ok. 16 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "10 mies.",
+        "raw_days": 300,
+        "human_label": "ok. 10 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 162,
+      "average_period_days": 638,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-108020-15528f8d",
+      "provider": "MIEJSKI SZPITAL ZESPOLONY",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIROWSKA 15",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 370 22 22",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "10 mies.",
+        "raw_days": 300,
+        "human_label": "ok. 10 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 mies. 1 tydz.",
+        "raw_days": 127,
+        "human_label": "ok. 4 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 148,
+      "average_period_days": 396,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-100147-f09c61ab",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. N.M.P. W CZĘSTOCHOWIE",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "BIALSKA 104/118",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 367 34 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "7 mies.",
+        "raw_days": 210,
+        "human_label": "ok. 7 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "6 mies. 2 tyg.",
+        "raw_days": 194,
+        "human_label": "ok. 6 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 295,
+      "average_period_days": 420,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-101002-c07fa311",
+      "provider": "ZAGŁĘBIOWSKIE CENTRUM ONKOLOGII SZPITAL SPECJALISTYCZNY IM. SZ. STARKIEWICZA W DĄBROWIE GÓRNICZEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 13",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 621 21 03",
+      "latitude": 50.32,
+      "longitude": 19.1763,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "10 mies. 3 tyg.",
+        "raw_days": 321,
+        "human_label": "ok. 10 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 dni",
+        "raw_days": 3,
+        "human_label": "ok. 3 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 227,
+      "average_period_days": 353,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-112510-131ecd06",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 32 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "40 mies. 1 tydz.",
+        "raw_days": 1207,
+        "human_label": "ok. 40 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "7 mies. 3 tyg.",
+        "raw_days": 231,
+        "human_label": "ok. 7 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 165,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100448-3636131f",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA JANA PAWŁA II 7",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 478 44 91",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "15 mies. 1 tydz.",
+        "raw_days": 457,
+        "human_label": "ok. 15 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 430,
+      "average_period_days": 417,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100178-aeb867aa",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "13 mies. 3 tyg.",
+        "raw_days": 411,
+        "human_label": "ok. 13 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 mies.",
+        "raw_days": 270,
+        "human_label": "ok. 9 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 337,
+      "average_period_days": 416,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-211925-3c879670",
+      "provider": "BONIFRATERSKIE CENTRUM MEDYCZNE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "L.MARKIEFKI  87",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 357 62 37",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "28 mies. 1 tydz.",
+        "raw_days": 847,
+        "human_label": "ok. 28 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "10 mies. 2 tyg.",
+        "raw_days": 314,
+        "human_label": "ok. 10 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1147,
+      "average_period_days": 716,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100089-d518a0f8",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 82 73",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "21 mies. 3 tyg.",
+        "raw_days": 651,
+        "human_label": "ok. 21 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "14 mies. 1 tydz.",
+        "raw_days": 427,
+        "human_label": "ok. 14 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 401,
+      "average_period_days": 632,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100685-aeca2eb5",
+      "provider": "SZPITAL MURCKI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALFREDA SOKOŁOWSKIEGO 2",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 255 61 62",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "18 mies. 3 tyg.",
+        "raw_days": 561,
+        "human_label": "ok. 18 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 mies.",
+        "raw_days": 120,
+        "human_label": "ok. 4 miesiące",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 361,
+      "average_period_days": 641,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-200543-071e548b",
+      "provider": "\"SZPITAL ŚW. JÓZEFA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "place": "ODDZIAŁ ORTOPEDII I REKONSTRUKCJI NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII KRĘGOSŁUPA",
+      "address": "STEFANA OKRZEI 27",
+      "locality": "MIKOŁÓW",
+      "teryt": "2408021",
+      "phone": "+48 32 226 59 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "9 mies.",
+        "raw_days": 270,
+        "human_label": "ok. 9 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 66,
+      "average_period_days": 386,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-107024-5319e7ca",
+      "provider": "SP ZOZ SZPITAL NR 2 IM. DR. TADEUSZA BOCZONIA W MYSŁOWICACH",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BYTOMSKA 41",
+      "locality": "MYSŁOWICE",
+      "teryt": "2470011",
+      "phone": "+48 723 183 348",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "12 mies. 3 tyg.",
+        "raw_days": 381,
+        "human_label": "ok. 12 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "5 mies. 1 tydz.",
+        "raw_days": 157,
+        "human_label": "ok. 5 miesięcy i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 125,
+      "average_period_days": 416,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-100327-67c1422e",
+      "provider": "SAMODZIELNY PUBLICZNY ZESPÓŁ OPIEKI ZDROWOTNEJ W MYSZKOWIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA WOLNOŚCI 29",
+      "locality": "MYSZKÓW",
+      "teryt": "2409011",
+      "phone": "+48 34 315 82 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "5 mies.",
+        "raw_days": 150,
+        "human_label": "ok. 5 miesięcy",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 143,
+      "average_period_days": 241,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100358-a1af2570",
+      "provider": "SAMODZIELNY PUBLICZNY WOJEWÓDZKI SZPITAL CHIRURGII URAZOWEJ IM.DR J. DAABA",
+      "place": "ODDZIAŁ I URAZOWO-ORTOPEDYCZNY",
+      "address": "BYTOMSKA  62",
+      "locality": "PIEKARY ŚLĄSKIE",
+      "teryt": "2471011",
+      "phone": "+48 32 393 41 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "20 mies. 1 tydz.",
+        "raw_days": 607,
+        "human_label": "ok. 20 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "16 mies.",
+        "raw_days": 480,
+        "human_label": "ok. 16 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1852,
+      "average_period_days": 684,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100582-25fb53c1",
+      "provider": "SZPITAL REJONOWY IM. DR. JÓZEFA ROSTKA W RACIBORZU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "GAMOWSKA 3",
+      "locality": "RACIBÓRZ",
+      "teryt": "2411011",
+      "phone": "+48 32 755 53 52",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "26 mies. 3 tyg.",
+        "raw_days": 801,
+        "human_label": "ok. 26 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 mies.",
+        "raw_days": 330,
+        "human_label": "ok. 11 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 135,
+      "average_period_days": 1075,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212090-6808f162",
+      "provider": "SZPITAL MIEJSKI W RUDZIE ŚLĄSKIEJ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "WINCENTEGO LIPA 2",
+      "locality": "RUDA ŚLĄSKA",
+      "teryt": "2472011",
+      "phone": "+48 32 344 07 58",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 47,
+      "average_period_days": 143,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100443-43c7e6f6",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 3 W RYBNIKU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ENERGETYKÓW  46",
+      "locality": "RYBNIK",
+      "teryt": "2473011",
+      "phone": "+48 32 429 13 02",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "13 mies. 2 tyg.",
+        "raw_days": 404,
+        "human_label": "ok. 13 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 340,
+      "average_period_days": 440,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100474-bc0e6bd5",
+      "provider": "SZPITAL MIEJSKI W SIEMIANOWICACH ŚLĄSKICH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "1 MAJA 9",
+      "locality": "SIEMIANOWICE ŚLĄSKIE",
+      "teryt": "2474011",
+      "phone": "+48 32 228 30 30",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 1081,
+      "average_period_days": 449,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "125-111151-373f5191",
+      "provider": "SOSNOWIECKI SZPITAL MIEJSKI SPÓŁKA Z O.O. W RESTRUKTURYZACJI",
+      "place": "ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII ARTROSKOPOWEJ",
+      "address": "EMILA ZEGADŁOWICZA 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 04 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "18 mies. 1 tydz.",
+        "raw_days": 547,
+        "human_label": "ok. 18 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 315,
+      "average_period_days": 340,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100468-97e9685f",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "place": "KLINICZNY ODDZIAŁ CHIRURGII ORTOPEDYCZNO-URAZOWEJ, ONKOLOGICZNEJ I REKONSTRUKCYJNEJ",
+      "address": "PLAC MEDYKÓW 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 368 25 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "8 mies. 1 tydz.",
+        "raw_days": 247,
+        "human_label": "ok. 8 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 147,
+      "average_period_days": 222,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212484-ba5a4cbd",
+      "provider": "MEGREZ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII REKONSTRUKCYJNEJ NARZĄDU RUCHU",
+      "address": "EDUKACJI 102",
+      "locality": "TYCHY",
+      "teryt": "2477011",
+      "phone": "+48 32 325 53 23",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "21 mies. 1 tydz.",
+        "raw_days": 637,
+        "human_label": "ok. 21 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 mies. 3 tyg.",
+        "raw_days": 291,
+        "human_label": "ok. 9 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 138,
+      "average_period_days": 558,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-500120-e1d548fc",
+      "provider": "SCANMED SPORT SP. Z O.O.",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO - ORTOPEDYCZNEJ",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 324 759 315",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "21 mies. 3 tyg.",
+        "raw_days": 651,
+        "human_label": "ok. 21 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "7 mies. 3 tyg.",
+        "raw_days": 231,
+        "human_label": "ok. 7 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 2204,
+      "average_period_days": 647,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100115-d977a99d",
+      "provider": "ŚLĄSKIE CENTRUM REUMATOLOGII IM. GEN. JERZEGO ZIĘTKA W USTRONIU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 11",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 26 40",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "48 mies.",
+        "raw_days": 1440,
+        "human_label": "ok. 48 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "35 mies. 2 tyg.",
+        "raw_days": 1064,
+        "human_label": "ok. 35 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 568,
+      "average_period_days": 50,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100310-e1b35e3d",
+      "provider": "SZPITAL POWIATOWY W WODZISŁAWIU ŚLĄSKIM",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "26 MARCA 51",
+      "locality": "WODZISŁAW ŚLĄSKI",
+      "teryt": "2415041",
+      "phone": "+48 32 459 19 55",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "12 mies. 2 tyg.",
+        "raw_days": 374,
+        "human_label": "ok. 12 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "10 mies. 1 tydz.",
+        "raw_days": 307,
+        "human_label": "ok. 10 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 223,
+      "average_period_days": 487,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-212018-129ead83",
+      "provider": "SZPITAL MIEJSKI W ZABRZU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ZAMKOWA 4",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 277 61 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "38 mies. 3 tyg.",
+        "raw_days": 1161,
+        "human_label": "ok. 38 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-03"
+      },
+      "wait_urgent": {
+        "pcus_raw": "12 mies. 3 tyg.",
+        "raw_days": 381,
+        "human_label": "ok. 12 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-03"
+      },
+      "awaiting": 629,
+      "average_period_days": 1252,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100597-04edfd7c",
+      "provider": "SZPITAL POWIATOWY W ZAWIERCIU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIODOWA 14",
+      "locality": "ZAWIERCIE",
+      "teryt": "2416021",
+      "phone": "+48 32 674 02 83",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "6 mies. 2 tyg.",
+        "raw_days": 194,
+        "human_label": "ok. 6 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 197,
+      "average_period_days": 170,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-214327-e7c21939",
+      "provider": "ICZ HEALTHCARE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "POLA LISICKICH 80",
+      "locality": "ŻYWIEC",
+      "teryt": "2417011",
+      "phone": "+48 33 440 14 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "15 mies.",
+        "raw_days": 450,
+        "human_label": "ok. 15 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "14 mies. 2 tyg.",
+        "raw_days": 434,
+        "human_label": "ok. 14 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 151,
+      "average_period_days": 367,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

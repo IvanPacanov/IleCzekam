@@ -1,0 +1,122 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "CZĘSTOCHOWA",
+    "slug": "czestochowa",
+    "teryt": "2464011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 255,
+    "median_label": "ok. 9 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "123-100147-f09c61ab",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. N.M.P. W CZĘSTOCHOWIE",
+      "locality": "CZĘSTOCHOWA",
+      "raw_days": 210,
+      "human_label": "ok. 7 miesięcy"
+    },
+    "places_total": 2,
+    "places_with_data": 2,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 255,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 255,
+      "places_with_data": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "123-108020-15528f8d",
+      "provider": "MIEJSKI SZPITAL ZESPOLONY",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIROWSKA 15",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 370 22 22",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "10 mies.",
+        "raw_days": 300,
+        "human_label": "ok. 10 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 mies. 1 tydz.",
+        "raw_days": 127,
+        "human_label": "ok. 4 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 148,
+      "average_period_days": 396,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-100147-f09c61ab",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. N.M.P. W CZĘSTOCHOWIE",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "BIALSKA 104/118",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 367 34 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "7 mies.",
+        "raw_days": 210,
+        "human_label": "ok. 7 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "6 mies. 2 tyg.",
+        "raw_days": 194,
+        "human_label": "ok. 6 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 295,
+      "average_period_days": 420,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

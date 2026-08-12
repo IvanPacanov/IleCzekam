@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "ortopedia-dziecieca",
+    "label": "Ortopeda dziecięcy",
+    "nfz_benefits": [
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "CHORZÓW",
+    "slug": "chorzow",
+    "teryt": "2463011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 18,
+    "median_label": "ok. 18 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "121-100010-4a3a980e",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ ZESPÓŁ SZPITALI MIEJSKICH",
+      "locality": "CHORZÓW",
+      "raw_days": 18,
+      "human_label": "ok. 18 dni"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 18,
+    "province_median_days": 18,
+    "best_city_in_province": {
+      "name": "GLIWICE",
+      "slug": "gliwice",
+      "median_days": 5,
+      "median_label": "ok. 5 dni",
+      "low_sample": true
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 18,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "121-100010-4a3a980e",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ ZESPÓŁ SZPITALI MIEJSKICH",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU DLA DZIECI",
+      "address": "WŁADYSŁAWA TRUCHANA 7",
+      "locality": "CHORZÓW",
+      "teryt": "2463011",
+      "phone": "+48 32 347 12 12",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "18 dni",
+        "raw_days": 18,
+        "human_label": "ok. 18 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-10"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 dni",
+        "raw_days": 11,
+        "human_label": "ok. 11 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-10"
+      },
+      "awaiting": 36,
+      "average_period_days": 21,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

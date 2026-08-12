@@ -1,0 +1,213 @@
+{
+  "benefit": {
+    "slug": "ortopedia-dziecieca",
+    "label": "Ortopeda dziecięcy",
+    "nfz_benefits": [
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI"
+    ]
+  },
+  "scope": {
+    "type": "wojewodztwo",
+    "name": "śląskie",
+    "slug": "wojewodztwo-12",
+    "teryt": null,
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 18,
+    "median_label": "ok. 18 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "126-112510-65938c5b",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "GLIWICE",
+      "raw_days": 5,
+      "human_label": "ok. 5 dni"
+    },
+    "places_total": 5,
+    "places_with_data": 5,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 18,
+    "province_median_days": 18,
+    "best_city_in_province": {
+      "name": "GLIWICE",
+      "slug": "gliwice",
+      "median_days": 5,
+      "median_label": "ok. 5 dni",
+      "low_sample": true
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 18,
+      "places_with_data": 5
+    }
+  ],
+  "places": [
+    {
+      "id": "121-100010-4a3a980e",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ ZESPÓŁ SZPITALI MIEJSKICH",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU DLA DZIECI",
+      "address": "WŁADYSŁAWA TRUCHANA 7",
+      "locality": "CHORZÓW",
+      "teryt": "2463011",
+      "phone": "+48 32 347 12 12",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "18 dni",
+        "raw_days": 18,
+        "human_label": "ok. 18 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-10"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 dni",
+        "raw_days": 11,
+        "human_label": "ok. 11 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-10"
+      },
+      "awaiting": 36,
+      "average_period_days": 21,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-112510-65938c5b",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ ORTOPEDII DZIECIĘCEJ",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 32 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "5 dni",
+        "raw_days": 5,
+        "human_label": "ok. 5 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 dni",
+        "raw_days": 4,
+        "human_label": "ok. 4 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 9,
+      "average_period_days": 5,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-101006-97dcc55b",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM ZDROWIA DZIECKA IM. ŚW. JANA PAWŁA II SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY NR 6 ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MEDYKÓW 16",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 207 18 08",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "15 dni",
+        "raw_days": 15,
+        "human_label": "ok. 15 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 268,
+      "average_period_days": 30,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100358-9c0029b2",
+      "provider": "SAMODZIELNY PUBLICZNY WOJEWÓDZKI SZPITAL CHIRURGII URAZOWEJ IM.DR J. DAABA",
+      "place": "ODDZIAŁ II URAZOWO-ORTOPEDYCZNY DZIECI I MŁODZIEŻY",
+      "address": "BYTOMSKA  62",
+      "locality": "PIEKARY ŚLĄSKIE",
+      "teryt": "2471011",
+      "phone": "+48 32 393 41 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-05"
+      },
+      "wait_urgent": {
+        "pcus_raw": "12 dni",
+        "raw_days": 12,
+        "human_label": "ok. 12 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "awaiting": 58,
+      "average_period_days": 49,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-500120-96a60bc7",
+      "provider": "SCANMED SPORT SP. Z O.O.",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 324 759 315",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "7 dni",
+        "raw_days": 7,
+        "human_label": "ok. 7 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 dzień",
+        "raw_days": 1,
+        "human_label": "ok. 1 dzień",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 6,
+      "average_period_days": 7,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

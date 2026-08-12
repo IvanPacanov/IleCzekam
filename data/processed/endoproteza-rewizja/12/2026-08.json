@@ -1,0 +1,1343 @@
+{
+  "benefit_slug": "endoproteza-rewizja",
+  "province": "12",
+  "month": "2026-08",
+  "places": [
+    {
+      "id": "121-100463-d572638b",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 4 W BYTOMIU",
+      "place": "ODDZIAŁ ORTOPEDYCZNO-URAZOWY",
+      "address": "ALEJA LEGIONÓW 10",
+      "locality": "BYTOM",
+      "teryt": "2462011",
+      "phone": "+48 32 281 02 71 wew. 4230",
+      "latitude": 18.9123,
+      "longitude": 50.3539,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 dni",
+        "raw_days": 2,
+        "human_label": "ok. 2 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 46,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100463-148c2ec5",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 4 W BYTOMIU",
+      "place": "ODDZIAŁ ORTOPEDYCZNO-URAZOWY",
+      "address": "ALEJA LEGIONÓW 10",
+      "locality": "BYTOM",
+      "teryt": "2462011",
+      "phone": "+48 32 281 02 71 wew. 4230",
+      "latitude": 18.9123,
+      "longitude": 50.3539,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "4 mies.",
+        "raw_days": 120,
+        "human_label": "ok. 4 miesiące",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 dzień",
+        "raw_days": 1,
+        "human_label": "ok. 1 dzień",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 4,
+      "average_period_days": 495,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100178-3f96cf82",
+      "provider": "ZESPÓŁ ZAKŁADÓW OPIEKI ZDROWOTNEJ W CIESZYNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BIELSKA 4",
+      "locality": "CIESZYN",
+      "teryt": "2403011",
+      "phone": "+48 33 852 05 11",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "6 dni",
+        "raw_days": 6,
+        "human_label": "ok. 6 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 dni",
+        "raw_days": 2,
+        "human_label": "ok. 2 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1,
+      "average_period_days": 9,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100178-4ee0e238",
+      "provider": "ZESPÓŁ ZAKŁADÓW OPIEKI ZDROWOTNEJ W CIESZYNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "BIELSKA 4",
+      "locality": "CIESZYN",
+      "teryt": "2403011",
+      "phone": "+48 33 852 05 11",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "7 dni",
+        "raw_days": 7,
+        "human_label": "ok. 7 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 dzień",
+        "raw_days": 1,
+        "human_label": "ok. 1 dzień",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-108020-2145f4e3",
+      "provider": "MIEJSKI SZPITAL ZESPOLONY",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIROWSKA 15",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 370 22 22",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 4,
+      "average_period_days": 95,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-108020-62407695",
+      "provider": "MIEJSKI SZPITAL ZESPOLONY",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIROWSKA 15",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 370 22 22",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 2,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "123-100147-11c57829",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. N.M.P. W CZĘSTOCHOWIE",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "BIALSKA 104/118",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 367 34 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "28 dni",
+        "raw_days": 28,
+        "human_label": "ok. 28 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 65,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "123-100147-436397b1",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. N.M.P. W CZĘSTOCHOWIE",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "BIALSKA 104/118",
+      "locality": "CZĘSTOCHOWA",
+      "teryt": "2464011",
+      "phone": "+48 34 367 34 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "5 mies. 1 tydz.",
+        "raw_days": 157,
+        "human_label": "ok. 5 miesięcy i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "24 dni",
+        "raw_days": 24,
+        "human_label": "ok. 24 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 4,
+      "average_period_days": 321,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-101002-910080fc",
+      "provider": "ZAGŁĘBIOWSKIE CENTRUM ONKOLOGII SZPITAL SPECJALISTYCZNY IM. SZ. STARKIEWICZA W DĄBROWIE GÓRNICZEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 13",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 621 21 03",
+      "latitude": 50.32,
+      "longitude": 19.1763,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "30 dni",
+        "raw_days": 30,
+        "human_label": "ok. 30 dni",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1,
+      "average_period_days": 8,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-101002-94d945bb",
+      "provider": "ZAGŁĘBIOWSKIE CENTRUM ONKOLOGII SZPITAL SPECJALISTYCZNY IM. SZ. STARKIEWICZA W DĄBROWIE GÓRNICZEJ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 13",
+      "locality": "DĄBROWA GÓRNICZA",
+      "teryt": "2465011",
+      "phone": "+48 32 621 21 03",
+      "latitude": 50.32,
+      "longitude": 19.1763,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "126-112510-313b47ac",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 32 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "126-112510-ca27553c",
+      "provider": "SZPITAL MIEJSKI W GLIWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "TADEUSZA KOŚCIUSZKI 29",
+      "locality": "GLIWICE",
+      "teryt": "2466011",
+      "phone": "+48 32 461 32 01",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "124-100448-6997ddc9",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA JANA PAWŁA II 7",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 478 44 91",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "16 dni",
+        "raw_days": 16,
+        "human_label": "ok. 16 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 dni",
+        "raw_days": 3,
+        "human_label": "ok. 3 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100448-aa3794f0",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 2 W JASTRZĘBIU ZDROJU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA JANA PAWŁA II 7",
+      "locality": "JASTRZĘBIE-ZDRÓJ",
+      "teryt": "2467011",
+      "phone": "+48 32 478 44 91",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "11 dni",
+        "raw_days": 11,
+        "human_label": "ok. 11 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 3,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100178-e09e8d4a",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "125-100178-5b6f023c",
+      "provider": "SZPITAL WIELOSPECJALISTYCZNY W JAWORZNIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "JÓZEFA CHEŁMOŃSKIEGO 28",
+      "locality": "JAWORZNO",
+      "teryt": "2468011",
+      "phone": "+48 32 616 44 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-211925-3ae04b47",
+      "provider": "BONIFRATERSKIE CENTRUM MEDYCZNE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "L.MARKIEFKI  87",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 357 62 37",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "121-211925-53c42690",
+      "provider": "BONIFRATERSKIE CENTRUM MEDYCZNE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "L.MARKIEFKI  87",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 357 62 37",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "121-100089-7a2de1dd",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 82 73",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "121-100089-b2251c42",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 82 73",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 2 tyg.",
+        "raw_days": 134,
+        "human_label": "ok. 4 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 12,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100685-5d1cdda0",
+      "provider": "SZPITAL MURCKI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALFREDA SOKOŁOWSKIEGO 2",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 255 61 62",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "14 dni",
+        "raw_days": 14,
+        "human_label": "ok. 14 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 dni",
+        "raw_days": 9,
+        "human_label": "ok. 9 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100685-daea24b1",
+      "provider": "SZPITAL MURCKI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALFREDA SOKOŁOWSKIEGO 2",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 255 61 62",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 149,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "121-200543-4ea1337d",
+      "provider": "\"SZPITAL ŚW. JÓZEFA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "place": "ODDZIAŁ ORTOPEDII I REKONSTRUKCJI NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII KRĘGOSŁUPA",
+      "address": "STEFANA OKRZEI 27",
+      "locality": "MIKOŁÓW",
+      "teryt": "2408021",
+      "phone": "+48 32 226 59 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "121-200543-c2298b71",
+      "provider": "\"SZPITAL ŚW. JÓZEFA\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI",
+      "place": "ODDZIAŁ ORTOPEDII I REKONSTRUKCJI NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII KRĘGOSŁUPA",
+      "address": "STEFANA OKRZEI 27",
+      "locality": "MIKOŁÓW",
+      "teryt": "2408021",
+      "phone": "+48 32 226 59 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "121-100358-a3baa8e6",
+      "provider": "SAMODZIELNY PUBLICZNY WOJEWÓDZKI SZPITAL CHIRURGII URAZOWEJ IM.DR J. DAABA",
+      "place": "ODDZIAŁ I URAZOWO-ORTOPEDYCZNY",
+      "address": "BYTOMSKA  62",
+      "locality": "PIEKARY ŚLĄSKIE",
+      "teryt": "2471011",
+      "phone": "+48 32 393 41 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "8 mies.",
+        "raw_days": 240,
+        "human_label": "ok. 8 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 83,
+      "average_period_days": 219,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-100358-0fe5f4b7",
+      "provider": "SAMODZIELNY PUBLICZNY WOJEWÓDZKI SZPITAL CHIRURGII URAZOWEJ IM.DR J. DAABA",
+      "place": "ODDZIAŁ I URAZOWO-ORTOPEDYCZNY",
+      "address": "BYTOMSKA  62",
+      "locality": "PIEKARY ŚLĄSKIE",
+      "teryt": "2471011",
+      "phone": "+48 32 393 41 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "5 mies. 3 tyg.",
+        "raw_days": 171,
+        "human_label": "ok. 5 miesięcy i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "5 mies. 1 tydz.",
+        "raw_days": 157,
+        "human_label": "ok. 5 miesięcy i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 43,
+      "average_period_days": 183,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100443-0f8df1ce",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 3 W RYBNIKU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ENERGETYKÓW  46",
+      "locality": "RYBNIK",
+      "teryt": "2473011",
+      "phone": "+48 32 429 13 02",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "124-100443-09c5a1f7",
+      "provider": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 3 W RYBNIKU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ENERGETYKÓW  46",
+      "locality": "RYBNIK",
+      "teryt": "2473011",
+      "phone": "+48 32 429 13 02",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "125-111151-0ab42e05",
+      "provider": "SOSNOWIECKI SZPITAL MIEJSKI SPÓŁKA Z O.O. W RESTRUKTURYZACJI",
+      "place": "ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII ARTROSKOPOWEJ",
+      "address": "EMILA ZEGADŁOWICZA 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 04 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 dzień",
+        "raw_days": 1,
+        "human_label": "ok. 1 dzień",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-111151-f40c821d",
+      "provider": "SOSNOWIECKI SZPITAL MIEJSKI SPÓŁKA Z O.O. W RESTRUKTURYZACJI",
+      "place": "ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU Z PODODDZIAŁEM CHIRURGII ARTROSKOPOWEJ",
+      "address": "EMILA ZEGADŁOWICZA 3",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 413 04 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100468-c38feb26",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "place": "KLINICZNY ODDZIAŁ CHIRURGII ORTOPEDYCZNO-URAZOWEJ, ONKOLOGICZNEJ I REKONSTRUKCYJNEJ",
+      "address": "PLAC MEDYKÓW 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 368 25 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 6,
+      "average_period_days": 96,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-100468-44892bac",
+      "provider": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY NR 5 IM. ŚW. BARBARY W SOSNOWCU",
+      "place": "KLINICZNY ODDZIAŁ CHIRURGII ORTOPEDYCZNO-URAZOWEJ, ONKOLOGICZNEJ I REKONSTRUKCYJNEJ",
+      "address": "PLAC MEDYKÓW 1",
+      "locality": "SOSNOWIEC",
+      "teryt": "2475011",
+      "phone": "+48 32 368 25 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "4 mies. 3 tyg.",
+        "raw_days": 141,
+        "human_label": "ok. 4 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 7,
+      "average_period_days": 91,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-212484-f1b978b9",
+      "provider": "MEGREZ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII REKONSTRUKCYJNEJ NARZĄDU RUCHU",
+      "address": "EDUKACJI 102",
+      "locality": "TYCHY",
+      "teryt": "2477011",
+      "phone": "+48 32 325 53 23",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "121-212484-f545fef7",
+      "provider": "MEGREZ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII REKONSTRUKCYJNEJ NARZĄDU RUCHU",
+      "address": "EDUKACJI 102",
+      "locality": "TYCHY",
+      "teryt": "2477011",
+      "phone": "+48 32 325 53 23",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "122-100115-a0c9b644",
+      "provider": "ŚLĄSKIE CENTRUM REUMATOLOGII IM. GEN. JERZEGO ZIĘTKA W USTRONIU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 11",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 26 40",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-100115-94372249",
+      "provider": "ŚLĄSKIE CENTRUM REUMATOLOGII IM. GEN. JERZEGO ZIĘTKA W USTRONIU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "SZPITALNA 11",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 26 40",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100310-42540679",
+      "provider": "SZPITAL POWIATOWY W WODZISŁAWIU ŚLĄSKIM",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "26 MARCA 51",
+      "locality": "WODZISŁAW ŚLĄSKI",
+      "teryt": "2415041",
+      "phone": "+48 32 459 19 55",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100310-93e4a50c",
+      "provider": "SZPITAL POWIATOWY W WODZISŁAWIU ŚLĄSKIM",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "26 MARCA 51",
+      "locality": "WODZISŁAW ŚLĄSKI",
+      "teryt": "2415041",
+      "phone": "+48 32 459 19 55",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 1 tydz.",
+        "raw_days": 97,
+        "human_label": "ok. 3 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "6 dni",
+        "raw_days": 6,
+        "human_label": "ok. 6 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-212018-c3e916c0",
+      "provider": "SZPITAL MIEJSKI W ZABRZU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ZAMKOWA 4",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 277 61 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "22 dni",
+        "raw_days": 22,
+        "human_label": "ok. 22 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 1,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-212018-ee3a0d45",
+      "provider": "SZPITAL MIEJSKI W ZABRZU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ZAMKOWA 4",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 277 61 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 8,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "125-100597-38dc1b36",
+      "provider": "SZPITAL POWIATOWY W ZAWIERCIU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIODOWA 14",
+      "locality": "ZAWIERCIE",
+      "teryt": "2416021",
+      "phone": "+48 32 674 02 83",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "125-100597-be66e7cb",
+      "provider": "SZPITAL POWIATOWY W ZAWIERCIU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "MIODOWA 14",
+      "locality": "ZAWIERCIE",
+      "teryt": "2416021",
+      "phone": "+48 32 674 02 83",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REWIZJA PO ENDOPROTEZOPLASTYCE STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 dni",
+        "raw_days": 4,
+        "human_label": "ok. 4 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 2,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

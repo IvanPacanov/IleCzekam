@@ -1,0 +1,344 @@
+{
+  "benefit": {
+    "slug": "kardiochirurgia",
+    "label": "Kardiochirurgia",
+    "nfz_benefits": [
+      "ODDZIAŁ KARDIOCHIRURGICZNY",
+      "ODDZIAŁ KARDIOCHIRURGICZNY DLA DZIECI",
+      "PORADNIA KARDIOCHIRURGICZNA",
+      "PORADNIA KARDIOCHIRURGICZNA DLA DZIECI"
+    ]
+  },
+  "scope": {
+    "type": "wojewodztwo",
+    "name": "śląskie",
+    "slug": "wojewodztwo-12",
+    "teryt": null,
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 51,
+    "median_label": "ok. 7 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "121-100089-52a054ad",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "locality": "KATOWICE",
+      "raw_days": 0,
+      "human_label": "bez oczekiwania"
+    },
+    "places_total": 9,
+    "places_with_data": 7,
+    "places_without_data": 2,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 51,
+    "province_median_days": 51,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 5,
+      "median_label": "ok. 5 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 51,
+      "places_with_data": 7
+    }
+  ],
+  "places": [
+    {
+      "id": "122-207776-eb552ae1",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOCHIRURGII",
+      "address": "ŚW. ANDRZEJA BOBOLI 20",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 472 63 10",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOCHIRURGICZNY",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-05"
+      },
+      "wait_urgent": {
+        "pcus_raw": "15 dni",
+        "raw_days": 15,
+        "human_label": "ok. 15 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "awaiting": 14,
+      "average_period_days": 37,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-207776-956e7bc9",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "PORADNIA KARDIOCHIRURGICZNA",
+      "address": "ŚW. ANDRZEJA BOBOLI 20",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 472 63 20",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "PORADNIA KARDIOCHIRURGICZNA",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-01"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-01"
+      },
+      "awaiting": 140,
+      "average_period_days": 46,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-3a06fbeb",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ KARDIOCHIRURGII",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 359 86 46",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOCHIRURGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "28 dni",
+        "raw_days": 28,
+        "human_label": "ok. 28 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 61,
+      "average_period_days": 55,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-100089-52a054ad",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM MEDYCZNE IM. PROF. LESZKA GIECA ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "PORADNIA KARDIOCHIRURGICZNA",
+      "address": "ZIOŁOWA 45-47",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 479 61 61",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "PORADNIA KARDIOCHIRURGICZNA",
+      "wait_stable": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-07-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-07-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "121-101006-54c95405",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM ZDROWIA DZIECKA IM. ŚW. JANA PAWŁA II SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY NR 6 ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "ODDZIAŁ KARDIOCHIRURGII DZIECIĘCEJ",
+      "address": "MEDYKÓW 16",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 207 18 93",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ KARDIOCHIRURGICZNY DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "121-101006-373439df",
+      "provider": "GÓRNOŚLĄSKIE CENTRUM ZDROWIA DZIECKA IM. ŚW. JANA PAWŁA II SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY NR 6 ŚLĄSKIEGO UNIWERSYTETU MEDYCZNEGO W KATOWICACH",
+      "place": "PORADNIA KARDIOCHIRURGICZNA",
+      "address": "MEDYKÓW 16",
+      "locality": "KATOWICE",
+      "teryt": "2469011",
+      "phone": "+48 32 207 17 77",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "PORADNIA KARDIOCHIRURGICZNA DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "10 dni",
+        "raw_days": 10,
+        "human_label": "ok. 10 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "4 dni",
+        "raw_days": 4,
+        "human_label": "ok. 4 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 2,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "126-101003-01269b38",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "ODDZIAŁ KARDIOCHIRURGII, TRANSPLANTACJI SERCA I MECHANICZNEGO WSPOMAGANIA KRĄŻENIA U DZIECI",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 479 34 73",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ KARDIOCHIRURGICZNY DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 14,
+      "average_period_days": 41,
+      "stats_month": "2026-06",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "126-101003-aa404c7e",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "ODDZIAŁ KARDIOCHIRURGII, TRANSPLANTACJI SERCA I PŁUC ORAZ MECHANICZNEGO WSPOMAGANIA KRĄŻENIA",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 479 34 66",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOCHIRURGICZNY",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 1 tydz.",
+        "raw_days": 67,
+        "human_label": "ok. 2 miesiące i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-01"
+      },
+      "wait_urgent": {
+        "pcus_raw": "5 dni",
+        "raw_days": 5,
+        "human_label": "ok. 5 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-01"
+      },
+      "awaiting": 4,
+      "average_period_days": 116,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "126-101003-35ac330b",
+      "provider": "ŚLĄSKIE CENTRUM CHORÓB SERCA W ZABRZU",
+      "place": "PORADNIA KARDIOCHIRURGICZNA",
+      "address": "MARII CURIE-SKŁODOWSKIEJ 9",
+      "locality": "ZABRZE",
+      "teryt": "2478011",
+      "phone": "+48 32 275 36 43",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "PORADNIA KARDIOCHIRURGICZNA",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 59,
+      "average_period_days": 13,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    }
+  ]
+}

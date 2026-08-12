@@ -8,8 +8,10 @@ namespace IleCzekam.Etl.Fetch;
 ///
 /// Regulamin API dopuszcza 10 zapytań na sekundę na adres IP i zakazuje działań mogących
 /// doprowadzić do przeciążenia - stąd throttling PRZED każdym zapytaniem (nie tylko między
-/// stronami) oraz retry z wykładniczym backoffem na 429/5xx. Klucz API nie jest wymagany,
-/// ale identyfikujemy się nagłówkiem User-Agent z adresem kontaktowym.
+/// stronami) oraz retry z wykładniczym backoffem na 429/5xx.
+///
+/// API nie wymaga klucza ani żadnego nagłówka identyfikującego - sprawdzone empirycznie,
+/// zapytanie bez User-Agenta zwraca HTTP 200 mimo WAF-a (Imperva) przed API.
 /// </summary>
 public sealed class NfzHttpClient : INfzHttp, IDisposable
 {
@@ -17,11 +19,10 @@ public sealed class NfzHttpClient : INfzHttp, IDisposable
     private readonly ApiSettings _settings;
     private DateTimeOffset _nextRequestAllowedAt = DateTimeOffset.MinValue;
 
-    public NfzHttpClient(ApiSettings settings, string userAgent)
+    public NfzHttpClient(ApiSettings settings)
     {
         _settings = settings;
         _http = new HttpClient { BaseAddress = new Uri(settings.BaseUrl), Timeout = TimeSpan.FromSeconds(60) };
-        _http.DefaultRequestHeaders.Add("User-Agent", userAgent);
         _http.DefaultRequestHeaders.Add("Accept", "application/json");
     }
 

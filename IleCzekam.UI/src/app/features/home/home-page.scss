@@ -54,6 +54,104 @@ input[type='search'] {
   }
 }
 
+.search-submit {
+  flex: none;
+  min-height: var(--touch-target);
+  padding: 0 26px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-accent-700);
+  color: var(--color-on-accent);
+  font-family: var(--font-display);
+  font-size: 19px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-accent-hover);
+  }
+}
+
+// Zasięg wyszukiwania - segmenty jak w projekcie: [W całej Polsce | Blisko mnie] [Miejscowość].
+.scope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-top: 16px;
+  max-width: 760px;
+}
+
+.scope-switch {
+  display: flex;
+  border: 2px solid var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  background: #fff;
+  overflow: hidden;
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: var(--touch-target);
+    padding: 0 20px;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text);
+    cursor: pointer;
+    white-space: nowrap;
+
+    &.active {
+      background: var(--color-accent-700);
+      color: var(--color-on-accent);
+      font-weight: 700;
+      border-radius: var(--radius-pill);
+    }
+  }
+}
+
+.scope-city {
+  min-height: calc(var(--touch-target) + 4px);
+  padding: 0 20px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--color-text);
+  min-width: 230px;
+
+  &::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  &.active {
+    border-color: var(--color-border-strong);
+    background: #fff;
+  }
+}
+
+.use-location {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--touch-target);
+  margin-top: 4px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--color-accent-700);
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-accent-hover);
+  }
+}
+
 .search-note {
   max-width: 760px;
   margin: 12px 0 0;
@@ -217,11 +315,49 @@ input[type='search'] {
 
   .search-field {
     min-height: 60px;
-    padding: 0 18px;
+    padding: 0 8px 0 18px;
   }
 
   input[type='search'] {
     font-size: 18px;
+  }
+
+  .search-submit {
+    padding: 0 18px;
+    font-size: 17px;
+  }
+
+  .scope-switch button {
+    padding: 0 14px;
+    font-size: 15px;
+  }
+
+  .scope-city {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+// Wąskie ekrany (390): segmenty na całą szerokość, tekst może się łamać -
+// zero poziomego scrolla.
+@media (max-width: 480px) {
+  .scope-switch {
+    width: 100%;
+
+    button {
+      flex: 1;
+      white-space: normal;
+      padding: 6px 10px;
+      min-height: var(--touch-target);
+    }
+  }
+
+  .scope-city {
+    width: 100%;
+  }
+
+  input[type='search'] {
+    min-width: 0;
   }
 
   .chip {

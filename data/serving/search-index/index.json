@@ -304,5 +304,2291 @@
     "province": "12",
     "median_days": 15,
     "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "BĘDZIN",
+    "city_slug": "bedzin",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "BIELSKO-BIAŁA",
+    "city_slug": "bielsko-biala",
+    "province": "12",
+    "median_days": 81,
+    "places_total": 10
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "BIERUŃ",
+    "city_slug": "bierun",
+    "province": "12",
+    "median_days": 22,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "BLACHOWNIA",
+    "city_slug": "blachownia",
+    "province": "12",
+    "median_days": 536,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "BRUDZOWICE",
+    "city_slug": "brudzowice",
+    "province": "12",
+    "median_days": 51,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "BYTOM",
+    "city_slug": "bytom",
+    "province": "12",
+    "median_days": 67,
+    "places_total": 7
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "CHORZÓW",
+    "city_slug": "chorzow",
+    "province": "12",
+    "median_days": 82,
+    "places_total": 5
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "CIESZYN",
+    "city_slug": "cieszyn",
+    "province": "12",
+    "median_days": 71,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "CZECHOWICE-DZIEDZICE",
+    "city_slug": "czechowice-dziedzice",
+    "province": "12",
+    "median_days": 81,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "CZELADŹ",
+    "city_slug": "czeladz",
+    "province": "12",
+    "median_days": 104,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "CZERWIONKA-LESZCZYNY",
+    "city_slug": "czerwionka-leszczyny",
+    "province": "12",
+    "median_days": 90,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "CZĘSTOCHOWA",
+    "city_slug": "czestochowa",
+    "province": "12",
+    "median_days": 67,
+    "places_total": 9
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "DĄBROWA GÓRNICZA",
+    "city_slug": "dabrowa-gornicza",
+    "province": "12",
+    "median_days": 71,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "GLIWICE",
+    "city_slug": "gliwice",
+    "province": "12",
+    "median_days": 74,
+    "places_total": 13
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "GRZAWA",
+    "city_slug": "grzawa",
+    "province": "12",
+    "median_days": 157,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "JASIENICA",
+    "city_slug": "jasienica",
+    "province": "12",
+    "median_days": 37,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "JASTRZĘBIE-ZDRÓJ",
+    "city_slug": "jastrzebie-zdroj",
+    "province": "12",
+    "median_days": 25,
+    "places_total": 6
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "JAWORZNO",
+    "city_slug": "jaworzno",
+    "province": "12",
+    "median_days": 29,
+    "places_total": 5
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 56,
+    "places_total": 28
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "KŁOBUCK",
+    "city_slug": "klobuck",
+    "province": "12",
+    "median_days": 26,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "KNURÓW",
+    "city_slug": "knurow",
+    "province": "12",
+    "median_days": 86,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "KONIECPOL",
+    "city_slug": "koniecpol",
+    "province": "12",
+    "median_days": 67,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "KROCZYCE",
+    "city_slug": "kroczyce",
+    "province": "12",
+    "median_days": 60,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "KRUSZYNA",
+    "city_slug": "kruszyna",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "LĘDZINY",
+    "city_slug": "ledziny",
+    "province": "12",
+    "median_days": 28,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "LUBLINIEC",
+    "city_slug": "lubliniec",
+    "province": "12",
+    "median_days": 101,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "ŁAZISKA GÓRNE",
+    "city_slug": "laziska-gorne",
+    "province": "12",
+    "median_days": 60,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "MIASTECZKO ŚLĄSKIE",
+    "city_slug": "miasteczko-slaskie",
+    "province": "12",
+    "median_days": 81,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "MIKOŁÓW",
+    "city_slug": "mikolow",
+    "province": "12",
+    "median_days": 81,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "MILÓWKA",
+    "city_slug": "milowka",
+    "province": "12",
+    "median_days": 10,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "MYSŁOWICE",
+    "city_slug": "myslowice",
+    "province": "12",
+    "median_days": 94,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "MYSZKÓW",
+    "city_slug": "myszkow",
+    "province": "12",
+    "median_days": 51,
+    "places_total": 5
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "PIEKARY ŚLĄSKIE",
+    "city_slug": "piekary-slaskie",
+    "province": "12",
+    "median_days": 131,
+    "places_total": 6
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "PNIÓWEK",
+    "city_slug": "pniowek",
+    "province": "12",
+    "median_days": 37,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "PSZCZYNA",
+    "city_slug": "pszczyna",
+    "province": "12",
+    "median_days": 64,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "PSZÓW",
+    "city_slug": "pszow",
+    "province": "12",
+    "median_days": 25,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "RACIBÓRZ",
+    "city_slug": "raciborz",
+    "province": "12",
+    "median_days": 74,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "RAJCZA",
+    "city_slug": "rajcza",
+    "province": "12",
+    "median_days": 11,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "RĘDZINY",
+    "city_slug": "redziny",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "RUDA ŚLĄSKA",
+    "city_slug": "ruda-slaska",
+    "province": "12",
+    "median_days": 119,
+    "places_total": 6
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "RYBNIK",
+    "city_slug": "rybnik",
+    "province": "12",
+    "median_days": 60,
+    "places_total": 5
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "RYDUŁTOWY",
+    "city_slug": "rydultowy",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "SIEMIANOWICE ŚLĄSKIE",
+    "city_slug": "siemianowice-slaskie",
+    "province": "12",
+    "median_days": 150,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "SKOCZÓW",
+    "city_slug": "skoczow",
+    "province": "12",
+    "median_days": 161,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "SOSNOWIEC",
+    "city_slug": "sosnowiec",
+    "province": "12",
+    "median_days": 97,
+    "places_total": 9
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "SZCZEKOCINY",
+    "city_slug": "szczekociny",
+    "province": "12",
+    "median_days": 29,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "ŚWIĘTOCHŁOWICE",
+    "city_slug": "swietochlowice",
+    "province": "12",
+    "median_days": 81,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "TARNOWSKIE GÓRY",
+    "city_slug": "tarnowskie-gory",
+    "province": "12",
+    "median_days": 104,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "TYCHY",
+    "city_slug": "tychy",
+    "province": "12",
+    "median_days": 59,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "USTROŃ",
+    "city_slug": "ustron",
+    "province": "12",
+    "median_days": 89,
+    "places_total": 5
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "WODZISŁAW ŚLĄSKI",
+    "city_slug": "wodzislaw-slaski",
+    "province": "12",
+    "median_days": 37,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "ZABRZE",
+    "city_slug": "zabrze",
+    "province": "12",
+    "median_days": 74,
+    "places_total": 7
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "ZAWIERCIE",
+    "city_slug": "zawiercie",
+    "province": "12",
+    "median_days": 74,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "ŻORY",
+    "city_slug": "zory",
+    "province": "12",
+    "median_days": 60,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia",
+    "benefit_label": "Ortopeda",
+    "synonyms": [
+      "ortopeda",
+      "kolano",
+      "biodro",
+      "kręgosłup",
+      "złamanie",
+      "uraz",
+      "staw"
+    ],
+    "city": "ŻYWIEC",
+    "city_slug": "zywiec",
+    "province": "12",
+    "median_days": 90,
+    "places_total": 5
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "BIELSKO-BIAŁA",
+    "city_slug": "bielsko-biala",
+    "province": "12",
+    "median_days": 427,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "BLACHOWNIA",
+    "city_slug": "blachownia",
+    "province": "12",
+    "median_days": 51,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "BYTOM",
+    "city_slug": "bytom",
+    "province": "12",
+    "median_days": 644,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "CHORZÓW",
+    "city_slug": "chorzow",
+    "province": "12",
+    "median_days": null,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "CIESZYN",
+    "city_slug": "cieszyn",
+    "province": "12",
+    "median_days": 277,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "CZELADŹ",
+    "city_slug": "czeladz",
+    "province": "12",
+    "median_days": 360,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "CZĘSTOCHOWA",
+    "city_slug": "czestochowa",
+    "province": "12",
+    "median_days": 239,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "DĄBROWA GÓRNICZA",
+    "city_slug": "dabrowa-gornicza",
+    "province": "12",
+    "median_days": 134,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "GLIWICE",
+    "city_slug": "gliwice",
+    "province": "12",
+    "median_days": 1087,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "JASTRZĘBIE-ZDRÓJ",
+    "city_slug": "jastrzebie-zdroj",
+    "province": "12",
+    "median_days": 471,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "JAWORZNO",
+    "city_slug": "jaworzno",
+    "province": "12",
+    "median_days": 411,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 644,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "MIKOŁÓW",
+    "city_slug": "mikolow",
+    "province": "12",
+    "median_days": 210,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "MYSŁOWICE",
+    "city_slug": "myslowice",
+    "province": "12",
+    "median_days": 330,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "MYSZKÓW",
+    "city_slug": "myszkow",
+    "province": "12",
+    "median_days": 141,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "PIEKARY ŚLĄSKIE",
+    "city_slug": "piekary-slaskie",
+    "province": "12",
+    "median_days": 441,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "RACIBÓRZ",
+    "city_slug": "raciborz",
+    "province": "12",
+    "median_days": 374,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "RUDA ŚLĄSKA",
+    "city_slug": "ruda-slaska",
+    "province": "12",
+    "median_days": 127,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "RYBNIK",
+    "city_slug": "rybnik",
+    "province": "12",
+    "median_days": 307,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "SIEMIANOWICE ŚLĄSKIE",
+    "city_slug": "siemianowice-slaskie",
+    "province": "12",
+    "median_days": 441,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "SOSNOWIEC",
+    "city_slug": "sosnowiec",
+    "province": "12",
+    "median_days": 236,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "TYCHY",
+    "city_slug": "tychy",
+    "province": "12",
+    "median_days": 591,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "USTROŃ",
+    "city_slug": "ustron",
+    "province": "12",
+    "median_days": 480,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "WODZISŁAW ŚLĄSKI",
+    "city_slug": "wodzislaw-slaski",
+    "province": "12",
+    "median_days": 381,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "ZABRZE",
+    "city_slug": "zabrze",
+    "province": "12",
+    "median_days": 1230,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "ZAWIERCIE",
+    "city_slug": "zawiercie",
+    "province": "12",
+    "median_days": 194,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-biodra",
+    "benefit_label": "Endoproteza biodra",
+    "synonyms": [
+      "wymiana biodra",
+      "proteza biodra",
+      "staw biodrowy"
+    ],
+    "city": "ŻYWIEC",
+    "city_slug": "zywiec",
+    "province": "12",
+    "median_days": 277,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "BIELSKO-BIAŁA",
+    "city_slug": "bielsko-biala",
+    "province": "12",
+    "median_days": null,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "BLACHOWNIA",
+    "city_slug": "blachownia",
+    "province": "12",
+    "median_days": 1050,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "BYTOM",
+    "city_slug": "bytom",
+    "province": "12",
+    "median_days": 817,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "CHORZÓW",
+    "city_slug": "chorzow",
+    "province": "12",
+    "median_days": null,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "CIESZYN",
+    "city_slug": "cieszyn",
+    "province": "12",
+    "median_days": 441,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "CZELADŹ",
+    "city_slug": "czeladz",
+    "province": "12",
+    "median_days": 494,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "CZĘSTOCHOWA",
+    "city_slug": "czestochowa",
+    "province": "12",
+    "median_days": 255,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "DĄBROWA GÓRNICZA",
+    "city_slug": "dabrowa-gornicza",
+    "province": "12",
+    "median_days": 321,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "GLIWICE",
+    "city_slug": "gliwice",
+    "province": "12",
+    "median_days": 1207,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "JASTRZĘBIE-ZDRÓJ",
+    "city_slug": "jastrzebie-zdroj",
+    "province": "12",
+    "median_days": 457,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "JAWORZNO",
+    "city_slug": "jaworzno",
+    "province": "12",
+    "median_days": 411,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 651,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "MIKOŁÓW",
+    "city_slug": "mikolow",
+    "province": "12",
+    "median_days": 270,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "MYSŁOWICE",
+    "city_slug": "myslowice",
+    "province": "12",
+    "median_days": 381,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "MYSZKÓW",
+    "city_slug": "myszkow",
+    "province": "12",
+    "median_days": 150,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "PIEKARY ŚLĄSKIE",
+    "city_slug": "piekary-slaskie",
+    "province": "12",
+    "median_days": 607,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "RACIBÓRZ",
+    "city_slug": "raciborz",
+    "province": "12",
+    "median_days": 801,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "RUDA ŚLĄSKA",
+    "city_slug": "ruda-slaska",
+    "province": "12",
+    "median_days": 104,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "RYBNIK",
+    "city_slug": "rybnik",
+    "province": "12",
+    "median_days": 404,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "SIEMIANOWICE ŚLĄSKIE",
+    "city_slug": "siemianowice-slaskie",
+    "province": "12",
+    "median_days": null,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "SOSNOWIEC",
+    "city_slug": "sosnowiec",
+    "province": "12",
+    "median_days": 397,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "TYCHY",
+    "city_slug": "tychy",
+    "province": "12",
+    "median_days": 637,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "USTROŃ",
+    "city_slug": "ustron",
+    "province": "12",
+    "median_days": 1046,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "WODZISŁAW ŚLĄSKI",
+    "city_slug": "wodzislaw-slaski",
+    "province": "12",
+    "median_days": 374,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "ZABRZE",
+    "city_slug": "zabrze",
+    "province": "12",
+    "median_days": 1161,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "ZAWIERCIE",
+    "city_slug": "zawiercie",
+    "province": "12",
+    "median_days": 194,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-kolana",
+    "benefit_label": "Endoproteza kolana",
+    "synonyms": [
+      "wymiana kolana",
+      "proteza kolana",
+      "staw kolanowy"
+    ],
+    "city": "ŻYWIEC",
+    "city_slug": "zywiec",
+    "province": "12",
+    "median_days": 450,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "BYTOM",
+    "city_slug": "bytom",
+    "province": "12",
+    "median_days": 90,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "CIESZYN",
+    "city_slug": "cieszyn",
+    "province": "12",
+    "median_days": 7,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "CZĘSTOCHOWA",
+    "city_slug": "czestochowa",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "DĄBROWA GÓRNICZA",
+    "city_slug": "dabrowa-gornicza",
+    "province": "12",
+    "median_days": 30,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "GLIWICE",
+    "city_slug": "gliwice",
+    "province": "12",
+    "median_days": null,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "JASTRZĘBIE-ZDRÓJ",
+    "city_slug": "jastrzebie-zdroj",
+    "province": "12",
+    "median_days": 34,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "JAWORZNO",
+    "city_slug": "jaworzno",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 74,
+    "places_total": 6
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "MIKOŁÓW",
+    "city_slug": "mikolow",
+    "province": "12",
+    "median_days": null,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "PIEKARY ŚLĄSKIE",
+    "city_slug": "piekary-slaskie",
+    "province": "12",
+    "median_days": 206,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "RYBNIK",
+    "city_slug": "rybnik",
+    "province": "12",
+    "median_days": null,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "SOSNOWIEC",
+    "city_slug": "sosnowiec",
+    "province": "12",
+    "median_days": 79,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "TYCHY",
+    "city_slug": "tychy",
+    "province": "12",
+    "median_days": null,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "USTROŃ",
+    "city_slug": "ustron",
+    "province": "12",
+    "median_days": 0,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "WODZISŁAW ŚLĄSKI",
+    "city_slug": "wodzislaw-slaski",
+    "province": "12",
+    "median_days": 82,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "ZABRZE",
+    "city_slug": "zabrze",
+    "province": "12",
+    "median_days": 37,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "endoproteza-rewizja",
+    "benefit_label": "Wymiana endoprotezy (rewizja)",
+    "synonyms": [
+      "reoperacja endoprotezy",
+      "poluzowana endoproteza",
+      "wymiana protezy"
+    ],
+    "city": "ZAWIERCIE",
+    "city_slug": "zawiercie",
+    "province": "12",
+    "median_days": 90,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "ortopedia-dziecieca",
+    "benefit_label": "Ortopeda dziecięcy",
+    "synonyms": [
+      "ortopeda dziecięcy",
+      "wady postawy"
+    ],
+    "city": "CHORZÓW",
+    "city_slug": "chorzow",
+    "province": "12",
+    "median_days": 18,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia-dziecieca",
+    "benefit_label": "Ortopeda dziecięcy",
+    "synonyms": [
+      "ortopeda dziecięcy",
+      "wady postawy"
+    ],
+    "city": "GLIWICE",
+    "city_slug": "gliwice",
+    "province": "12",
+    "median_days": 5,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia-dziecieca",
+    "benefit_label": "Ortopeda dziecięcy",
+    "synonyms": [
+      "ortopeda dziecięcy",
+      "wady postawy"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia-dziecieca",
+    "benefit_label": "Ortopeda dziecięcy",
+    "synonyms": [
+      "ortopeda dziecięcy",
+      "wady postawy"
+    ],
+    "city": "PIEKARY ŚLĄSKIE",
+    "city_slug": "piekary-slaskie",
+    "province": "12",
+    "median_days": 37,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "ortopedia-dziecieca",
+    "benefit_label": "Ortopeda dziecięcy",
+    "synonyms": [
+      "ortopeda dziecięcy",
+      "wady postawy"
+    ],
+    "city": "USTROŃ",
+    "city_slug": "ustron",
+    "province": "12",
+    "median_days": 7,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia-dziecieca",
+    "benefit_label": "Kardiologia dziecięca - oddział szpitalny",
+    "synonyms": [
+      "serce dziecka",
+      "kardiolog dziecięcy"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 134,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiologia-dziecieca",
+    "benefit_label": "Kardiologia dziecięca - oddział szpitalny",
+    "synonyms": [
+      "serce dziecka",
+      "kardiolog dziecięcy"
+    ],
+    "city": "ZABRZE",
+    "city_slug": "zabrze",
+    "province": "12",
+    "median_days": 74,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "kardiochirurgia",
+    "benefit_label": "Kardiochirurgia",
+    "synonyms": [
+      "operacja serca",
+      "bypassy",
+      "zastawka"
+    ],
+    "city": "BIELSKO-BIAŁA",
+    "city_slug": "bielsko-biala",
+    "province": "12",
+    "median_days": 51,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "kardiochirurgia",
+    "benefit_label": "Kardiochirurgia",
+    "synonyms": [
+      "operacja serca",
+      "bypassy",
+      "zastawka"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 5,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "kardiochirurgia",
+    "benefit_label": "Kardiochirurgia",
+    "synonyms": [
+      "operacja serca",
+      "bypassy",
+      "zastawka"
+    ],
+    "city": "ZABRZE",
+    "city_slug": "zabrze",
+    "province": "12",
+    "median_days": 67,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "BIELSKO-BIAŁA",
+    "city_slug": "bielsko-biala",
+    "province": "12",
+    "median_days": 12,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "CZĘSTOCHOWA",
+    "city_slug": "czestochowa",
+    "province": "12",
+    "median_days": 10,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "JASTRZĘBIE-ZDRÓJ",
+    "city_slug": "jastrzebie-zdroj",
+    "province": "12",
+    "median_days": 11,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "JAWORZE",
+    "city_slug": "jaworze",
+    "province": "12",
+    "median_days": 10,
+    "places_total": 3
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "KATOWICE",
+    "city_slug": "katowice",
+    "province": "12",
+    "median_days": 19,
+    "places_total": 4
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "RACIBÓRZ",
+    "city_slug": "raciborz",
+    "province": "12",
+    "median_days": 51,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "RYBNIK",
+    "city_slug": "rybnik",
+    "province": "12",
+    "median_days": 44,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "SOSNOWIEC",
+    "city_slug": "sosnowiec",
+    "province": "12",
+    "median_days": 35,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "TARNOWSKIE GÓRY",
+    "city_slug": "tarnowskie-gory",
+    "province": "12",
+    "median_days": 29,
+    "places_total": 2
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "TYCHY",
+    "city_slug": "tychy",
+    "province": "12",
+    "median_days": 201,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "USTROŃ",
+    "city_slug": "ustron",
+    "province": "12",
+    "median_days": 24,
+    "places_total": 7
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "ZABRZE",
+    "city_slug": "zabrze",
+    "province": "12",
+    "median_days": 111,
+    "places_total": 1
+  },
+  {
+    "benefit_slug": "rehabilitacja-kardiologiczna",
+    "benefit_label": "Rehabilitacja kardiologiczna",
+    "synonyms": [
+      "rehabilitacja serca",
+      "rehabilitacja po zawale"
+    ],
+    "city": "ŻYWIEC",
+    "city_slug": "zywiec",
+    "province": "12",
+    "median_days": 0,
+    "places_total": 1
   }
 ]

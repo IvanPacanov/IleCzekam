@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "endoproteza-biodra",
+    "label": "Endoproteza biodra",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "RACIBÓRZ",
+    "slug": "raciborz",
+    "teryt": "2411011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 374,
+    "median_label": "ok. 12 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "124-100582-bb5f0177",
+      "provider": "SZPITAL REJONOWY IM. DR. JÓZEFA ROSTKA W RACIBORZU",
+      "locality": "RACIBÓRZ",
+      "raw_days": 374,
+      "human_label": "ok. 12 miesięcy i 2 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 374,
+    "province_median_days": 360,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 644,
+      "median_label": "ok. 21 miesięcy",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 374,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "124-100582-bb5f0177",
+      "provider": "SZPITAL REJONOWY IM. DR. JÓZEFA ROSTKA W RACIBORZU",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "GAMOWSKA 3",
+      "locality": "RACIBÓRZ",
+      "teryt": "2411011",
+      "phone": "+48 32 755 53 52",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU BIODROWEGO",
+      "wait_stable": {
+        "pcus_raw": "12 mies. 2 tyg.",
+        "raw_days": 374,
+        "human_label": "ok. 12 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 mies. 1 tydz.",
+        "raw_days": 277,
+        "human_label": "ok. 9 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 54,
+      "average_period_days": 496,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

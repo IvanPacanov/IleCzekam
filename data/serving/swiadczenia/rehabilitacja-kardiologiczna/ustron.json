@@ -1,0 +1,281 @@
+{
+  "benefit": {
+    "slug": "rehabilitacja-kardiologiczna",
+    "label": "Rehabilitacja kardiologiczna",
+    "nfz_benefits": [
+      "REHABILITACJA KARDIOLOGICZNA W WARUNKACH STACJONARNYCH",
+      "KARDIOLOGICZNA TELEREHABILITACJA HYBRYDOWA W WARUNKACH STACJONARNYCH",
+      "ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ",
+      "ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ DZIENNEJ",
+      "PORADNIA REHABILITACJI KARDIOLOGICZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "USTROŃ",
+    "slug": "ustron",
+    "teryt": "2403021",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 24,
+    "median_label": "ok. 24 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "122-107535-6af96dc5",
+      "provider": "ŚLĄSKIE CENTRUM REHABILITACJI I PREWENCJI",
+      "locality": "USTROŃ",
+      "raw_days": 0,
+      "human_label": "bez oczekiwania"
+    },
+    "places_total": 7,
+    "places_with_data": 6,
+    "places_without_data": 1,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 24,
+    "province_median_days": 21,
+    "best_city_in_province": {
+      "name": "CZĘSTOCHOWA",
+      "slug": "czestochowa",
+      "median_days": 10,
+      "median_label": "ok. 10 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 24,
+      "places_with_data": 6
+    }
+  ],
+  "places": [
+    {
+      "id": "122-207776-14e5afe2",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ WCZESNEJ REHABILITACJI KARDIOLOGICZNEJ",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 54 54",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REHABILITACJA KARDIOLOGICZNA W WARUNKACH STACJONARNYCH",
+      "wait_stable": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "wait_urgent": {
+        "pcus_raw": null,
+        "raw_days": null,
+        "human_label": "brak danych",
+        "bucket": "brak_danych",
+        "as_at": null
+      },
+      "awaiting": 3,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": [
+        "no_data"
+      ]
+    },
+    {
+      "id": "122-207776-9759207a",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "OŚRODEK REHABILITACJI DZIENNEJ KARDIOLOGICZNEJ",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 856 50 56",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ",
+      "wait_stable": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-08"
+      },
+      "wait_urgent": {
+        "pcus_raw": "12 dni",
+        "raw_days": 12,
+        "human_label": "ok. 12 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-08"
+      },
+      "awaiting": 13,
+      "average_period_days": 39,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "122-107535-6af96dc5",
+      "provider": "ŚLĄSKIE CENTRUM REHABILITACJI I PREWENCJI",
+      "place": "II ODDZIAŁ REHABILITACJI KARDIOLOGICZNEJ",
+      "address": "ZDROJOWA 6",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 16 32",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "KARDIOLOGICZNA TELEREHABILITACJA HYBRYDOWA W WARUNKACH STACJONARNYCH",
+      "wait_stable": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-107535-bb07889e",
+      "provider": "ŚLĄSKIE CENTRUM REHABILITACJI I PREWENCJI",
+      "place": "I ODDZIAŁ REHABILITACJI KARDIOLOGICZNEJ",
+      "address": "ZDROJOWA 6",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 16 32",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "KARDIOLOGICZNA TELEREHABILITACJA HYBRYDOWA W WARUNKACH STACJONARNYCH",
+      "wait_stable": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 0,
+      "average_period_days": 0,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-107535-6618d404",
+      "provider": "ŚLĄSKIE CENTRUM REHABILITACJI I PREWENCJI",
+      "place": "II ODDZIAŁ REHABILITACJI KARDIOLOGICZNEJ",
+      "address": "ZDROJOWA 6",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 16 32",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REHABILITACJA KARDIOLOGICZNA W WARUNKACH STACJONARNYCH",
+      "wait_stable": {
+        "pcus_raw": "21 dni",
+        "raw_days": 21,
+        "human_label": "ok. 21 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 60,
+      "average_period_days": 29,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-107535-e6666d70",
+      "provider": "ŚLĄSKIE CENTRUM REHABILITACJI I PREWENCJI",
+      "place": "I ODDZIAŁ REHABILITACJI KARDIOLOGICZNEJ",
+      "address": "ZDROJOWA 6",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 33 854 16 32",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "REHABILITACJA KARDIOLOGICZNA W WARUNKACH STACJONARNYCH",
+      "wait_stable": {
+        "pcus_raw": "26 dni",
+        "raw_days": 26,
+        "human_label": "ok. 26 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 83,
+      "average_period_days": 39,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-107535-5bedf0fb",
+      "provider": "ŚLĄSKIE CENTRUM REHABILITACJI I PREWENCJI",
+      "place": "OŚRODEK REHABILITACJI KARDIOLOGICZNEJ",
+      "address": "ZDROJOWA 6",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 338 541 632",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-01"
+      },
+      "wait_urgent": {
+        "pcus_raw": "0 dni",
+        "raw_days": 0,
+        "human_label": "bez oczekiwania",
+        "bucket": "krotko",
+        "as_at": "2026-07-01"
+      },
+      "awaiting": 45,
+      "average_period_days": 56,
+      "stats_month": "2026-06",
+      "flags": []
+    }
+  ]
+}

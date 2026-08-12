@@ -1,0 +1,125 @@
+{
+  "benefit": {
+    "slug": "kardiochirurgia",
+    "label": "Kardiochirurgia",
+    "nfz_benefits": [
+      "ODDZIAŁ KARDIOCHIRURGICZNY",
+      "ODDZIAŁ KARDIOCHIRURGICZNY DLA DZIECI",
+      "PORADNIA KARDIOCHIRURGICZNA",
+      "PORADNIA KARDIOCHIRURGICZNA DLA DZIECI"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "BIELSKO-BIAŁA",
+    "slug": "bielsko-biala",
+    "teryt": "2461011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 51,
+    "median_label": "ok. 7 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "122-207776-eb552ae1",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "locality": "BIELSKO-BIAŁA",
+      "raw_days": 51,
+      "human_label": "ok. 1 miesiąc i 3 tygodnie"
+    },
+    "places_total": 2,
+    "places_with_data": 2,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 51,
+    "province_median_days": 51,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 5,
+      "median_label": "ok. 5 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 51,
+      "places_with_data": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "122-207776-eb552ae1",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "ODDZIAŁ KARDIOCHIRURGII",
+      "address": "ŚW. ANDRZEJA BOBOLI 20",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 472 63 10",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ KARDIOCHIRURGICZNY",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-05"
+      },
+      "wait_urgent": {
+        "pcus_raw": "15 dni",
+        "raw_days": 15,
+        "human_label": "ok. 15 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-05"
+      },
+      "awaiting": 14,
+      "average_period_days": 37,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-207776-956e7bc9",
+      "provider": "AMERICAN HEART OF POLAND SPÓŁKA AKCYJNA",
+      "place": "PORADNIA KARDIOCHIRURGICZNA",
+      "address": "ŚW. ANDRZEJA BOBOLI 20",
+      "locality": "BIELSKO-BIAŁA",
+      "teryt": "2461011",
+      "phone": "+48 33 472 63 20",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "PORADNIA KARDIOCHIRURGICZNA",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-01"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-01"
+      },
+      "awaiting": 140,
+      "average_period_days": 46,
+      "stats_month": "2026-06",
+      "flags": []
+    }
+  ]
+}

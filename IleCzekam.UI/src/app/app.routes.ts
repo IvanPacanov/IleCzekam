@@ -9,6 +9,11 @@ export const routes: Routes = [
     loadComponent: () => import('@features/home/home-page').then((m) => m.HomePage),
   },
   {
+    // Widok wyników - dynamiczny (geolokalizacja, filtry), więc CSR jak strona główna.
+    path: 'szukaj',
+    loadComponent: () => import('@features/search/search-page').then((m) => m.SearchPage),
+  },
+  {
     path: 'o-danych',
     loadComponent: () => import('@features/about/about-page').then((m) => m.AboutPage),
   },

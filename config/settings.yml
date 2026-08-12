@@ -7,7 +7,6 @@ api:
   # Wersja 1.4 (PCUŚ). Stary host api.nfz.gov.pl/app-itl-api (v1.3) jest oznaczony
   # jako nieaktualny od 10 lipca 2026 - szczegóły w RECON.md.
   base_url: https://apinfz.nfz.gov.pl/app-itl-api-pcus/
-  user_agent_env: NFZ_USER_AGENT
   throttle_ms: 600          # z dużym zapasem względem limitu 10 req/s
   page_limit: 25            # twardy limit API: maks. 25 pozycji na stronę
   retry:

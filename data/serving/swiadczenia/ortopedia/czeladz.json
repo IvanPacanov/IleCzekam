@@ -1,0 +1,123 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "CZELADŹ",
+    "slug": "czeladz",
+    "teryt": "2401021",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 104,
+    "median_label": "ok. 3 miesiące",
+    "median_bucket": "dlugo",
+    "fastest": {
+      "place_id": "125-110545-2ce87ff9",
+      "provider": "ZAGŁĘBIOWSKI SZPITAL KLINICZNY",
+      "locality": "CZELADŹ",
+      "raw_days": 44,
+      "human_label": "ok. 1 miesiąc i 2 tygodnie"
+    },
+    "places_total": 2,
+    "places_with_data": 2,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 104,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 104,
+      "places_with_data": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "125-110545-b42133d4",
+      "provider": "ZAGŁĘBIOWSKI SZPITAL KLINICZNY",
+      "place": "ODDZIAŁ URAZOWO-ORTOPEDYCZNY",
+      "address": "SZPITALNA  40",
+      "locality": "CZELADŹ",
+      "teryt": "2401021",
+      "phone": "+48 32 265 16 44",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "5 mies. 2 tyg.",
+        "raw_days": 164,
+        "human_label": "ok. 5 miesięcy i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 167,
+      "average_period_days": 177,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "125-110545-2ce87ff9",
+      "provider": "ZAGŁĘBIOWSKI SZPITAL KLINICZNY",
+      "place": "PORADNIA URAZOWO-ORTOPEDYCZNA",
+      "address": "SZPITALNA  40",
+      "locality": "CZELADŹ",
+      "teryt": "2401021",
+      "phone": "+48 690 475 233",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "27 dni",
+        "raw_days": 27,
+        "human_label": "ok. 27 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 149,
+      "average_period_days": 32,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

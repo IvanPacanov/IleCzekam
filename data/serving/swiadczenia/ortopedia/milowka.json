@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "MILÓWKA",
+    "slug": "milowka",
+    "teryt": "2417092",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 10,
+    "median_label": "ok. 10 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "122-200177-44ea368e",
+      "provider": "ZAKŁAD OPIEKI ZDROWOTNEJ \"MEDYK\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "MILÓWKA",
+      "raw_days": 10,
+      "human_label": "ok. 10 dni"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 10,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 10,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "122-200177-44ea368e",
+      "provider": "ZAKŁAD OPIEKI ZDROWOTNEJ \"MEDYK\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "DWORCOWA  31",
+      "locality": "MILÓWKA",
+      "teryt": "2417092",
+      "phone": "+48 33 863 76 89",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "10 dni",
+        "raw_days": 10,
+        "human_label": "ok. 10 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "6 dni",
+        "raw_days": 6,
+        "human_label": "ok. 6 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 43,
+      "average_period_days": 7,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

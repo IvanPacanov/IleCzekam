@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "ortopedia-dziecieca",
+    "label": "Ortopeda dziecięcy",
+    "nfz_benefits": [
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "USTROŃ",
+    "slug": "ustron",
+    "teryt": "2403021",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 7,
+    "median_label": "ok. 7 dni",
+    "median_bucket": "krotko",
+    "fastest": {
+      "place_id": "124-500120-96a60bc7",
+      "provider": "SCANMED SPORT SP. Z O.O.",
+      "locality": "USTROŃ",
+      "raw_days": 7,
+      "human_label": "ok. 7 dni"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 7,
+    "province_median_days": 18,
+    "best_city_in_province": {
+      "name": "GLIWICE",
+      "slug": "gliwice",
+      "median_days": 5,
+      "median_label": "ok. 5 dni",
+      "low_sample": true
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 7,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "124-500120-96a60bc7",
+      "provider": "SCANMED SPORT SP. Z O.O.",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "address": "SANATORYJNA 7",
+      "locality": "USTROŃ",
+      "teryt": "2403021",
+      "phone": "+48 324 759 315",
+      "latitude": null,
+      "longitude": null,
+      "for_children": true,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "wait_stable": {
+        "pcus_raw": "7 dni",
+        "raw_days": 7,
+        "human_label": "ok. 7 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 dzień",
+        "raw_days": 1,
+        "human_label": "ok. 1 dzień",
+        "bucket": "krotko",
+        "as_at": "2026-08-07"
+      },
+      "awaiting": 6,
+      "average_period_days": 7,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

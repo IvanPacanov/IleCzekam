@@ -4,11 +4,7 @@ import { SearchIndexEntry } from '@models/serving';
 
 /** Znormalizowany tekst do dopasowania: bez polskich znaków i wielkości liter. */
 function normalize(text: string): string {
-  return text
-    .toLocaleLowerCase('pl-PL')
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/ł/g, 'l');
+  return text.toLocaleLowerCase('pl-PL').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l');
 }
 
 export interface BenefitSuggestion {
@@ -65,7 +61,7 @@ export class SearchIndexService {
           slug: entry.benefit_slug,
           label: entry.benefit_label,
           synonyms: entry.synonyms,
-          cities: [],
+          cities: []
         };
         bySlug.set(entry.benefit_slug, group);
       }
@@ -75,7 +71,7 @@ export class SearchIndexService {
 
     const groups = [...bySlug.values()].map((group) => ({
       ...group,
-      cities: [...group.cities].sort((a, b) => (a.median_days ?? Infinity) - (b.median_days ?? Infinity)),
+      cities: [...group.cities].sort((a, b) => (a.median_days ?? Infinity) - (b.median_days ?? Infinity))
     }));
 
     if (needle === '') {
@@ -86,7 +82,7 @@ export class SearchIndexService {
       (group) =>
         normalize(group.label).includes(needle) ||
         group.slug.includes(needle) ||
-        group.synonyms.some((synonym) => normalize(synonym).includes(needle)),
+        group.synonyms.some((synonym) => normalize(synonym).includes(needle))
     );
   }
 

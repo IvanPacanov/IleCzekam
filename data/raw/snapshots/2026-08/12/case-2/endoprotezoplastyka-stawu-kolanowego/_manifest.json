@@ -1,0 +1,13 @@
+{
+  "month": "2026-08",
+  "province": "12",
+  "case": 2,
+  "benefit_slug": "endoproteza-kolana",
+  "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+  "fetched_at": "2026-08-12T07:15:45.290829+02:00",
+  "reported_count": 32,
+  "pages": [
+    "page-001.json",
+    "page-002.json"
+  ]
+}

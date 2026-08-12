@@ -1,0 +1,12 @@
+{
+  "month": "2026-08",
+  "province": "12",
+  "case": 2,
+  "benefit_slug": "ortopedia-dziecieca",
+  "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+  "fetched_at": "2026-08-12T07:15:45.290829+02:00",
+  "reported_count": 5,
+  "pages": [
+    "page-001.json"
+  ]
+}

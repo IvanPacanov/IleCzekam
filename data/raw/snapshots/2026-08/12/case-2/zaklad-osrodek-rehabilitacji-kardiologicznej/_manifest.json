@@ -1,0 +1,12 @@
+{
+  "month": "2026-08",
+  "province": "12",
+  "case": 2,
+  "benefit_slug": "rehabilitacja-kardiologiczna",
+  "nfz_benefit": "ZAKŁAD/OŚRODEK REHABILITACJI KARDIOLOGICZNEJ",
+  "fetched_at": "2026-08-12T07:15:45.290829+02:00",
+  "reported_count": 14,
+  "pages": [
+    "page-001.json"
+  ]
+}

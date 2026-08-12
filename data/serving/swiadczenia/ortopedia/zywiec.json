@@ -1,0 +1,214 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "ŻYWIEC",
+    "slug": "zywiec",
+    "teryt": "2417011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 90,
+    "median_label": "ok. 3 miesiące",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "122-214327-f743d193",
+      "provider": "ICZ HEALTHCARE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "ŻYWIEC",
+      "raw_days": 10,
+      "human_label": "ok. 10 dni"
+    },
+    "places_total": 5,
+    "places_with_data": 5,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 90,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 90,
+      "places_with_data": 5
+    }
+  ],
+  "places": [
+    {
+      "id": "122-214327-f3e241a9",
+      "provider": "ICZ HEALTHCARE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "POLA LISICKICH 80",
+      "locality": "ŻYWIEC",
+      "teryt": "2417011",
+      "phone": "+48 33 440 14 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 2 tyg.",
+        "raw_days": 44,
+        "human_label": "ok. 1 miesiąc i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-07-01"
+      },
+      "wait_urgent": {
+        "pcus_raw": "19 dni",
+        "raw_days": 19,
+        "human_label": "ok. 19 dni",
+        "bucket": "krotko",
+        "as_at": "2026-07-01"
+      },
+      "awaiting": 576,
+      "average_period_days": 35,
+      "stats_month": "2026-06",
+      "flags": []
+    },
+    {
+      "id": "122-214327-f743d193",
+      "provider": "ICZ HEALTHCARE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ DLA DZIECI",
+      "address": "POLA LISICKICH 80",
+      "locality": "ŻYWIEC",
+      "teryt": "2417011",
+      "phone": "+48 33 440 14 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "10 dni",
+        "raw_days": 10,
+        "human_label": "ok. 10 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 dni",
+        "raw_days": 9,
+        "human_label": "ok. 9 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 21,
+      "average_period_days": 9,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-214327-4cd8feb1",
+      "provider": "ICZ HEALTHCARE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA URAZOWO - ORTOPEDYCZNA Z GABINETEM DIAGNOSTYCZNO-ZABIEGOWYM",
+      "address": "POLA LISICKICH 80",
+      "locality": "ŻYWIEC",
+      "teryt": "2417011",
+      "phone": "+48 33 440 14 00",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 3 tyg.",
+        "raw_days": 111,
+        "human_label": "ok. 3 miesiące i 3 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies. 2 tyg.",
+        "raw_days": 74,
+        "human_label": "ok. 2 miesiące i 2 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 336,
+      "average_period_days": 59,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-202444-88483563",
+      "provider": "MEDICUS MAURYCY JAKUBIEC URSZULA JAKUBIEC SPÓŁKA JAWNA",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "DWORCOWA  22",
+      "locality": "ŻYWIEC",
+      "teryt": "2417011",
+      "phone": "+48 33 861 36 78",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "2 mies.",
+        "raw_days": 60,
+        "human_label": "ok. 2 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 53,
+      "average_period_days": 78,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "122-200177-922994b8",
+      "provider": "ZAKŁAD OPIEKI ZDROWOTNEJ \"MEDYK\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "LEŚNIANKA 127",
+      "locality": "ŻYWIEC",
+      "teryt": "2417011",
+      "phone": "+48 33 471 18 50",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "3 mies. 1 tydz.",
+        "raw_days": 97,
+        "human_label": "ok. 3 miesiące i 1 tydzień",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies.",
+        "raw_days": 90,
+        "human_label": "ok. 3 miesiące",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 96,
+      "average_period_days": 77,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

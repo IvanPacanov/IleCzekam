@@ -1,0 +1,152 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "WODZISŁAW ŚLĄSKI",
+    "slug": "wodzislaw-slaski",
+    "teryt": "2415041",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 37,
+    "median_label": "ok. 5 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "124-212449-2d583480",
+      "provider": "RYSZARD ZAKRZEWSKI",
+      "locality": "WODZISŁAW ŚLĄSKI",
+      "raw_days": 37,
+      "human_label": "ok. 1 miesiąc i 1 tydzień"
+    },
+    "places_total": 3,
+    "places_with_data": 3,
+    "places_without_data": 0,
+    "flags": []
+  },
+  "comparison": {
+    "scope_median_days": 37,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 37,
+      "places_with_data": 3
+    }
+  ],
+  "places": [
+    {
+      "id": "124-212449-2d583480",
+      "provider": "RYSZARD ZAKRZEWSKI",
+      "place": "PORADNIA URAZOWO-ORTOPEDYCZNA",
+      "address": "ŚWIĘTEGO WAWRZYŃCA 1",
+      "locality": "WODZISŁAW ŚLĄSKI",
+      "teryt": "2415041",
+      "phone": "+48 32 729 31 84",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "23 dni",
+        "raw_days": 23,
+        "human_label": "ok. 23 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 43,
+      "average_period_days": 38,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100310-8624c427",
+      "provider": "SZPITAL POWIATOWY W WODZISŁAWIU ŚLĄSKIM",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "26 MARCA 51",
+      "locality": "WODZISŁAW ŚLĄSKI",
+      "teryt": "2415041",
+      "phone": "+48 32 459 19 55",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "wait_stable": {
+        "pcus_raw": "5 mies.",
+        "raw_days": 150,
+        "human_label": "ok. 5 miesięcy",
+        "bucket": "dlugo",
+        "as_at": "2026-08-09"
+      },
+      "wait_urgent": {
+        "pcus_raw": "1 mies. 3 tyg.",
+        "raw_days": 51,
+        "human_label": "ok. 1 miesiąc i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-09"
+      },
+      "awaiting": 438,
+      "average_period_days": 176,
+      "stats_month": "2026-07",
+      "flags": []
+    },
+    {
+      "id": "124-100310-7ab4f9ef",
+      "provider": "SZPITAL POWIATOWY W WODZISŁAWIU ŚLĄSKIM",
+      "place": "PORADNIA CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "26 MARCA  164",
+      "locality": "WODZISŁAW ŚLĄSKI",
+      "teryt": "2415041",
+      "phone": "+48 32 459 17 47",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "1 mies. 1 tydz.",
+        "raw_days": 37,
+        "human_label": "ok. 1 miesiąc i 1 tydzień",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 427,
+      "average_period_days": 39,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

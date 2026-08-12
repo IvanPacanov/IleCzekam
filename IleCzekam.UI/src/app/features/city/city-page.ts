@@ -2,12 +2,14 @@ import { ChangeDetectionStrategy, Component, computed, inject, input, signal } f
 import { Meta, Title } from '@angular/platform-browser';
 
 import { Place, ServingFile, VALIDATION_FLAG } from '@models/serving';
+import { DataNotice } from '@shared/data-notice/data-notice';
 import { PlaceCard } from '@shared/place-card/place-card';
 import { SiteHeader } from '@shared/site-header/site-header';
 import { WaitPill } from '@shared/wait-pill/wait-pill';
 import { cityHeadline, cityLocative, cityName } from '@shared/format/city-name';
 import {
   dateLabel,
+  daysApprox,
   monthAfterZa,
   monthLabel,
   monthRoman,
@@ -51,7 +53,7 @@ const COLLAPSED_PLACES = 3;
 @Component({
   selector: 'app-city-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [SiteHeader, WaitPill, PlaceCard],
+  imports: [SiteHeader, DataNotice, WaitPill, PlaceCard],
   templateUrl: './city-page.html',
   styleUrl: './city-page.scss',
 })
@@ -255,26 +257,8 @@ export class CityPage {
     return dateLabel(date);
   }
 
-  /**
-   * Etykieta dla wartości wyliczonych - te same reguły zaokrągleń, co w ETL:
-   * < 30 dni → dni, 30–84 → tygodnie, ≥ 85 → miesiące.
-   */
   private daysLabel(days: number): string {
-    if (days === 0) {
-      return 'bez oczekiwania';
-    }
-
-    if (days < 30) {
-      return `ok. ${days} ${plural(days, 'dzień', 'dni', 'dni')}`;
-    }
-
-    if (days < 85) {
-      const weeks = Math.round(days / 7);
-      return `ok. ${weeks} ${plural(weeks, 'tydzień', 'tygodnie', 'tygodni')}`;
-    }
-
-    const months = Math.round(days / 30);
-    return `ok. ${months} ${plural(months, 'miesiąc', 'miesiące', 'miesięcy')}`;
+    return daysApprox(days);
   }
 
   private sortKey(place: Place): number {

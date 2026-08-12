@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "TYCHY",
+    "slug": "tychy",
+    "teryt": "2477011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 637,
+    "median_label": "ok. 21 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "121-212484-ba5a4cbd",
+      "provider": "MEGREZ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "TYCHY",
+      "raw_days": 637,
+      "human_label": "ok. 21 miesięcy i 1 tydzień"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 637,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 637,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "121-212484-ba5a4cbd",
+      "provider": "MEGREZ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "ODDZIAŁ CHIRURGII REKONSTRUKCYJNEJ NARZĄDU RUCHU",
+      "address": "EDUKACJI 102",
+      "locality": "TYCHY",
+      "teryt": "2477011",
+      "phone": "+48 32 325 53 23",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "21 mies. 1 tydz.",
+        "raw_days": 637,
+        "human_label": "ok. 21 miesięcy i 1 tydzień",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "9 mies. 3 tyg.",
+        "raw_days": 291,
+        "human_label": "ok. 9 miesięcy i 3 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 138,
+      "average_period_days": 558,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

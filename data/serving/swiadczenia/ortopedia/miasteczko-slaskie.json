@@ -1,0 +1,92 @@
+{
+  "benefit": {
+    "slug": "ortopedia",
+    "label": "Ortopeda",
+    "nfz_benefits": [
+      "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "MIASTECZKO ŚLĄSKIE",
+    "slug": "miasteczko-slaskie",
+    "teryt": "2413021",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 81,
+    "median_label": "ok. 12 tygodni",
+    "median_bucket": "umiarkowanie",
+    "fastest": {
+      "place_id": "126-200619-88699cfb",
+      "provider": "CENTRUM MEDYCZNE \"EKO-PROF-MED\" SPÓŁKA  Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "locality": "MIASTECZKO ŚLĄSKIE",
+      "raw_days": 81,
+      "human_label": "ok. 2 miesiące i 3 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 81,
+    "province_median_days": 67,
+    "best_city_in_province": {
+      "name": "JASTRZĘBIE-ZDRÓJ",
+      "slug": "jastrzebie-zdroj",
+      "median_days": 25,
+      "median_label": "ok. 25 dni",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 81,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "126-200619-88699cfb",
+      "provider": "CENTRUM MEDYCZNE \"EKO-PROF-MED\" SPÓŁKA  Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "place": "PORADNIA ORTOPEDYCZNA DLA DOROSŁYCH",
+      "address": "CYNKOWA 6",
+      "locality": "MIASTECZKO ŚLĄSKIE",
+      "teryt": "2413021",
+      "phone": "+48 32 288 88 82",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ŚWIADCZENIA Z ZAKRESU ORTOPEDII I TRAUMATOLOGII NARZĄDU RUCHU",
+      "wait_stable": {
+        "pcus_raw": "2 mies. 3 tyg.",
+        "raw_days": 81,
+        "human_label": "ok. 2 miesiące i 3 tygodnie",
+        "bucket": "umiarkowanie",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "25 dni",
+        "raw_days": 25,
+        "human_label": "ok. 25 dni",
+        "bucket": "krotko",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 406,
+      "average_period_days": 82,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

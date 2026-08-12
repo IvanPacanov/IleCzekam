@@ -1,0 +1,246 @@
+// Nagłówkowa szukajka - wpięta w slot wspólnego nagłówka.
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.header-form {
+  flex: 1;
+  min-width: 0;
+}
+
+.header-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  background: #fff;
+  border: 2px solid var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  padding: 0 18px;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: var(--color-accent-700);
+}
+
+.header-field input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 18px;
+  color: var(--color-text);
+  min-height: var(--touch-target);
+
+  &::placeholder {
+    color: var(--color-text-muted);
+  }
+}
+
+.city-chip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 0 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-muted);
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--color-border-strong);
+  }
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: start;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 26px 48px 56px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: sticky;
+  top: 16px;
+}
+
+.filters {
+  background: var(--color-surface);
+  border-radius: var(--radius-panel);
+  padding: 22px 24px;
+}
+
+.panel-title {
+  font-family: var(--font-display);
+  font-size: 21px;
+  margin: 0 0 14px;
+}
+
+.metric-label {
+  margin: 16px 0 8px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+// Segmenty Stabilny/Pilny - ten sam wzorzec, co na stronie miasta.
+.case-switch,
+.sorting {
+  display: flex;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-muted);
+  overflow: hidden;
+
+  button {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 52px;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-text);
+    cursor: pointer;
+
+    &.active {
+      background: var(--color-border-strong);
+      color: var(--color-on-accent);
+      font-weight: 700;
+      border-radius: var(--radius-pill);
+    }
+
+    &:disabled {
+      color: var(--color-text-muted);
+      cursor: not-allowed;
+    }
+  }
+}
+
+.sorting {
+  flex-direction: column;
+  border-radius: 26px;
+
+  button {
+    border-radius: var(--radius-pill);
+  }
+}
+
+.filter-note {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  margin: 8px 0 0;
+}
+
+.radius {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  button {
+    min-height: var(--touch-target);
+    padding: 0 16px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-text);
+    cursor: pointer;
+
+    &.active {
+      background: var(--color-border-strong);
+      border-color: var(--color-border-strong);
+      color: var(--color-on-accent);
+      font-weight: 700;
+    }
+  }
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0 0 8px;
+}
+
+.subline {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  margin: 0 0 22px;
+}
+
+.note {
+  font-size: 17px;
+  color: var(--color-text-secondary);
+  background: var(--color-surface-highlight);
+  border: 1px solid var(--wait-dlugo-bg);
+  border-radius: var(--radius-card-sm);
+  padding: 14px 18px;
+  margin: 0 0 16px;
+  max-width: 640px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+// Boks „Gotów wyjechać?”: desktop pod filtrami, mobile po 3. karcie.
+.hint-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 16px 20px 40px;
+  }
+
+  .side {
+    position: static;
+  }
+
+  .hint-desktop {
+    display: none;
+  }
+
+  .hint-mobile {
+    display: block;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  .subline {
+    font-size: 16px;
+  }
+
+  .city-chip {
+    min-height: var(--touch-target);
+    padding: 0 14px;
+  }
+}

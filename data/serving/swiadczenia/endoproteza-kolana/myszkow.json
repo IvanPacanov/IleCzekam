@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "MYSZKÓW",
+    "slug": "myszkow",
+    "teryt": "2409011",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 150,
+    "median_label": "ok. 5 miesięcy",
+    "median_bucket": "dlugo",
+    "fastest": {
+      "place_id": "123-100327-67c1422e",
+      "provider": "SAMODZIELNY PUBLICZNY ZESPÓŁ OPIEKI ZDROWOTNEJ W MYSZKOWIE",
+      "locality": "MYSZKÓW",
+      "raw_days": 150,
+      "human_label": "ok. 5 miesięcy"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 150,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 150,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "123-100327-67c1422e",
+      "provider": "SAMODZIELNY PUBLICZNY ZESPÓŁ OPIEKI ZDROWOTNEJ W MYSZKOWIE",
+      "place": "ODDZIAŁ CHIRURGII URAZOWO-ORTOPEDYCZNEJ",
+      "address": "ALEJA WOLNOŚCI 29",
+      "locality": "MYSZKÓW",
+      "teryt": "2409011",
+      "phone": "+48 34 315 82 31",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "5 mies.",
+        "raw_days": 150,
+        "human_label": "ok. 5 miesięcy",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "3 mies. 2 tyg.",
+        "raw_days": 104,
+        "human_label": "ok. 3 miesiące i 2 tygodnie",
+        "bucket": "dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 143,
+      "average_period_days": 241,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}

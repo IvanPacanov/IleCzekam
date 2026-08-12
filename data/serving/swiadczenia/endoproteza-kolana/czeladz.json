@@ -1,0 +1,91 @@
+{
+  "benefit": {
+    "slug": "endoproteza-kolana",
+    "label": "Endoproteza kolana",
+    "nfz_benefits": [
+      "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO"
+    ]
+  },
+  "scope": {
+    "type": "miasto",
+    "name": "CZELADŹ",
+    "slug": "czeladz",
+    "teryt": "2401021",
+    "province": "12"
+  },
+  "snapshot_month": "2026-08",
+  "generated_at": "2026-08-12T07:17:07.3984900+02:00",
+  "source": {
+    "name": "Narodowy Fundusz Zdrowia - Informator o Terminach Leczenia",
+    "url": "https://api.nfz.gov.pl/"
+  },
+  "summary": {
+    "median_days": 494,
+    "median_label": "ok. 16 miesięcy",
+    "median_bucket": "bardzo_dlugo",
+    "fastest": {
+      "place_id": "125-110545-1a3597db",
+      "provider": "ZAGŁĘBIOWSKI SZPITAL KLINICZNY",
+      "locality": "CZELADŹ",
+      "raw_days": 494,
+      "human_label": "ok. 16 miesięcy i 2 tygodnie"
+    },
+    "places_total": 1,
+    "places_with_data": 1,
+    "places_without_data": 0,
+    "flags": [
+      "low_sample"
+    ]
+  },
+  "comparison": {
+    "scope_median_days": 494,
+    "province_median_days": 457,
+    "best_city_in_province": {
+      "name": "KATOWICE",
+      "slug": "katowice",
+      "median_days": 651,
+      "median_label": "ok. 22 miesiące",
+      "low_sample": false
+    }
+  },
+  "trend": [
+    {
+      "month": "2026-08",
+      "median_days": 494,
+      "places_with_data": 1
+    }
+  ],
+  "places": [
+    {
+      "id": "125-110545-1a3597db",
+      "provider": "ZAGŁĘBIOWSKI SZPITAL KLINICZNY",
+      "place": "ODDZIAŁ URAZOWO-ORTOPEDYCZNY",
+      "address": "SZPITALNA  40",
+      "locality": "CZELADŹ",
+      "teryt": "2401021",
+      "phone": "+48 32 265 16 44",
+      "latitude": null,
+      "longitude": null,
+      "for_children": false,
+      "nfz_benefit": "ENDOPROTEZOPLASTYKA STAWU KOLANOWEGO",
+      "wait_stable": {
+        "pcus_raw": "16 mies. 2 tyg.",
+        "raw_days": 494,
+        "human_label": "ok. 16 miesięcy i 2 tygodnie",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "wait_urgent": {
+        "pcus_raw": "10 mies.",
+        "raw_days": 300,
+        "human_label": "ok. 10 miesięcy",
+        "bucket": "bardzo_dlugo",
+        "as_at": "2026-08-02"
+      },
+      "awaiting": 162,
+      "average_period_days": 638,
+      "stats_month": "2026-07",
+      "flags": []
+    }
+  ]
+}
