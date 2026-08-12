@@ -252,6 +252,30 @@ export class SearchPage implements OnInit {
     return this.mode() === 'city' && raw != null ? cityName(raw) : null;
   });
 
+  /** Miejscowości dostępne dla świadczenia - podpowiedzi filtra „Miejscowość”. */
+  protected readonly cityOptions = computed(() => {
+    const names = new Set<string>();
+    for (const place of this.data()?.places ?? []) {
+      names.add(cityName(place.locality));
+    }
+    return [...names].sort((a, b) => a.localeCompare(b, 'pl-PL'));
+  });
+
+  /**
+   * Podpowiedzi pola „czego szukasz”: etykiety świadczeń i ich synonimy.
+   * Etykieta synonimu pokazuje, do jakiego świadczenia prowadzi.
+   */
+  protected readonly benefitOptions = computed(() => {
+    const options: { value: string; label: string | null }[] = [];
+    for (const group of this.index.benefits('')) {
+      options.push({ value: group.label, label: null });
+      for (const synonym of group.synonyms) {
+        options.push({ value: synonym, label: group.label });
+      }
+    }
+    return options;
+  });
+
   constructor() {
     // Dane świadczenia dociągane, gdy znamy dopasowanie z indeksu.
     effect(() => {
@@ -298,6 +322,17 @@ export class SearchPage implements OnInit {
     void this.router.navigate([], {
       relativeTo: this.route,
       queryParams: { q: value.trim() },
+      queryParamsHandling: 'merge'
+    });
+  }
+
+  /** Filtr „Miejscowość”: pusta wartość wraca do całej Polski. */
+  protected submitCity(event: Event, value: string): void {
+    event.preventDefault();
+    const city = value.trim();
+    void this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: city === '' ? { mode: 'all', miejscowosc: null } : { mode: 'city', miejscowosc: city },
       queryParamsHandling: 'merge'
     });
   }

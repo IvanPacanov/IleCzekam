@@ -18,7 +18,7 @@ function render(input: Place, extra: { urgent?: boolean; distance?: string | nul
 describe('karta placówki (kanoniczny układ)', () => {
   beforeEach(() => TestBed.configureTestingModule({ imports: [PlaceCard] }));
 
-  // Kanoniczny układ z projektu: nazwa → adres+odległość → [pigułka][telefon] → statystyki.
+  // Kanoniczny układ (it. 3): nazwa → adres+odległość → pigułka → [telefon][trasa] → statystyki.
   it('renderuje sekcje w kanonicznej kolejności', () => {
     const element = render(place(), { distance: '12 km od Gliwic' });
     const order = [...element.children].map((child) =>
@@ -33,13 +33,14 @@ describe('karta placówki (kanoniczny układ)', () => {
               : child.tagName.toLowerCase()
     );
 
-    expect(order).toEqual(['name', 'address', 'action', 'stats']);
+    expect(order).toEqual(['name', 'address', 'app-wait-pill', 'action', 'stats']);
   });
 
-  it('pigułka i telefon są WEWNĄTRZ osi akcji', () => {
+  it('telefon i trasa są WEWNĄTRZ osi akcji, pigułka na własnej linii przed nią', () => {
     const element = render(place());
-    expect(element.querySelector('.action-row app-wait-pill')).not.toBeNull();
+    expect(element.querySelector('.action-row app-wait-pill')).toBeNull();
     expect(element.querySelector('.action-row a.phone-cta')).not.toBeNull();
+    expect(element.querySelector('.action-row a.route-cta')).not.toBeNull();
   });
 
   it('telefon jest linkiem tel: bez spacji', () => {
@@ -68,6 +69,32 @@ describe('karta placówki (kanoniczny układ)', () => {
     expect(element.querySelector('.no-data-note')?.textContent).toContain('To nie znaczy, że kolejka jest krótka');
     expect(element.querySelector('.stats')).toBeNull();
     expect(element.querySelector('.phone-cta')).not.toBeNull();
+  });
+
+  it('„Trasa” to zwykły link do Map Google w nowej karcie, obok telefonu', () => {
+    const element = render(place());
+    const route = element.querySelector<HTMLAnchorElement>('.action-row a.route-cta');
+
+    expect(route?.getAttribute('href')).toBe('https://www.google.com/maps/dir/?api=1&destination=50.2945,18.6714');
+    expect(route?.getAttribute('target')).toBe('_blank');
+    expect(route?.getAttribute('rel')).toBe('noopener');
+    expect(route?.getAttribute('aria-label')).toBe(
+      'Wyznacz trasę do Szpital Miejski nr 4 w Gliwicach - Poradnia Kardiologiczna w Mapach Google (otwiera nową kartę)'
+    );
+  });
+
+  it('bez współrzędnych w danych „Trasa” celuje w nazwę + adres', () => {
+    const element = render(place({ latitude: null, longitude: null }));
+
+    expect(element.querySelector<HTMLAnchorElement>('.route-cta')?.getAttribute('href')).toBe(
+      'https://www.google.com/maps/dir/?api=1&destination=' +
+        encodeURIComponent('SZPITAL MIEJSKI NR 4 W GLIWICACH, UL. ZYGMUNTA STAREGO 20, GLIWICE')
+    );
+  });
+
+  it('brak danych o kolejce nie odbiera nawigacji - „Trasa” zostaje', () => {
+    const element = render(place({ wait_stable: wait('brak_danych', 'brak danych', null) }));
+    expect(element.querySelector('.route-cta')).not.toBeNull();
   });
 
   it('odległość dokleja się do adresu tylko, gdy widok ją poda', () => {

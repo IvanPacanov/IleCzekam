@@ -20,8 +20,17 @@
           [value]="q()"
           type="search"
           autocomplete="off"
+          list="benefit-options"
           placeholder="np. kardiolog, rezonans kolana" />
       </div>
+      <!-- Natywne podpowiedzi: świadczenia i ich synonimy z indeksu wyszukiwania. -->
+      <datalist id="benefit-options">
+        @for (option of benefitOptions(); track option.value) {
+          <option
+            [value]="option.value"
+            [attr.label]="option.label"></option>
+        }
+      </datalist>
     </form>
 
     @if (chipCity(); as chip) {
@@ -70,6 +79,33 @@
         </button>
       </div>
       <p class="filter-note">„Pilny” dotyczy skierowań z adnotacją cito.</p>
+
+      <!-- Powrót do wyszukiwania wokół miasta po skasowaniu chipa - bez wracania na główną. -->
+      <p class="metric-label">Miejscowość</p>
+      <form
+        class="city-filter"
+        (submit)="submitCity($event, cityFilterInput.value)">
+        <label
+          class="visually-hidden"
+          for="city-filter-input">
+          Miejscowość
+        </label>
+        <input
+          id="city-filter-input"
+          #cityFilterInput
+          [value]="chipCity() ?? ''"
+          type="text"
+          autocomplete="off"
+          list="city-options"
+          placeholder="np. Gliwice" />
+        <button type="submit">Ustaw</button>
+      </form>
+      <datalist id="city-options">
+        @for (city of cityOptions(); track city) {
+          <option [value]="city"></option>
+        }
+      </datalist>
+      <p class="filter-note">Puste pole = wyniki z całej Polski.</p>
 
       @if (reference() !== null) {
         <p class="metric-label">Promień</p>
@@ -145,8 +181,8 @@
 
       @if (geoDenied() && mode() === 'near') {
         <p class="note">
-          Nie mamy dostępu do Twojej lokalizacji - pokazujemy wyniki z całej Polski. Możesz też wpisać miejscowość na
-          stronie głównej.
+          Nie mamy dostępu do Twojej lokalizacji - pokazujemy wyniki z całej Polski. Możesz też wpisać miejscowość w
+          filtrach.
         </p>
       }
       @if (cityNotFound()) {

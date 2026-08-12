@@ -154,6 +154,54 @@
   margin: 8px 0 0;
 }
 
+// Filtr „Miejscowość” - pole z natywnymi podpowiedziami miast z danych.
+.city-filter {
+  display: flex;
+  gap: 8px;
+
+  input {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    min-height: var(--touch-target);
+    padding: 0 16px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-text);
+
+    &::placeholder {
+      color: var(--color-text-muted);
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: var(--color-border-strong);
+    }
+  }
+
+  button {
+    flex: none;
+    min-height: var(--touch-target);
+    padding: 0 16px;
+    border: 2px solid var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-text);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--color-border-strong);
+      color: var(--color-on-accent);
+    }
+  }
+}
+
 .radius {
   display: flex;
   flex-wrap: wrap;

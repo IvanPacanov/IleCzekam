@@ -59,17 +59,18 @@
   white-space: nowrap;
 }
 
-// Oś [pigułka czasu][przycisk telefonu]; przy braku miejsca telefon schodzi niżej.
+// Pigułka czasu na własnej linii - nie konkuruje o szerokość z przyciskami.
+app-wait-pill {
+  margin-bottom: 12px;
+}
+
+// Oś akcji [telefon][trasa]; przy braku miejsca „Trasa” schodzi niżej.
 .action-row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 10px;
-}
-
-.action-row app-wait-pill {
-  flex: none;
 }
 
 .stats {
@@ -90,7 +91,13 @@
 }
 
 .phone-cta {
-  flex: 1;
+  flex: 1 1 auto;
+  // border-box: przy width:100% na mobile padding 20px nie może poszerzać przycisku.
+  box-sizing: border-box;
+  // Numer NIGDY nie łamie się na linie - to on jest głównym CTA. Górna granica
+  // szerokości: na szerokiej karcie (/szukaj) przycisk nie robi się banerem.
+  white-space: nowrap;
+  max-width: 420px;
   min-height: var(--touch-target);
   display: flex;
   align-items: center;
@@ -109,20 +116,60 @@
   }
 }
 
-// Mobile: telefon na pełną szerokość karty.
+// „Trasa” - akcja wtórna: ten sam kształt i wysokość co telefon, ale obrys zamiast
+// wypełnienia, żeby wzrok pacjenta najpierw trafiał na „Zadzwoń”.
+.route-cta {
+  flex: none;
+  // Bez border-box obrys 2px wystawał poza kartę przy width:100% (poziomy scroll na mobile).
+  box-sizing: border-box;
+  white-space: nowrap;
+  min-height: var(--touch-target);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 20px;
+  border: 2px solid var(--color-accent-700);
+  background: transparent;
+  color: var(--color-accent-700);
+  border-radius: var(--radius-pill);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    border-color: var(--color-accent-hover);
+    color: var(--color-accent-hover);
+  }
+}
+
+.route-icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+
+// Mobile: pigułka, telefon i trasa na pełną szerokość karty - wspólne krawędzie
+// wszystkich trzech bloków; telefon pierwszy z przycisków.
 @media (max-width: 900px) {
-  .action-row {
-    align-items: stretch;
-    flex-direction: column;
+  app-wait-pill {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  .action-row app-wait-pill {
-    align-self: flex-start;
+  .action-row {
+    flex-direction: column;
   }
 
   .phone-cta {
     width: 100%;
+    max-width: none;
     min-height: var(--touch-target-lg);
     font-size: 22px;
+  }
+
+  .route-cta {
+    width: 100%;
   }
 }

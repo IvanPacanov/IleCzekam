@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
 import { Place, VALIDATION_FLAG } from '@models/serving';
+import { directionsUrl } from '@shared/format/directions';
 import { WaitPill } from '@shared/wait-pill/wait-pill';
 import {
   dateLabel,
@@ -88,4 +89,10 @@ export class PlaceCard {
     const phone = this.place().phone;
     return phone === null ? null : phoneHref(phone);
   });
+
+  protected readonly routeLink = computed(() => directionsUrl(this.place()));
+
+  protected readonly routeAriaLabel = computed(
+    () => `Wyznacz trasę do ${this.title()} w Mapach Google (otwiera nową kartę)`,
+  );
 }

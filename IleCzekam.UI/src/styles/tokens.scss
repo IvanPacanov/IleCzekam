@@ -4,9 +4,10 @@
 // Wartości pochodzą z audytu kontrastów WCAG 2.1 (sekcja „it. 2 · 1” projektu):
 // elementy kluczowe - czas na pigułce, numer telefonu, nagłówek-odpowiedź - trzymają AAA.
 :root {
-  // Powierzchnie - piaskowe, nie białe (mniej olśnienia)
-  --color-bg: #f5ead8; // tło strony, 14,0:1 z tekstem
-  --color-surface: #ebddc5; // karty i pola, 12,4:1 z tekstem
+  // Powierzchnie - piaskowe, nie białe (mniej olśnienia). Iteracja 3: rozjaśnione
+  // i odsycone względem it. 2 - lżejszy, pogodniejszy ton bez utraty kontrastów.
+  --color-bg: #f7efe1; // tło strony, 14,5:1 z tekstem
+  --color-surface: #f0e6d3; // karty i pola, 13,4:1 z tekstem
   --color-surface-muted: #f9f4ed;
   --color-surface-sunken: #eee7db; // pasek informacyjny
   --color-surface-highlight: #fff2eb; // boksy ostrzegawcze / share
@@ -22,9 +23,11 @@
 
   // Akcent. UWAGA: accent-700 jest jedynym wypełnieniem pod tekst -
   // accent-500 nie przechodzi AA jako tło (3,0:1), zostaje na ikony i obrysy.
-  --color-accent-700: #8c491a; // linki, wypełnienie „Zadzwoń”, stany aktywne - 5,8:1
+  --color-accent-700: #8c491a; // linki, wypełnienie „Zadzwoń”, stany aktywne - 6,0:1
   --color-accent-500: #c67139; // WYŁĄCZNIE ikony, obrysy, elementy nietekstowe
-  --color-accent-hover: #b2622d;
+  // Hover CIEMNIEJE, nie jaśnieje: rozjaśnienie (#b2622d) spadało do 3,8:1 z tekstem
+  // na wypełnieniu, poniżej AA. Ciemniejszy hover trzyma 7,7:1.
+  --color-accent-hover: #6f3a15;
   --color-on-accent: #f5ead8;
 
   // Pigułka czasu - cztery stopnie + brak danych.

@@ -7,6 +7,7 @@ import { PlaceCard } from '@shared/place-card/place-card';
 import { SiteHeader } from '@shared/site-header/site-header';
 import { WaitPill } from '@shared/wait-pill/wait-pill';
 import { cityHeadline, cityLocative, cityName } from '@shared/format/city-name';
+import { directionsUrl } from '@shared/format/directions';
 import {
   dateLabel,
   daysApprox,
@@ -141,6 +142,22 @@ export class CityPage {
     return fastest === null
       ? null
       : this.serving().places.find((candidate) => candidate.id === fastest.place_id) ?? null;
+  });
+
+  /** Komplet „jak dojechać”: adres, trasa i telefon w jednym bloku nagłówka-odpowiedzi. */
+  protected readonly fastestAddress = computed(() => {
+    const place = this.fastestPlace();
+    return place === null ? null : titleCasePl(`${place.address}, ${place.locality}`);
+  });
+
+  protected readonly fastestRoute = computed(() => {
+    const place = this.fastestPlace();
+    return place === null
+      ? null
+      : {
+          href: directionsUrl(place),
+          ariaLabel: `Wyznacz trasę do ${titleCasePl(place.provider)} w Mapach Google (otwiera nową kartę)`,
+        };
   });
 
   protected readonly fastestName = computed(() => {

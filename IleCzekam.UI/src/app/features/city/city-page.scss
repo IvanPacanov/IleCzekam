@@ -58,6 +58,11 @@ h2 {
   line-height: 1.25;
 }
 
+.fastest-address {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+}
+
 .fastest-stats {
   font-size: 16px;
   color: var(--color-text-secondary);
@@ -65,6 +70,7 @@ h2 {
 
 .phone-cta {
   flex: none;
+  box-sizing: border-box;
   min-width: 250px;
   min-height: 64px;
   display: flex;
@@ -81,6 +87,37 @@ h2 {
     background: var(--color-accent-hover);
     color: var(--color-on-accent);
   }
+}
+
+// „Trasa” w nagłówku-odpowiedzi - wtórna wobec telefonu: obrys zamiast wypełnienia.
+.route-cta {
+  flex: none;
+  // Bez border-box obrys 2px wystawał poza panel przy width:100% (poziomy scroll na mobile).
+  box-sizing: border-box;
+  min-height: var(--touch-target);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 24px;
+  border: 2px solid var(--color-accent-700);
+  background: transparent;
+  color: var(--color-accent-700);
+  border-radius: var(--radius-pill);
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    border-color: var(--color-accent-hover);
+    color: var(--color-accent-hover);
+  }
+}
+
+.route-icon {
+  width: 22px;
+  height: 22px;
+  flex: none;
 }
 
 .caveat {
@@ -324,6 +361,10 @@ app-place-card {
     min-width: 0;
     width: 100%;
     font-size: 22px;
+  }
+
+  .route-cta {
+    width: 100%;
   }
 
   .trend {

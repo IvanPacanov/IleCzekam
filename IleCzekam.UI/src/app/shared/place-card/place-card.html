@@ -10,12 +10,13 @@
   }
 </p>
 
-<!-- Oś akcji: pigułka i telefon w jednej linii - kanoniczny układ karty. -->
-<div class="action-row">
-  <app-wait-pill
-    [wait]="wait()"
-    [size]="pillSize()" />
+<!-- Kanoniczny układ (it. 3): pigułka na własnej linii, pod nią oś akcji [telefon][trasa].
+     Pigułka w jednej osi z przyciskami ściskała numer telefonu przy szerokich kartach. -->
+<app-wait-pill
+  [wait]="wait()"
+  [size]="pillSize()" />
 
+<div class="action-row">
   @if (phoneLink(); as href) {
     <a
       class="phone-cta phone-number"
@@ -25,6 +26,23 @@
       {{ phoneText() }}
     </a>
   }
+
+  <a
+    class="route-cta"
+    [href]="routeLink()"
+    [attr.aria-label]="routeAriaLabel()"
+    target="_blank"
+    rel="noopener">
+    <!-- Strzałka nawigacji w currentColor - projekt nie ma zestawu ikon, więc inline. -->
+    <svg
+      class="route-icon"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true">
+      <path d="M12 2 4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
+    </svg>
+    Trasa w Mapach Google
+  </a>
 </div>
 
 @if (hasNoData()) {

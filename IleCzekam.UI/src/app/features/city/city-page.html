@@ -35,6 +35,9 @@
         <div class="fastest">
           <p class="metric-label">Najszybciej w mieście</p>
           <p class="fastest-name">{{ fastestName() }}</p>
+          @if (fastestAddress(); as address) {
+            <p class="fastest-address">{{ address }}</p>
+          }
           <p class="fastest-stats">{{ fastestStats() }}</p>
         </div>
       }
@@ -46,6 +49,25 @@
           <span aria-hidden="true">☎</span>
           <span class="visually-hidden">Zadzwoń do najszybszej placówki:</span>
           {{ phone.text }}
+        </a>
+      }
+
+      @if (fastestRoute(); as route) {
+        <a
+          class="route-cta"
+          [href]="route.href"
+          [attr.aria-label]="route.ariaLabel"
+          target="_blank"
+          rel="noopener">
+          <!-- Ta sama strzałka nawigacji, co na karcie placówki. -->
+          <svg
+            class="route-icon"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true">
+            <path d="M12 2 4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
+          </svg>
+          Trasa w Mapach Google
         </a>
       }
     </section>
