@@ -42,7 +42,13 @@ export function listCityRoutes(): { benefit: string; city: string }[] {
     );
 }
 
+/**
+ * Wzbogacony indeks z public/ (pisze go scripts/generate-search-index.mjs w prebuild) -
+ * ma fastest_days/fastest_label, których surowy indeks ETL nie zna. Fallback: surowy indeks.
+ */
 export function loadSearchIndex(): SearchIndexEntry[] {
-  const path = join(servingDir(), 'search-index', 'index.json');
+  const enriched = resolve(process.cwd(), 'public', 'search-index.json');
+  const raw = join(servingDir(), 'search-index', 'index.json');
+  const path = existsSync(enriched) ? enriched : raw;
   return existsSync(path) ? (JSON.parse(readFileSync(path, 'utf-8')) as SearchIndexEntry[]) : [];
 }

@@ -1,49 +1,8 @@
 <app-site-header>
-  <div class="header-search">
-    <form
-      class="header-form"
-      (submit)="resubmit($event, headerInput.value)">
-      <label
-        class="visually-hidden"
-        for="header-search-input">
-        Czego szukasz?
-      </label>
-      <div class="header-field">
-        <span
-          class="search-icon"
-          aria-hidden="true">
-          ⌕
-        </span>
-        <input
-          id="header-search-input"
-          #headerInput
-          [value]="q()"
-          type="search"
-          autocomplete="off"
-          list="benefit-options"
-          placeholder="np. kardiolog, rezonans kolana" />
-      </div>
-      <!-- Natywne podpowiedzi: świadczenia i ich synonimy z indeksu wyszukiwania. -->
-      <datalist id="benefit-options">
-        @for (option of benefitOptions(); track option.value) {
-          <option
-            [value]="option.value"
-            [attr.label]="option.label"></option>
-        }
-      </datalist>
-    </form>
-
-    @if (chipCity(); as chip) {
-      <button
-        class="city-chip"
-        (click)="clearCity()"
-        type="button">
-        {{ chip }}
-        <span aria-hidden="true">×</span>
-        <span class="visually-hidden">- usuń filtr miejscowości</span>
-      </button>
-    }
-  </div>
+  <app-header-search
+    [query]="q()"
+    [city]="chipCity()"
+    [mode]="mode()" />
 </app-site-header>
 
 <app-data-notice [month]="snapshotMonth()" />

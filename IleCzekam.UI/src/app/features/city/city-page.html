@@ -1,11 +1,21 @@
-<app-site-header />
+<app-site-header>
+  <!-- Ta sama szukajka co na widoku wyników; mobile zwija się do lupy,
+       żeby hero z odpowiedzią został na pierwszym ekranie. -->
+  <app-header-search
+    [query]="serving().benefit.label"
+    [city]="city()"
+    [collapsible]="true" />
+</app-site-header>
 
 <app-data-notice [month]="serving().snapshot_month" />
 
 <div class="page">
   <main class="main">
     <p class="breadcrumb">
-      {{ serving().benefit.label }} · {{ city() }} · woj. {{ provinceName() }}
+      <a [href]="benefitSearchHref()">{{ serving().benefit.label }}</a>
+      ·
+      <a href="#inne-swiadczenia">{{ city() }}</a>
+      · woj. {{ provinceName() }}
     </p>
 
     <h1>{{ headline() }}</h1>
@@ -184,6 +194,47 @@
     </section>
   </aside>
 </div>
+
+<!-- Wyjścia krzyżowe - po liście, przed stopką; ciche listy linków, wyłącznie
+     pary istniejące w indeksie (prerenderowane w statycznym HTML). -->
+@if (crossBenefits().length > 0 || nearbyCities().length > 0) {
+  <nav
+    class="cross-links"
+    aria-label="Inne świadczenia i miasta">
+    @if (crossBenefits().length > 0) {
+      <section
+        id="inne-swiadczenia"
+        aria-label="Inne świadczenia w tym mieście">
+        <h2>Inne świadczenia w {{ cityIn() }}</h2>
+        <ul>
+          @for (link of crossBenefits(); track link.href) {
+            <li>
+              <a [href]="link.href">{{ link.label }}</a>
+            </li>
+          }
+        </ul>
+      </section>
+    }
+
+    @if (nearbyCities().length > 0) {
+      <section aria-label="To świadczenie w miastach obok">
+        <h2>{{ serving().benefit.label }} w miastach obok</h2>
+        <ul>
+          @for (link of nearbyCities(); track link.href) {
+            <li>
+              <a [href]="link.href">
+                {{ link.name }}
+                @if (link.time; as time) {
+                  <span class="cross-time">· {{ time }}</span>
+                }
+              </a>
+            </li>
+          }
+        </ul>
+      </section>
+    }
+  </nav>
+}
 
 <footer class="site-footer">
   <p>

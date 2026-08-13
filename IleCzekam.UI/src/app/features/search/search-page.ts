@@ -5,12 +5,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { BenefitPlaces, BenefitPlacesService } from '@core/search/benefit-places.service';
 import { cityCoords } from '@core/search/city-coords';
+import { fastestWait } from '@core/search/fastest';
 import { GeoPoint, centroid, distanceKm, kmLabel } from '@core/search/geo';
 import { SearchIndexService } from '@core/search/search-index.service';
 import { RADIUS_OPTIONS, RadiusKm, parseMode } from '@core/search/search-params';
 import { Place } from '@models/serving';
 import { DataNotice } from '@shared/data-notice/data-notice';
 import { cityFrom, cityLocative, cityName, cityNear } from '@shared/format/city-name';
+import { HeaderSearch } from '@shared/header-search/header-search';
 import { placesCount } from '@shared/format/pl-format';
 import { PlaceCard } from '@shared/place-card/place-card';
 import { SiteHeader } from '@shared/site-header/site-header';
@@ -43,7 +45,7 @@ function normalizeName(text: string): string {
 @Component({
   selector: 'app-search-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [SiteHeader, DataNotice, PlaceCard, TravelHint],
+  imports: [SiteHeader, HeaderSearch, DataNotice, PlaceCard, TravelHint],
   templateUrl: './search-page.html',
   styleUrl: './search-page.scss'
 })
@@ -230,21 +232,17 @@ export class SearchPage implements OnInit {
     const radius = this.effectiveRadius();
     const scope = radius === null ? 'w całej Polsce' : `w promieniu ${radius} km`;
 
-    const fastest = rows
-      .filter((row) => this.waitDays(row.place) !== Number.MAX_SAFE_INTEGER)
-      .reduce<ResultRow | null>(
-        (best, row) => (best === null || this.waitDays(row.place) < this.waitDays(best.place) ? row : best),
-        null
-      );
-
-    if (fastest === null) {
+    // Ta sama funkcja min, która zasila chipy miast w panelu podpowiedzi -
+    // wartość obiecana chipem MUSI zgadzać się z tym zdaniem.
+    const wait = fastestWait(rows.map((row) => row.place), this.urgent());
+    if (wait === null) {
       return `${placesCount(rows.length)} ${scope}`;
     }
 
-    const wait =
-      this.urgent() && fastest.place.wait_urgent !== null ? fastest.place.wait_urgent : fastest.place.wait_stable;
-    const where = cityLocative(fastest.place.locality) ?? cityName(fastest.place.locality);
-    return `${placesCount(rows.length)} ${scope} · najkrótszy termin: ${wait.human_label} w ${where}`;
+    const fastest = rows.find((row) => this.waitDays(row.place) === wait.raw_days);
+    const where =
+      fastest === undefined ? '' : ` w ${cityLocative(fastest.place.locality) ?? cityName(fastest.place.locality)}`;
+    return `${placesCount(rows.length)} ${scope} · najkrótszy termin: ${wait.human_label}${where}`;
   });
 
   protected readonly chipCity = computed(() => {
@@ -259,21 +257,6 @@ export class SearchPage implements OnInit {
       names.add(cityName(place.locality));
     }
     return [...names].sort((a, b) => a.localeCompare(b, 'pl-PL'));
-  });
-
-  /**
-   * Podpowiedzi pola „czego szukasz”: etykiety świadczeń i ich synonimy.
-   * Etykieta synonimu pokazuje, do jakiego świadczenia prowadzi.
-   */
-  protected readonly benefitOptions = computed(() => {
-    const options: { value: string; label: string | null }[] = [];
-    for (const group of this.index.benefits('')) {
-      options.push({ value: group.label, label: null });
-      for (const synonym of group.synonyms) {
-        options.push({ value: synonym, label: group.label });
-      }
-    }
-    return options;
   });
 
   constructor() {
@@ -317,15 +300,6 @@ export class SearchPage implements OnInit {
     void this.index.load();
   }
 
-  protected resubmit(event: Event, value: string): void {
-    event.preventDefault();
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { q: value.trim() },
-      queryParamsHandling: 'merge'
-    });
-  }
-
   /** Filtr „Miejscowość”: pusta wartość wraca do całej Polski. */
   protected submitCity(event: Event, value: string): void {
     event.preventDefault();
@@ -333,14 +307,6 @@ export class SearchPage implements OnInit {
     void this.router.navigate([], {
       relativeTo: this.route,
       queryParams: city === '' ? { mode: 'all', miejscowosc: null } : { mode: 'city', miejscowosc: city },
-      queryParamsHandling: 'merge'
-    });
-  }
-
-  protected clearCity(): void {
-    void this.router.navigate([], {
-      relativeTo: this.route,
-      queryParams: { mode: 'all', miejscowosc: null },
       queryParamsHandling: 'merge'
     });
   }

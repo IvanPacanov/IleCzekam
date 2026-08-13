@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 import { BenefitSuggestion, SearchIndexService } from '@core/search/search-index.service';
 import { SearchMode } from '@core/search/search-params';
+import { SearchIndexEntry } from '@models/serving';
 import { SiteHeader } from '@shared/site-header/site-header';
 import { cityName } from '@shared/format/city-name';
 import { placesCount } from '@shared/format/pl-format';
@@ -39,7 +40,7 @@ export class HomePage implements OnInit {
   protected readonly cityMatches = computed<CityLink[]>(() =>
     this.index.cities(this.query()).map((entry) => ({
       label: `${entry.benefit_label} - ${cityName(entry.city)}`,
-      href: `/swiadczenie/${entry.benefit_slug}/${entry.city_slug}/`,
+      href: this.searchHref(entry.benefit_slug, entry.city),
       meta: placesCount(entry.places_total)
     }))
   );
@@ -82,11 +83,23 @@ export class HomePage implements OnInit {
     });
   }
 
-  protected cityHref(benefitSlug: string, citySlug: string): string {
-    return `/swiadczenie/${benefitSlug}/${citySlug}/`;
+  /**
+   * Reguła routingu: z szukajki ZAWSZE do wyników. Każdy element panelu podpowiedzi
+   * prowadzi do /szukaj - strony miast (widok 2) zostają dla Google, „Popularnych miast”,
+   * mostka na wynikach i breadcrumbów.
+   */
+  protected searchHref(benefitSlug: string, city?: string): string {
+    return city === undefined
+      ? `/szukaj?q=${encodeURIComponent(benefitSlug)}&mode=all`
+      : `/szukaj?q=${encodeURIComponent(benefitSlug)}&mode=city&miejscowosc=${encodeURIComponent(cityName(city))}`;
   }
 
   protected cityLabel(city: string): string {
     return cityName(city);
+  }
+
+  /** Czas na chipie - z tego samego źródła (fastest z indeksu), co nagłówek wyników. */
+  protected chipTime(entry: SearchIndexEntry): string | null {
+    return entry.fastest_label ?? (entry.median_days === null ? null : `${entry.median_days} dni`);
   }
 }

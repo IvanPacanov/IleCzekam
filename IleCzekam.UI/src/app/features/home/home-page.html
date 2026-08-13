@@ -112,15 +112,21 @@
           id="search-results">
           @for (benefit of suggestions(); track benefit.slug) {
             <div class="result-group">
-              <p class="result-benefit">{{ benefit.label }}</p>
+              <!-- Nazwa świadczenia → wyniki ogólnopolskie; chipy miast → wyniki wokół miasta.
+                   Z panelu podpowiedzi NIGDY do strony miasta - reguła routingu projektu. -->
+              <a
+                class="result-benefit"
+                [href]="searchHref(benefit.slug)">
+                {{ benefit.label }}
+              </a>
               <p class="result-synonyms">{{ benefit.synonyms.join(' · ') }}</p>
               <ul class="result-cities">
                 @for (city of benefit.cities; track city.city_slug) {
                   <li>
-                    <a [href]="cityHref(benefit.slug, city.city_slug)">
+                    <a [href]="searchHref(benefit.slug, city.city)">
                       {{ cityLabel(city.city) }}
-                      @if (city.median_days !== null) {
-                        <span class="result-days">{{ city.median_days }} dni</span>
+                      @if (chipTime(city); as time) {
+                        <span class="result-days">{{ time }}</span>
                       }
                     </a>
                   </li>

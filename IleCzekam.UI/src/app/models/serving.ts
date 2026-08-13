@@ -121,6 +121,12 @@ export interface SearchIndexEntry {
   readonly province: string;
   readonly median_days: number | null;
   readonly places_total: number;
+  /**
+   * Najkrótszy termin w mieście - dokładane przez scripts/generate-search-index.mjs
+   * (nie przez ETL), tą samą regułą min co nagłówek wyników (@core/search/fastest).
+   */
+  readonly fastest_days?: number | null;
+  readonly fastest_label?: string | null;
 }
 
 export const VALIDATION_FLAG = {

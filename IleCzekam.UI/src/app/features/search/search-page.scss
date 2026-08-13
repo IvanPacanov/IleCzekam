@@ -1,68 +1,4 @@
-// Nagłówkowa szukajka - wpięta w slot wspólnego nagłówka.
-.header-search {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  min-width: 0;
-}
-
-.header-form {
-  flex: 1;
-  min-width: 0;
-}
-
-.header-field {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 52px;
-  background: #fff;
-  border: 2px solid var(--color-border-strong);
-  border-radius: var(--radius-pill);
-  padding: 0 18px;
-}
-
-.search-icon {
-  font-size: 20px;
-  color: var(--color-accent-700);
-}
-
-.header-field input {
-  flex: 1;
-  min-width: 0;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  font-family: inherit;
-  font-size: 18px;
-  color: var(--color-text);
-  min-height: var(--touch-target);
-
-  &::placeholder {
-    color: var(--color-text-muted);
-  }
-}
-
-.city-chip {
-  flex: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 52px;
-  padding: 0 18px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-pill);
-  background: var(--color-surface-muted);
-  font-family: inherit;
-  font-size: 17px;
-  font-weight: 600;
-  color: var(--color-text);
-  cursor: pointer;
-
-  &:hover {
-    border-color: var(--color-border-strong);
-  }
-}
+// Nagłówkowa szukajka mieszka we wspólnym komponencie app-header-search.
 
 .page {
   display: grid;
@@ -285,10 +221,5 @@ h1 {
 
   .subline {
     font-size: 16px;
-  }
-
-  .city-chip {
-    min-height: var(--touch-target);
-    padding: 0 14px;
   }
 }

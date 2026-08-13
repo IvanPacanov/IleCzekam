@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 
+import { searchIndexResolver } from '@core/serving/search-index.resolver';
 import { servingResolver } from '@core/serving/serving.resolver';
 
 export const routes: Routes = [
@@ -21,6 +22,6 @@ export const routes: Routes = [
     // Strona SEO: jedno świadczenie w jednym mieście. Prerenderowana z data/serving.
     path: 'swiadczenie/:benefit/:city',
     loadComponent: () => import('@features/city/city-page').then((m) => m.CityPage),
-    resolve: { serving: servingResolver },
+    resolve: { serving: servingResolver, searchIndex: searchIndexResolver },
   },
 ];

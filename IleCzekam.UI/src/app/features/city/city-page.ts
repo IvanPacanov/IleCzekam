@@ -1,8 +1,11 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
-import { Place, ServingFile, VALIDATION_FLAG } from '@models/serving';
+import { cityCoords } from '@core/search/city-coords';
+import { distanceKm } from '@core/search/geo';
+import { Place, SearchIndexEntry, ServingFile, VALIDATION_FLAG } from '@models/serving';
 import { DataNotice } from '@shared/data-notice/data-notice';
+import { HeaderSearch } from '@shared/header-search/header-search';
 import { PlaceCard } from '@shared/place-card/place-card';
 import { SiteHeader } from '@shared/site-header/site-header';
 import { WaitPill } from '@shared/wait-pill/wait-pill';
@@ -54,13 +57,15 @@ const COLLAPSED_PLACES = 3;
 @Component({
   selector: 'app-city-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [SiteHeader, DataNotice, WaitPill, PlaceCard],
+  imports: [SiteHeader, HeaderSearch, DataNotice, WaitPill, PlaceCard],
   templateUrl: './city-page.html',
   styleUrl: './city-page.scss',
 })
 export class CityPage {
   /** Wstrzykiwane przez router (withComponentInputBinding + resolve). */
   readonly serving = input.required<ServingFile>();
+  /** Indeks wyszukiwarki - zasila bloki krzyżowe (resolver, w prerenderze z dysku). */
+  readonly searchIndex = input<SearchIndexEntry[]>([]);
 
   private readonly title = inject(Title);
   private readonly meta = inject(Meta);
@@ -230,6 +235,54 @@ export class CityPage {
   });
 
   protected readonly hasTrend = computed(() => this.trendBars().length >= 2);
+
+  /** Breadcrumb „{Świadczenie}” → wyniki ogólnopolskie (reguła: z szukajki do wyników). */
+  protected readonly benefitSearchHref = computed(
+    () => `/szukaj?q=${encodeURIComponent(this.serving().benefit.slug)}&mode=all`
+  );
+
+  /**
+   * Blok krzyżowy nr 1: inne świadczenia z prerenderowaną stroną w TYM mieście.
+   * Tylko pary obecne w indeksie - zero linków do 404.
+   */
+  protected readonly crossBenefits = computed(() => {
+    const scope = this.serving().scope;
+    const current = this.serving().benefit.slug;
+
+    return this.searchIndex()
+      .filter((entry) => entry.city_slug === scope.slug && entry.benefit_slug !== current)
+      .slice(0, 8)
+      .map((entry) => ({
+        label: entry.benefit_label,
+        href: `/swiadczenie/${entry.benefit_slug}/${entry.city_slug}/`
+      }));
+  });
+
+  /**
+   * Blok krzyżowy nr 2: to świadczenie w najbliższych geograficznie miastach.
+   * Czas przy mieście z tego samego źródła (fastest z indeksu), co chipy podpowiedzi.
+   */
+  protected readonly nearbyCities = computed(() => {
+    const serving = this.serving();
+    const here = cityCoords(serving.scope.name);
+
+    const candidates = this.searchIndex()
+      .filter((entry) => entry.benefit_slug === serving.benefit.slug && entry.city_slug !== serving.scope.slug)
+      .map((entry) => ({ entry, point: cityCoords(entry.city) }))
+      .filter((candidate) => candidate.point !== null);
+
+    if (here !== null) {
+      candidates.sort(
+        (a, b) => distanceKm(here, a.point as NonNullable<typeof a.point>) - distanceKm(here, b.point as NonNullable<typeof b.point>)
+      );
+    }
+
+    return candidates.slice(0, 6).map(({ entry }) => ({
+      name: cityName(entry.city),
+      href: `/swiadczenie/${entry.benefit_slug}/${entry.city_slug}/`,
+      time: entry.fastest_label ?? null
+    }));
+  });
 
   protected readonly shareText = computed(() => {
     const best = this.serving().comparison.best_city_in_province;

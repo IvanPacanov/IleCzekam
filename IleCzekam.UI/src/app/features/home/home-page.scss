@@ -177,10 +177,19 @@ input[type='search'] {
   }
 }
 
+// Nazwa świadczenia jest teraz linkiem do wyników - wygląd bez zmian, podkreślenie na hover.
 .result-benefit {
+  display: inline-block;
   font-size: 18px;
   font-weight: 700;
   margin: 0;
+  color: var(--color-text);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-accent-700);
+    text-decoration: underline;
+  }
 }
 
 .result-synonyms {

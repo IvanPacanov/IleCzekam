@@ -12,6 +12,16 @@
   font-size: 16px;
   color: var(--color-text-muted);
   margin: 0 0 6px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-accent-700);
+      text-decoration: underline;
+    }
+  }
 }
 
 h1 {
@@ -317,6 +327,45 @@ app-place-card {
   margin: 0;
 }
 
+// Bloki krzyżowe - wizualnie ciche listy linków, nie karty.
+.cross-links {
+  max-width: 1280px;
+  margin: 44px auto 0;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li a {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--touch-target);
+    color: var(--color-accent-700);
+    text-decoration: none;
+    font-size: 17px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .cross-time {
+    color: var(--color-text-muted);
+    margin-left: 6px;
+  }
+}
+
 .site-footer {
   max-width: 1280px;
   margin: 44px auto 0;
@@ -333,6 +382,7 @@ app-place-card {
 // Mobile 390 - kolumny schodzą pod siebie, nagłówek-odpowiedź zostaje pierwszy.
 @media (max-width: 900px) {
   .page,
+  .cross-links,
   .site-footer {
     padding-left: 20px;
     padding-right: 20px;
